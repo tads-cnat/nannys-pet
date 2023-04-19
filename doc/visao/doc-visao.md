@@ -10,7 +10,7 @@
 
 ## 1. Objetivo do projeto
 
-Texto...
+O objetivo do projeto visa a Hospedagem de cachorros e gatos por um eventual compromisso do dono nas casas de hospedeiros que sejam capacitados para realizar o serviço.
 
 ## 2. Descrição do problema
 
