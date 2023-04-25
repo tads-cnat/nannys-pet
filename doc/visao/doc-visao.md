@@ -4,7 +4,7 @@
 
 | Data                |  Versão             |          Descrição  |  Autores            |
 | :-----------------: | :-----------------: | :-----------------: | :-----------------: |
-| - | - | Versão inicial |  - |
+| 25/04/2023 | 1.0 | Versão inicial |  Walber Ranniere |
 | - | - | - |  - |
 
 
@@ -16,10 +16,10 @@ O objetivo do projeto visa a Hospedagem de cachorros e gatos por um eventual com
 
 |     |      |
 | --- | --- |
-| **Problema**            | ... |
-| **Afeta**               | ... |  
-| **Impacta**             | ... |
-| **Solução**             | ... | 
+| **Problema**            | A necessidade eventual de estar fora do lar sem ter ninguém que cuide do seu pet. |
+| **Afeta**               | Todos aqueles que possuem um pet de estimação. |  
+| **Impacta**             | Em um busca por terceiros para que cuidem do pet enquanto o dono está fora de casa. |
+| **Solução**             | Uma plataforma web que junte aquele que pode disponibilizar o serviço de hospedar um pet com aquele que precisa dessa hospedagem para o seu pet. | 
 
 ## 3. Descrição dos usuários 
 
