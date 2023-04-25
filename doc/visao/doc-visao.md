@@ -37,7 +37,13 @@ Texto...
 
 ## 6. Alternativas concorrentes
 
-Texto...
+* **DogHero** a principal concorrente, plataforma que conta com diversos serviços como creche, hospedagem, passeio, serviços veterinários em casa e etc.
+
+* **Lar Dog Lar** day care e hospedagem para animais de estimação.
+
+* **Prontocan: Hotel, Day Care e Clínica Veterinária** hotel para animais de estimação.
+
+Embora as duas segundas alternativas digam ser para "animais de estimação", em pesquisa rápida vemos que são para cachorros.
 
 ## 7. Visão geral do produto
 
