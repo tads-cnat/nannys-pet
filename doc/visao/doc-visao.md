@@ -37,7 +37,15 @@ Texto...
 
 ## 6. Alternativas concorrentes
 
-Texto...
+* **DogHero** plataforma de hospedagem de animais de estimação, que tem serviço de creche, pet sitter, passeio, serviço veterinário sem sair de casa. Que tem a creche, mas também oferece o serviço "personalizado".
+
+E a ambito regional, temos algumas opções como:
+
+* **Lar Dog Lar - Day Care e Hospedagem** Hotel para animais de estimação.
+
+* **JR Creche e Hotel Para Cães** Hotel para animais de estimação. 
+
+Ps: Ambas às opções regionais que eu vi, oferecem o serviço apenas para cachorro.
 
 ## 7. Visão geral do produto
 
