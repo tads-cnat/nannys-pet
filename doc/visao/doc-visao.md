@@ -52,8 +52,21 @@ Plataforma que intermediam e organizam o contrato entre pessoas que tem tempo, a
 
 | Código              |  Nome               |          Descrição  |  Prioridade         |
 | :-----------------: | :-----------------: | :-----------------: | :-----------------: |
-| F01 | ... | ... | ... |
-| F02 | ... | ... | ... |
+| F01 | Cadastrar dono do pet | O usuário que deseja hospedar seu pet realiza o cadastro no sistema | Essencial |
+| F02 | Cadastrar cuidador | O usuário que deseja cuidar de um pet realiza o cadastro no sistema | Essencial |
+| F03 | Login usuário | O usuário (cuidador ou dono do pet) realiza login no sistema | Essencial |
+| F04 | Adicionar pet | O dono do pet adiciona seu pet e as demais informações | Essencial |
+| F05 | Buscar cuidador | O dono do pet busca um cuidador no sistema | Essencial |
+| F06 | Buscar dono do pet | O cuidador busca um cuidador no sistema | Essencial |
+| F07 | Solicitar hospedagem | O dono do pet solicita a hospedagem em uma data definida | Essencial |
+| F08 | Confirmar hospedagem | O cuidador confirma a hospedagem | Essencial |
+| F09 | Cancelar hospedagem | O cuidador ou dono do pet cancelam a hospedagem | Essencial |
+| F10 | Definir preço | O cuidador define um valor por diária no sistema | Essencial |
+| F11 | Realizar pagamento | O dono do pet realiza o pagamento do valor mediante termos de contrato de serviço | Essencial |
+| F12 | Confirmar pagamento | O cuidador confirma o pagamento | Essencial |
+| F13 | Finalizar hospedagem | O dono do pet finaliza o processo de hospedagem e confirma a retirada do pet | Essencial |
+| F14 | Avaliar cuidador | O dono do pet avalia o cuidador após o fim da hospedagem | Desejável |
+
 
 ## 9. Requisitos não-funcionais
 
