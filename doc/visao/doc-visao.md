@@ -66,6 +66,7 @@ Plataforma que intermediam e organizam o contrato entre pessoas que tem tempo, a
 | F12 | Confirmar pagamento | O cuidador confirma o pagamento | Essencial |
 | F13 | Finalizar hospedagem | O dono do pet finaliza o processo de hospedagem e confirma a retirada do pet | Essencial |
 | F14 | Avaliar cuidador | O dono do pet avalia o cuidador após o fim da hospedagem | Desejável |
+| F15 | Avaliar dono do pet | O cuidador avalia o dono do pet após o fim da hospedagem | Desejável |
 
 
 ## 9. Requisitos não-funcionais
