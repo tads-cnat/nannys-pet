@@ -30,13 +30,13 @@ O objetivo do projeto visa a Hospedagem de cachorros e gatos por um eventual com
 
 ## 4. Descrição do ambiente dos usuários
 
-*Número de pessoas envolvidas na execução da tarefa? Isso está mudando?  
+* Número de pessoas envolvidas na execução da tarefa? Isso está mudando?  
 Para que a tarefa seja executada são necessárias duas pessoas, uma que disponibiliza os serviços de hospedagem e a outra que precisa desse serviço.  
-*Quaisquer restrições ambientais exclusivas: móveis, externas, de aeronaves etc.?  
+* Quaisquer restrições ambientais exclusivas: móveis, externas, de aeronaves etc.?  
 Não há restrições ambientais.  
-*Que plataformas de sistema são utilizadas hoje? Plataformas futuras?  
+* Que plataformas de sistema são utilizadas hoje? Plataformas futuras?  
 Na pesquisa feita anteriormente via-se ideias parecidas, como é o caso do DogHero e da Prontocan: Hotel, Day Care e Clínica Veterinária.  
-*Que outros aplicativos estão em uso? É necessário que o seu aplicativo interaja com eles?  
+* Que outros aplicativos estão em uso? É necessário que o seu aplicativo interaja com eles?  
 Não há aplicativos similares. 
 
 ## 5. Principais necessidades dos usuários
