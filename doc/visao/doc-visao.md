@@ -24,7 +24,7 @@ O objetivo do projeto visa a Hospedagem de cachorros e gatos por um eventual com
 ## 3. Descrição dos usuários 
 
 |  Nome               |          Descrição  |  Responsabilidade|
-| :-----------------: | :-----------------: | :-----------------: | :-----------------: | :-----------------: | 
+| :-----------------: | :-----------------: | :-----------------: |
 |  Administrador              |  Administrador: Repsonsáavel pelo gerenciamento e funcionamento correto da aplicação         |  -Oferecer suporte; -Alteração de qualquer funcionalidade necessária; - Aprovação de cadastros para host; -Validar cadastro de usuário; -Validar operações entre usuário e host.|
 |  Usuário             |  Usuário: São as pessoas que se cadastram no site com objetivo de arranjar local para seus pets durante o período desejado.         |  - Cadastrar pets para hospedagem; - Demonstrar interesse em conseguir hospedagem.|
 | Host | São as pessoas que se cadastram no site, para disponibilizar a hospedagem dos pets dos outros | Cadastrar o tipo de serviço que deseja prestar; -Demonstrar interesse em oferecer a hospedagem. |
