@@ -59,5 +59,6 @@ Plataforma que intermediam e organizam o contrato entre pessoas que tem tempo, a
 
 | Código              |  Nome               |          Descrição  |  Categoria          |  Classificação      |
 | :-----------------: | :-----------------: | :-----------------: | :-----------------: | :-----------------: |
-| NF01 | ... | ... | ... | ... |
-| NF02 | ... | ... | ... | ... |
+| NF01 | Segurança dos Dados | Manter os dados pessoais dos usuários privados | Segurança | Essencial |
+| NF02 | Responsividade | O Sistema Web deve ser responsivo para o uso em diversos dispositivos | Usuabilidade | Desejável |
+| NF03 | Funcionamento | O Sistema deve suportar o uso de vários usuários ao mesmo tempo com qualidade e velocidade | Usuabilidade | Desejável |
