@@ -24,12 +24,20 @@ O objetivo do projeto visa a Hospedagem de cachorros e gatos por um eventual com
 ## 3. Descrição dos usuários 
 
 | Nome                |  Descrição          |   Responsabilidade  |
-| -----------------   | -----------------   | -----------------   |
-| ? | - | - |
+| Administrador  | Administrador: Repsonsáavel pelo gerenciamento e funcionamento correto da aplicação  | Supervisionar a relação entre usuários e aplicação; -Oferecer suporte; -Alteração de qualquer funcionalidade necessária; - Aprovação de cadastros para host; -Validar cadastro de usuário; -Validar operações entre usuário e host.   |
+| Usuário | Usuário: São as pessoas que se cadastram no site com objetivo de arranjar local para seus pets durante o período desejado. | -Cadastrar livros que deseja doar; -Demonstrar interesse em conseguir hospedagem. |
+| Host | São as pessoas que se cadastram no site, para disponibilizar a hospedagem dos pets dos outros | Cadastrar o tipo de serviço que deseja prestar; -Demonstrar interesse em oferecer a hospedagem. |
 
 ## 4. Descrição do ambiente dos usuários
 
-Texto...
+*Número de pessoas envolvidas na execução da tarefa? Isso está mudando?  
+Para que a tarefa seja executada são necessárias duas pessoas, uma que disponibiliza os serviços de hospedagem e a outra que precisa desse serviço.  
+*Quaisquer restrições ambientais exclusivas: móveis, externas, de aeronaves etc.?  
+Não há restrições ambientais.  
+*Que plataformas de sistema são utilizadas hoje? Plataformas futuras?  
+Na pesquisa feita anteriormente via-se ideias parecidas, como é o caso do DogHero e da Prontocan: Hotel, Day Care e Clínica Veterinária.  
+*Que outros aplicativos estão em uso? É necessário que o seu aplicativo interaja com eles?  
+Não há aplicativos similares. 
 
 ## 5. Principais necessidades dos usuários
 
