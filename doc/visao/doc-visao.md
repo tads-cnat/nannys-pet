@@ -25,7 +25,7 @@ Objetivo é desenvolver o sistema para o serviço de hospedagem de cachorros e g
 
 |  Nome               |          Descrição  |  Responsabilidade|
 | :-----------------: | :-----------------: | :-----------------: |
-|  Administrador              |  Administrador: Responsável pelo gerenciamento e funcionamento correto da aplicação         |  - Aprovação de cadastros para cuidador; -Validar cadastro de usuário; -Validar operações entre usuário e host(finalização do serviço).|
+|  Administrador              |  Administrador: Responsável pelo gerenciamento e funcionamento correto da aplicação         |  - Validar cadastros para cuidador; -Validar cadastro de usuário; -Validar operações entre usuário e host(finalização do serviço).|
 |  Usuário             |  Usuário: São as pessoas que se cadastram no site com objetivo de arranjar local para seus pets durante o período desejado.         |  - Cadastrar pets para hospedagem; - Cadastra pedido de hospedagem.|
 | Cuidador | São as pessoas que se cadastram no site, para disponibilizar a hospedagem dos pets dos outros | Realiza auto-cadastro; - Atende pedidos de hospedagem. |
 | Visitante | Sem a necessidade de cadastro | Visualiza cuidadores |
@@ -58,7 +58,7 @@ Conseguir encontrar uma pessoa de confiança disponível para cuidar do seu pet,
 
 ## 7. Visão geral do produto
 
-Plataforma que intermediam e organizam o contrato entre pessoas que tem tempo, amor, disposição e carinho para receber os pets e pessoas que buscam alguém de confiança para deixar seu animalzinho na hora da necessidade.
+Plataforma que intermedia e organiza o contato entre pessoas que tem tempo, amor, disposição e carinho para receber os pets e pessoas que buscam alguém de confiança para deixar seu animalzinho na hora da necessidade.
 
 ## 8. Requisitos funcionais
 
