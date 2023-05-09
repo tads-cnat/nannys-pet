@@ -5,27 +5,27 @@
 | Data                |  Versão             |          Descrição  |  Autores            |
 | :-----------------: | :-----------------: | :-----------------: | :-----------------: |
 | 25/04/2023 | 1.0 | Versão inicial |  Walber Ranniere |
+| 09/05/2023 | 1.1 | Versão revisada |  Anna Carolinne |
 | - | - | - |  - |
-
 
 ## 1. Objetivo do projeto
 
-Objetivo é desenvolver o sistema para o serviço de hospedagem de cachorros e gatos por um eventual compromisso do dono nas casas de hospedeiros que sejam capacitados para realizar o serviço.
+Objetivo é desenvolver o sistema para o serviço de hospedagem de cachorros e gatos pela necessidade de eventual compromisso dos seus donos, deixando assim seu(s) pet(s) nas casas de hospedeiros que sejam capacitados para realizar o serviço.
 
 ## 2. Descrição do problema
 
 |     |      |
 | --- | --- |
 | **Problema**            | A necessidade de estar fora do lar sem ter ninguém que cuide do seu pet. |
-| **Afeta**               | Todos aqueles que possuem um pet de estimação. |  
-| **Impacta**             | Em evitar uma busca desorganizada por cuidadores de pets ou cancelamentos de compromissos motivados pela não possibilidade de ter onde deixar seu pet. |
+| **Afeta**               | Todos aqueles que possuem um pet de estimação e em algum momento necessitam se afastar de sua residência. |  
+| **Impacta**             | Em evitar uma busca desorganizada por cuidadores de pets ou cancelamentos de compromissos motivados pela não possibilidade de ter onde deixar seu pet.|
 | **Solução**             | Uma plataforma web que junte aquele que pode disponibilizar o serviço de hospedar um pet com aquele que precisa dessa hospedagem para o seu pet. | 
 
 ## 3. Descrição dos usuários 
 
 |  Nome               |          Descrição  |  Responsabilidade|
 | :-----------------: | :-----------------: | :-----------------: |
-|  Administrador              |  Administrador: Responsável pelo gerenciamento e funcionamento correto da aplicação         |  - Validar cadastros para cuidador; -Validar cadastro de usuário; -Validar operações entre usuário e host(finalização do serviço).|
+|  Administrador              |  Administrador: Responsável pelo gerenciamento e funcionamento correto da aplicação         |  - Aprovação de cadastros para cuidador; -Validar cadastro de usuário; -Validar operações entre usuário e host(finalização do serviço).|
 |  Usuário             |  Usuário: São as pessoas que se cadastram no site com objetivo de arranjar local para seus pets durante o período desejado.         |  - Cadastrar pets para hospedagem; - Cadastra pedido de hospedagem.|
 | Cuidador | São as pessoas que se cadastram no site, para disponibilizar a hospedagem dos pets dos outros | Realiza auto-cadastro; - Atende pedidos de hospedagem. |
 | Visitante | Sem a necessidade de cadastro | Visualiza cuidadores |
@@ -36,7 +36,7 @@ Objetivo é desenvolver o sistema para o serviço de hospedagem de cachorros e g
 
 * Número de pessoas envolvidas na execução da tarefa? Isso está mudando?  
 **Para que a tarefa seja executada são necessárias duas pessoas, uma que disponibiliza os serviços de hospedagem e a outra que precisa desse serviço.**  
-* Quaisquer restrições ambientais exclusivas: móveis, externas, de aeronaves etc.?  
+* Quaisquer restrições ambientais exclusivas: móveis, externas etc?  
 **Não há restrições ambientais.** 
 * Que plataformas de sistema são utilizadas hoje? Plataformas futuras?  
 **Na pesquisa feita anteriormente via-se ideias parecidas, como é o caso do DogHero e da Prontocan: Hotel, Day Care e Clínica Veterinária.** 
@@ -49,12 +49,20 @@ Conseguir encontrar uma pessoa de confiança disponível para cuidar do seu pet,
 
 ## 6. Alternativas concorrentes
 
+* **DogHero** plataforma de hospedagem de animais de estimação, que tem serviço de creche, pet sitter, passeio, serviço veterinário sem sair de casa. Que tem a creche, mas também oferece o serviço "personalizado".
+
+E a ambito regional, temos algumas opções como:
+
+* **Lar Dog Lar - Day Care e Hospedagem** Hotel para animais de estimação.
+
+* **JR Creche e Hotel Para Cães** Hotel para animais de estimação. 
+
+Ps: Ambas às opções regionais que eu vi, oferecem o serviço apenas para cachorro.
 * **DogHero** o principal concorrente da plataforma, contando com serviços de hospedagem, creche, passeio, veterinário e pet sitter (um cuidador vai até a sua casa para ficar com o seu pet) https://www.doghero.com.br/
 
 * **Prontocan: Hotel, Day Care e Clínica Veterinária** hotel para animais de estimação. R. Dr. Pedro Segundo de Araújo, 1801 - Capim Macio, Natal - RN, 59082-040 https://www.instagram.com/prontocan_/ 
 
 * **Lar Dog Lar - Day Care e Hospedagem** hospedagem animal no bairro do Pitimbu - R. Serra do Tombador, 8098 - Pitimbú, Natal - RN, 59068-160 https://hotelzinhopetlardoglar.negocio.site/
-
 
 ## 7. Visão geral do produto
 
@@ -84,5 +92,5 @@ Plataforma que intermedia e organiza o contato entre pessoas que tem tempo, amor
 | Código              |  Nome               |          Descrição  |  Categoria          |  Classificação      |
 | :-----------------: | :-----------------: | :-----------------: | :-----------------: | :-----------------: |
 | NF01 | Segurança dos Dados | Manter os dados pessoais dos usuários privados | Segurança | Essencial |
-| NF02 | Responsividade | O Sistema Web deve ser responsivo para o uso em diversos dispositivos | Usuabilidade | Desejável |
-| NF03 | Funcionamento | O Sistema deve suportar o uso de vários usuários ao mesmo tempo com qualidade e velocidade | Usuabilidade | Desejável |
+| NF02 | Responsividade | O Sistema Web deve ser responsivo para o uso em diversos dispositivos | Usabilidade | Desejável |
+| NF03 | Funcionamento | O Sistema deve suportar o uso de vários usuários ao mesmo tempo com qualidade e velocidade | Usabilidade | Desejável |
