@@ -31,6 +31,7 @@ Objetivo é desenvolver o sistema para o serviço de hospedagem de cachorros e g
 | Visitante | Sem a necessidade de cadastro | Visualiza cuidadores |
 
 
+
 ## 4. Descrição do ambiente dos usuários
 
 * Número de pessoas envolvidas na execução da tarefa? Isso está mudando?  
@@ -56,7 +57,7 @@ Conseguir encontrar uma pessoa de confiança disponível para cuidar do seu pet,
 
 ## 7. Visão geral do produto
 
-Plataforma que intermediam e organizam o contrato entre pessoas que tem tempo, amor, disposição e carinho para receber os pets e pessoas que buscam alguém de confiança para deixar seu animalzinho na hora da necessidade.
+Plataforma que intermedia e organiza o contato entre pessoas que tem tempo, amor, disposição e carinho para receber os pets e pessoas que buscam alguém de confiança para deixar seu animalzinho na hora da necessidade.
 
 ## 8. Requisitos funcionais
 
