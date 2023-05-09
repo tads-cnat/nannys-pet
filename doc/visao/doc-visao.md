@@ -49,6 +49,15 @@ Conseguir encontrar uma pessoa de confiança disponível para cuidar do seu pet,
 
 ## 6. Alternativas concorrentes
 
+* **DogHero** plataforma de hospedagem de animais de estimação, que tem serviço de creche, pet sitter, passeio, serviço veterinário sem sair de casa. Que tem a creche, mas também oferece o serviço "personalizado".
+
+E a ambito regional, temos algumas opções como:
+
+* **Lar Dog Lar - Day Care e Hospedagem** Hotel para animais de estimação.
+
+* **JR Creche e Hotel Para Cães** Hotel para animais de estimação. 
+
+Ps: Ambas às opções regionais que eu vi, oferecem o serviço apenas para cachorro.
 * **DogHero** o principal concorrente da plataforma, contando com serviços de hospedagem, creche, passeio, veterinário e pet sitter (um cuidador vai até a sua casa para ficar com o seu pet) https://www.doghero.com.br/
 
 * **Prontocan: Hotel, Day Care e Clínica Veterinária** hotel para animais de estimação. R. Dr. Pedro Segundo de Araújo, 1801 - Capim Macio, Natal - RN, 59082-040 https://www.instagram.com/prontocan_/ 
