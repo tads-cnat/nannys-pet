@@ -45,3 +45,8 @@ O usuário agora está cadastrado no sistema Nanny's Pets (podendo ser através 
 
 **5.3 Fluxo de exceção**
 1.  ...
+
+
+----------------------
+
+![Diagrama do CDU1](https://github.com/tads-cnat/receber-pets/blob/documentar-cdus/doc/cdu/diagramas-cdu/CDU01.png?raw=true)
