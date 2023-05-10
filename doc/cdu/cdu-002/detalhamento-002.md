@@ -13,10 +13,10 @@ O usuário que deseja utilizar o “Nanny's Pets” para hospedar seu pet, preci
 
 ### **3 Precondições**  
 3.1 Usuário acessa o site “Nanny's Pets”  
-3.2 Usuário realiza login no site “Nanny's Pets”
-3.3 Usuário clica no link “hospedar meu pet” disponível no dashboard da página.
-3.4 Dentro da página de “hospedar meu pet” o usuário vai preencher os dados referentes a hospedagem do pet, data e informações do animal a ser hospedado.
-3.5 Clicar em “Hospedar”.
+3.2 Usuário realiza login no site “Nanny's Pets”  
+3.3 Usuário clica no link “hospedar meu pet” disponível no dashboard da página.  
+3.4 Dentro da página de “hospedar meu pet” o usuário vai preencher os dados referentes a hospedagem do pet, data e informações do animal a ser hospedado.  
+3.5 Clicar em “Hospedar”.  
 3.6 É exibido o “Termo de Ética e Responsabilidade” com os direitos e deveres dos usuários sobre os serviços de hospedagem na plataforma “Nanny's Pets”, após ler e concordar com o Termo de Ética da Empresa o usuário clica em “Realizar hospedagem”.  
 
 ### **4 Pós-condições**  
