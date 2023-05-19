@@ -20,7 +20,7 @@ O projeto Nanny's Pets tem como objetivo desenvolver um sistema para o serviço 
 
 # Horário de Reuniões
 
-Reuniões duas vezes por semana às 19h geralmente às terças e quintas, às vezes mais com horários previamente acordados entre os integrantes dependendo das demandas que vão surgindo no decorrer do desenolvimento do projeto.   
+Reuniões duas vezes por semana, às 19h, geralmente às terças e quintas; às vezes mais, com horários previamente acordados entre os integrantes dependendo das demandas que vão surgindo no decorrer do desenolvimento do projeto.   
 </br>
 
 # Ferramentas e tecnologias utilizadas no desenvolvimento do projeto:
