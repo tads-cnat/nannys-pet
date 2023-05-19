@@ -37,3 +37,8 @@ O usuário que deseja utilizar o “Nanny's Pets” para hospedar seu pet, preci
 
 **5.3 Fluxo de exceção**
 1.  ...
+
+
+-----------------------------------
+
+![Diagrama do CDU2](https://github.com/tads-cnat/receber-pets/blob/documentar-cdus/doc/cdu/diagramas-cdu/CDU02.png?raw=true)
