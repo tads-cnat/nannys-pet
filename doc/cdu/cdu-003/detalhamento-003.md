@@ -2,9 +2,9 @@
 ## **Especificação de Caso de Uso**
 ### **Agendamento de hospedagem**
 **Histórico da Revisão**
-| **Data** | **Versão** | **Descrição** | **Autor** |
+| **Data** | **Versão** | **Descrição** | **Autores** |
 | --- | --- | --- | --- |
-| 09/05/2023 | 1.0 | Agendamento de hospedagem | Anna Carolinne |
+| 22/05/2023 | 1.0 | Agendamento de hospedagem | Evandro H. e Sérgio H. |
 ### **1 Resumo**
 O usuário que deseja utilizar o “Nanny's Pets” para hospedar seu pet, precisa acessar o site, realizar o login, na página de dashboard clicar em “hospedar meu pet” quando será encaminhado para a página de agendamento da hospedagem. Na página de hospedagem, o usuário vai preencher os dados que são solicitados como nome, telefone, motivo da hospedagem, dias em que o pet vai ficar hospedado (data inicial com horário de chegada, e data final com horário de saída) e selecionar e/ou cadastrar os pets que ficaram hospedados.
 
