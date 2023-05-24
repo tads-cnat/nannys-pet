@@ -4,7 +4,7 @@
 **Histórico da Revisão**
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | --- | --- | --- | --- |
-| 23/05/2023 | 1.0 | Listar Solicitações | Anna Carolinne |
+| 24/05/2023 | 1.0 | Listar Solicitações | Anna Carolinne |
 ### **1 Resumo**
 O cuidador que desejar listar às solicitações já feitas para ele precisa acessar o site e realizar o login. Na página de dashboard, clicar em “Listar Solicitações”, momento em que será encaminhado para a página onde aparece a lista com todas às hospedagem solicitadas até o momento. 
 
@@ -18,7 +18,7 @@ O cuidador que desejar listar às solicitações já feitas para ele precisa ace
 3.4 Dentro da página de “Listar Solicitações” o usuário vai visualizar todas às hospedagem que já foram solicitadas para ele até o momento.
 
 ### **4 Pós-condições**  
-4.1 O cuidador vizualizou todas às solicitações que foram feitas à ele.
+4.1 O cuidador vizualizou todas às solicitações que foram feitas à ele.    
 4.2 O cuidador pode ou não "Confirmar Hospedagem"
 
 ### **5 Fluxos de evento**
