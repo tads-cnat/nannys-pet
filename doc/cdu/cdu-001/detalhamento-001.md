@@ -34,19 +34,11 @@ O usuário agora está cadastrado no sistema Nanny's Pets (podendo ser através 
 ### **5 Fluxos de evento**
 
 **5.1 Fluxo básico**
-1. O usuário acessa o site “Nanny's Pets”
-2. O usuário clica na opção “quero me cadastrar”
-3. O usuário é levado a página de cadastro onde vai inserir suas informações, no caso do cadastro básico: e-mail, nome, sobrenome, celular, senha e como conheceu o site “Nanny's Pets”. 
-4. Após todos os itens serem preenchidos o usuário finaliza a ação clicando em "cadastrar".
+1. Na página de cadastro, o usuário vai inserir suas informações, no caso do cadastro básico: e-mail, nome, sobrenome, celular, senha e como conheceu o site “Nanny's Pets”. 
+2. Após todos os itens serem preenchidos o usuário finaliza a ação clicando em "cadastrar".
 
 **5.2 Fluxo alternativo**
 
-1. O usuário apenas visualiza o site, buscando informações sem a necessidade se cadastrar.
-
-**5.3 Fluxo de exceção**
-1.  ...
-
+1. O usuário apenas visualiza a página de cadastro, olha as informações que são necessárias e sai sem a necessidade se cadastrar.
 
 ----------------------
-
-![Diagrama do CDU1](https://github.com/tads-cnat/receber-pets/blob/documentar-cdus/doc/cdu/diagramas-cdu/CDU01.png?raw=true)
