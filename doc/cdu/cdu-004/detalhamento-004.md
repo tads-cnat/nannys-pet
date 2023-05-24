@@ -1,44 +1,33 @@
 # **Projeto “Nanny's Pets”**
 ## **Especificação de Caso de Uso**
-### **Agendamento de hospedagem**
+### **Listar Solicitações**
 **Histórico da Revisão**
-| **Data** | **Versão** | **Descrição** | **Autores** |
+| **Data** | **Versão** | **Descrição** | **Autor** |
 | --- | --- | --- | --- |
-| 22/05/2023 | 1.0 | Agendamento de hospedagem | Evandro H. e Sérgio H. |
+| 23/05/2023 | 1.0 | Listar Solicitações | Anna Carolinne |
 ### **1 Resumo**
-O usuário que deseja utilizar o “Nanny's Pets” para hospedar seu pet, precisa acessar o site, realizar o login, na página de dashboard clicar em “hospedar meu pet” quando será encaminhado para a página de agendamento da hospedagem. Na página de hospedagem, o usuário vai preencher os dados que são solicitados como nome, telefone, motivo da hospedagem, dias em que o pet vai ficar hospedado (data inicial com horário de chegada, e data final com horário de saída) e selecionar e/ou cadastrar os pets que ficaram hospedados.
+O cuidador que desejar listar às solicitações já feitas para ele precisa acessar o site e realizar o login. Na página de dashboard, clicar em “Listar Solicitações”, momento em que será encaminhado para a página onde aparece a lista com todas às hospedagem solicitadas até o momento. 
 
 ### **2 Atores**
-2.1 Usuário  
+2.1 Cuidador
 
 ### **3 Precondições**  
-3.1 Usuário acessa o site “Nanny's Pets”  
-3.2 Usuário realiza login no site “Nanny's Pets”  
-3.3 Usuário clica no link “hospedar meu pet” disponível no dashboard da página.  
-3.4 Dentro da página de “hospedar meu pet” o usuário vai preencher os dados referentes a hospedagem do pet, data e informações do animal a ser hospedado.  
-3.5 Clicar em “Hospedar”.  
-3.6 É exibido o “Termo de Ética e Responsabilidade” com os direitos e deveres dos usuários sobre os serviços de hospedagem na plataforma “Nanny's Pets”, após ler e concordar com o Termo de Ética da Empresa o usuário clica em “Realizar hospedagem”.  
+3.1 O cuidador acessa o site “Nanny's Pets”  
+3.2 O cuidador realiza login no site “Nanny's Pets”  
+3.3 O cuidador clica no link “Listar Solicitações” disponível no dashboard da página.  
+3.4 Dentro da página de “Listar Solicitações” o usuário vai visualizar todas às hospedagem que já foram solicitadas para ele até o momento.
 
 ### **4 Pós-condições**  
-4.1 A hospedagem do pet está realizada e é exibida uma página de confirmação.
+4.1 O cuidador vizualizou todas às solicitações que foram feitas à ele.
+4.2 O cuidador pode ou não "Confirmar Hospedagem"
 
 ### **5 Fluxos de evento**
 **5.1 Fluxo básico**
-1. O usuário acessa o site “Nanny's Pets”
-2. O usuário realiza login.
-3. O usuário acessa o dashboard e clica em “hospedar pet”.
-4. Dentro da página de hospedagem de pet, o usuário vai preencher todos os dados necessários para poder solicitar a hospedagem e clicado em “hospedar”.
-5. Após preencher e solicitar a hospedagem, ele vai ser encaminhado a página contendo o “Termo de Ética e Responsabilidade” do “Nanny's Pets” que deverá ler e concordar caso queira continuar o processo de hospedagem. 
-6. Concordando com os termos, o usuário realiza a hospedagem e é encaminhado a página de “hospedagem realizada”.
-
-
-**5.2 Fluxo alternativo**
-1. ...
-
-**5.3 Fluxo de exceção**
-1.  ...
+1. O cuidador acessa o site “Nanny's Pets”
+2. O cuidador realiza login.
+3. O cuidador acessa o dashboard e clica em “Listar Solicitações”.
+4. Dentro da página de “Listar Solicitações”, o cuidador vai visualizar todas às solicitações e vai poder tanto "Confirmar Hospedgem" quanto "Cancelar Hospedagem".
+5. Após uma hospedagem bem sucessidida, o cuidador deve "Avaliar Usuário" e "Confirmar Pagamento". 
 
 
 -----------------------------------
-
-![Diagrama do CDU2](https://github.com/tads-cnat/receber-pets/blob/documentar-cdus/doc/cdu/diagramas-cdu/CDU02.png?raw=true)
