@@ -19,7 +19,7 @@ O cuidador após verificar a lista com todas às hospedagem solicitadas a ele, v
 3.5 Vendo as hospedagens solicitadas, o cuidador tem a opção de clicar no link "Confirmar Hospedagem" para aceitar receber aquele Pet como hospede.
 
 ### **4 Pós-condições**  
-4.1 O cuidador agora tem a hospedagem do Pet confirmada de acordo com a data e horário que foram préviamente divulgados na "lista de solicitações" e no momento da confirmação.
+4.1 O cuidador agora tem a hospedagem do Pet confirmada de acordo com a data e horário que foram préviamente divulgados na "lista de solicitações" e no momento da confirmação.   
 4.2 Após o termino do serviço, o cuidador deve acessar os links "Avaliar Usuário" e "Confirmar Pagamento" para finalização do processo de hospedagem na plataforma.
 
 
