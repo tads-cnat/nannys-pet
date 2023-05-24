@@ -27,8 +27,8 @@ O usuário que deseja Listar Hospedagem marcada, precisa acessar o site, realiza
 2. O usuário realiza login.
 3. O usuário acessa o dashboard e clica em “Listar Hospedagens”.
 4. Dentro da página de “Listar Hospedagens”, o usuário vai visualizar "Hospedagem Agendada" e vai visualizar também "Hospedagens Realizadas".
-5 Pode ou não "Cancelar Hospedagem".
-6 Pode ver detalhes de "Hospedagens Realizadas"
+5. Pode ou não "Cancelar Hospedagem".
+6. Pode ver detalhes de "Hospedagens Realizadas"
 
 
 **5.2 Fluxo alternativo**
