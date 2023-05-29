@@ -2,7 +2,7 @@
 
 As telas estão disponiveis em PDF no GitHub do projeto na pasta receber-petss/doc/prototipos.   
 
-Os links para os arquivos no FIGMA das respectivas páginas são os seguintes:
+Os links para os arquivos no FIGMA e para os PDF's das respectivas páginas são os seguintes:
 
 
 * Login - [Abrir no FIGMA](https://www.figma.com/file/nsenwfWDldwBCP6ZZUXXKH/Hospedagem-de-Pets---PDS?type=design&node-id=61-6&t=FxjaO56hj8ddWd1G-0) | [Abrir PDF](https://github.com/tads-cnat/receber-pets/blob/4-elabora%C3%A7%C3%A3o-de-prot%C3%B3tipos-de-tela-wireframes/doc/prototipos/Login-PDS.pdf)
