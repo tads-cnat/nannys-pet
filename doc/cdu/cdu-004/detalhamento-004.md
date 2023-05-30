@@ -25,9 +25,11 @@ O cuidador que desejar listar às solicitações. </br></br>
 **5.1 Fluxo básico**
 | **Ações do ator** | **Ações do sistema** | 
 | --- | --- |
-| 1. Clicar em "Listar solicitações" |  | 
+| 1. Acessar a plataforma |  | 
+|   | Carregar página inicial da plataforma Nanny’s Pet | 
+| 2. Clicar em "Listar solicitações" |  | 
 |   | Carrega página que lista solicitações | 
-| 2. Visualiza as solicitações e pode tanto "Confirmar Hospedagem" quanto "Cancelar Hospedagem".|  | 
+| 3. Visualiza as solicitações e pode tanto "Confirmar Hospedagem" quanto "Cancelar Hospedagem".|  | 
 |   | Lista todas as solicitações para o cuidador | 
 </br></br>
 -----------------------------------

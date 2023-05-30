@@ -6,7 +6,8 @@
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | --- | --- | --- | --- |
 | 09/05/2023 | 1.0 | Agendamento de hospedagem | Anna Carolinne |
-| 30/05/2023 | 1.1 | Revisão dos detalhamentos para simplificar | Anna Carolinne | </br>
+| 30/05/2023 | 1.1 | Revisão dos detalhamentos para simplificar | Anna Carolinne | 
+</br>
 
 ### **1 Resumo**
 Usuário acessa “Nanny's Pets” para hospedar seu pet.</br></br>
