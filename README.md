@@ -41,9 +41,3 @@ Reuniões duas vezes por semana, às 19h, geralmente às terças e quintas; às 
 * [Modelo de Domínio](doc/dominio/dominio.md)
 * [Modelo de casos de uso](/doc/cdu/Diagramas%20Casos%20de%20Uso.jpeg)
 * [Protótipos de interface com o usuário](doc/prototipos/prototipos.md)
-
-> Ir inserindo os links conforme forem sendo feitos.
-
-# Manual da Desenvolvedor
-
->Descrever os comandos iniciais para começar a colaborar com o desenvolvimento do projeto...
