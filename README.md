@@ -36,7 +36,7 @@ Reuniões duas vezes por semana, às 19h, geralmente às terças e quintas; às 
 # Documentação
 
 * [Documento de visão](doc/visao/doc-visao.md)
-* [Mapa do Site](doc/mapa-site)
+* [Mapa do Site](doc/mapa-site/mapa-site.md)
 * [Diagrama Entidade-Relacionamento](doc/bd)
 * [Modelo de Domínio](doc/dominio/dominio.md)
 * [Modelo de casos de uso](doc/cdu/cdu.md)
