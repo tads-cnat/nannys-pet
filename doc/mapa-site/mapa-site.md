@@ -1,3 +1,3 @@
 # Mapa do Site
 
-![Mapa do Site](doc/mapa-site/Sitemap.png)
+![Mapa do Site](https://github.com/tads-cnat/receber-pets/blob/main/doc/mapa-site/Sitemap.png?raw=true)
