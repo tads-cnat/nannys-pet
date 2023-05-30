@@ -1,40 +1,57 @@
 # **Projeto “Nanny's Pets”**
 ## **Especificação de Caso de Uso**
 ### **Agendamento de hospedagem**
+
 **Histórico da Revisão**
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | --- | --- | --- | --- |
 | 09/05/2023 | 1.0 | Agendamento de hospedagem | Anna Carolinne |
+| 30/05/2023 | 1.1 | Revisão dos detalhamentos para simplificar | Anna Carolinne | 
+</br>
+
 ### **1 Resumo**
-O usuário que deseja utilizar o “Nanny's Pets” para hospedar seu pet.
+Usuário acessa “Nanny's Pets” para hospedar seu pet.</br></br>
 
 ### **2 Atores**
-2.1 Usuário  
+2.1 Usuário. </br></br>  
 
 ### **3 Precondições**  
-3.1 Usuário deve estar logado   
-3.2 Usuário deve ter pet cadastrado   
+3.1 Usuário deve estar logado.   
+3.2 Usuário deve ter pet cadastrado. </br></br>   
 
 ### **4 Pós-condições**  
-4.1 A hospedagem do pet está realizada e é exibida uma página de confirmação.   
+4.1 A hospedagem do pet foi realizada.   </br></br>
 
 ### **5 Fluxos de evento**
 **5.1 Fluxo básico**
-1 Usuário clica no link “hospedar meu pet” disponível no dashboard da página.   
-2 O sistema apresenta a página de hospedagem.    
-3 Usuário preenche os dados referentes a hospedagem do pert, data e informações do animal a ser hospedado.       
-4 Sistema lista os cuidadores disponiveis na data informada.   
-5 Usuário seleciona cuidador da lista.   
-6 É exibido o “Termo de Ética e Responsabilidade” com os direitos e deveres dos usuários sobre os serviços de hospedagem na plataforma “Nanny's Pets”, após ler e concordar com o Termo de Ética da Empresa o usuário clica em “Realizar hospedagem”.   
+| **Ações do ator** | **Ações do sistema** | 
+| --- | --- |
+| 1. Acessar a plataforma |  | 
+|   | Carregar página inicial da plataforma Nanny’s Pet | 
+| 2. Clicar em "Hospedar meu Pet" |  | 
+|   | Carrega página que lista hospedagens | 
+| 3. Preencher dados referente a hospedagem desejada e clica em "Hospedar"|  | 
+|   | Lista cuidadores disponíveis na data desejada | 
+| 4. Seleciona cuidador da lista |  |
+|   | Exibe página com “Termo de Ética e Responsabilidade” |
+| 5. Usuário concorda com termo e confirma hospedagem |  | 
+|   | Registra hospedagem com sucesso! |
+</br></br>
 
 
 **5.2 Fluxo alternativo**
-1. ...
+| **Ações do ator** | **Ações do sistema** | 
+| --- | --- |
+| 1. Seleciona cuidador da lista |  |
+|   | Exibe página com “Termo de Ética e Responsabilidade” |
+| 2. Usuário NÃO concorda com “Termo de Ética e Responsabilidade” |  | 
+|   | Impossibilita o usuário de finalizar a hospedagem |
+</br></br>
 
 **5.3 Fluxo de exceção**
-1. Caso o usuário não tenha Pet cadastrado, ele é redirecionado a página de "Cadastrar Pet"
-
-
+| **Ações do ator** | **Ações do sistema** | 
+| --- | --- |
+| 1. Preencher dados referente a hospedagem desejada, sem ter Pet cadastrado e clica em "Hospedar"|  | 
+|   | Redireciona para página "Cadastrar Pet" | 
+</br></br>
 -----------------------------------
-
-![Diagrama do CDU2](https://github.com/tads-cnat/receber-pets/blob/documentar-cdus/doc/cdu/diagramas-cdu/CDU02.png?raw=true)
