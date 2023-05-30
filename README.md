@@ -1,30 +1,43 @@
-# Título do Projeto
+# Nanny's Pets
 
-<img src="logo.png" width="200" height="200" />
+<img src="logo.png" width="600" height="200" />
 
->Inserir uma logo para o projeto
+O projeto Nanny's Pets tem como objetivo desenvolver um sistema para o serviço de hospedagem de cachorros e gatos pela necessidade de eventual compromisso dos seus donos, deixando assim seu(s) pet(s) nas casas de hospedeiros que sejam capacitados para realizar o serviço.  
 
->Inserir pequena descrição do projeto
+</br>
 
 # Equipe e Formas de Contato
 
-1. Nome...
-2. Nome...
+1. Anna Carolinne - [GitHub](https://github.com/anna-albuquerque) 
+2. Evandro Henrique - [GitHub](https://github.com/evandrohpereira)
+3. Gabriel Ricardo - [GitHub](https://github.com/gabriellldev) 
+4. Maria Luiza - [GitHub](https://github.com/malucarvalho) 
+5. Sérgio Henrique - [GitHub](https://github.com/sergioh665)
+6. Walber Ranniere - [GitHub](https://github.com/WalberRanniere) 
 
->Descrever as formas de contato da equipe - WhatsApp, Discord, etc.
+**Orientador:** Gilbert Azevedo - [GitHub](https://github.com/Gilbert-Silva)   
+</br>
 
 # Horário de Reuniões
 
->Descrever dias, horários e local das reuniões da equipe
+Reuniões duas vezes por semana, às 19h, geralmente às terças e quintas; às vezes mais, com horários previamente acordados entre os integrantes dependendo das demandas que vão surgindo no decorrer do desenolvimento do projeto.   
+</br>
 
-# Tecnologias Utilizadas
+# Ferramentas e tecnologias utilizadas no desenvolvimento do projeto:
 
->Enumerar as tecnoligas utilzadas no projeto
+* Github para a realizar o controle de versões do projeto.
+* Figma para a prototipação em baixa, média e alta fidelidade da interface do sistema;
+* ERDPlus para elaboração dos diagramas ER;
+* Html 5 como linguagem de marcação;
+* CSS 3 para estilizar as páginas web;
+* Python + Django Framework Web da linguagem de programação Python;   
+</br>
 
 # Documentação
 
-[Link para os documentos do projeto](doc/documentacao.md)
-
-# Manual da Desenvolvedor
-
->Descrever os comandos iniciais para começar a colaborar com o desenvolvimento do projeto
+* [Documento de visão](doc/visao/doc-visao.md)
+* [Mapa do Site](doc/mapa-site)
+* [Diagrama Entidade-Relacionamento](doc/bd)
+* [Modelo de Domínio](doc/dominio/dominio.md)
+* [Modelo de casos de uso](doc/cdu/cdu.md)
+* [Protótipos de interface com o usuário](doc/prototipos/prototipos.md)
