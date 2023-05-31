@@ -65,7 +65,7 @@ $ git push
 
 ```mermaid
 ---
-title: Trabalho Diário no Git
+title: Trabalho Diário e individual no Git
 ---
 flowchart TD
     inicio[Início]
