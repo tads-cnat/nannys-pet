@@ -1,6 +1,6 @@
 # Protótipos de Interface com o Usuário
 
-As telas estão disponiveis em PDF no GitHub do projeto na pasta receber-petss/doc/prototipos.   
+As telas estão disponiveis em PDF no GitHub do projeto na pasta receber-pets/doc/prototipos.   
 
 O links para os arquivos no FIGMA das respectivas páginas são os seguintes:
 
