@@ -36,6 +36,7 @@ Usuário acessa “Nanny's Pets” para hospedar seu pet.</br></br>
 |   | Exibe página com “Termo de Ética e Responsabilidade” |
 | 5. Usuário concorda com termo e confirma hospedagem |  | 
 |   | Registra hospedagem com sucesso! |
+    
 </br></br>
 
 
@@ -45,13 +46,15 @@ Usuário acessa “Nanny's Pets” para hospedar seu pet.</br></br>
 | 1. Seleciona cuidador da lista |  |
 |   | Exibe página com “Termo de Ética e Responsabilidade” |
 | 2. Usuário NÃO concorda com “Termo de Ética e Responsabilidade” |  | 
-|   | Impossibilita o usuário de finalizar a hospedagem |
+|   | Impossibilita o usuário de finalizar a hospedagem |     
+
 </br></br>
 
 **5.3 Fluxo de exceção**
 | **Ações do ator** | **Ações do sistema** | 
 | --- | --- |
 | 1. Preencher dados referente a hospedagem desejada, sem ter Pet cadastrado e clica em "Hospedar"|  | 
-|   | Redireciona para página "Cadastrar Pet" | 
+|   | Redireciona para página "Cadastrar Pet" |     
+
 </br></br>
 -----------------------------------
