@@ -7,8 +7,8 @@ class Administrador(models.Model):
 
 class SolicitacaoCuidador(models.Model):
     comprovante = models.ImageField
-    fotoResidencia = models.ImageField
-    statusSolicitacao = models.CharField
+    foto_residencia = models.ImageField
+    status_solicitacao = models.CharField
     endereco = models.CharField(max_length=100)
     codigo = models.CharField
 
@@ -34,6 +34,6 @@ class Pet(models.Model):
     codigo = models.CharField(max_length=100)
 
 class Cuidador(models.Model):
-    diasDisponiveis = models.CharField
+    dias_disponiveis = models.CharField
     valorDiaria = models.IntegerField
     preferencia = models.CharField(max_length=300)
