@@ -1,6 +1,6 @@
 # Nanny's Pets
 
-<img src="logo.png" width="600" height="200" />
+<img src="logo.png" width="680" height="200" />
 
 O projeto Nanny's Pets tem como objetivo desenvolver um sistema para o serviço de hospedagem de cachorros e gatos pela necessidade de eventual compromisso dos seus donos, deixando assim seu(s) pet(s) nas casas de hospedeiros que sejam capacitados para realizar o serviço.  
 
