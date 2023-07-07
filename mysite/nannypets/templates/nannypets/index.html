@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nanny Pets</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/index-one.css' %}">
 </head>
 <body>
-    <h1>Gabrishow e Maluplay</h1>
-    <style>
-        
-    </style>
+    <h1>Bem vindo {{ user.username }}</h1>
+    {% if user.is_authenticated %}
+    <a href="/accounts/logout">Sair</a>
+    {% endif %}
 </body>
 </html>

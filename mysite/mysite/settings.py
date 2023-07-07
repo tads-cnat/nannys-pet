@@ -1,3 +1,4 @@
+import os
 """
 Django settings for mysite project.
 
@@ -24,6 +25,8 @@ SECRET_KEY = 'django-insecure-0!%jrt6f2t)ms5ip3r!$ks)&soipys7s^7k+xjp*bq4@c6^3dz
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+AUTH_USER_MODEL = 'nannypets.User'
 
 ALLOWED_HOSTS = []
 
@@ -55,7 +58,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "nannypets/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,10 +122,14 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "nannypets/static/assets",
 ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/nannypets'
+
+LOGOUT_REDIRECT_URL = '/accounts/login'

@@ -1,0 +1,285 @@
+
+
+body {
+    margin :0;
+    padding :0;
+
+    font-family: 'DM Sans', sans-serif;
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/static/assets/img/cat-and-dog.jpg");
+    
+
+    background-size: 125%;
+    background-position: right bottom;
+    
+    filter: contrast(1.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-login {
+    width: 791px;
+    height: 593px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5), 4px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo{
+    align-items:center ;
+    display: flex;
+    flex-direction: column;
+    width: 501px;
+    height: 515px;
+    
+
+}
+.conteudo img {
+    width: 273px;
+    height: 64px;
+    margin-bottom: 4%;
+}
+.title-input {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+   
+}
+.title-input h3{
+    
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+
+    color: #5F5F5F;
+}
+.title-input input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #5f5f5f;
+    border-radius: 16px;
+    display: flex;
+    font-size: 15px; 
+    appearance: none;
+}
+.title-input input:focus-within {
+    outline: 0;
+    border: 3px solid #FF6663;
+}
+
+.caixa-texto {
+    text-indent: 25px;
+}
+
+.links {
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #FF6663; 
+}
+
+.link:focus {
+    outline: 0;
+}
+
+.logar {
+    width: 200px;
+    height: 70px;
+    background: #D2657F;
+    border-radius: 16px;
+    border-color: #F4F4F4;
+    border-style: hidden;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+
+    color: #F4F4F4;
+    margin-left: 15px;
+    margin-top: 40px;
+    cursor: pointer; ;
+
+}
+.logar:hover {
+    transition-delay: 200ms;
+    background-color: #FF6663;
+}
+.link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #FF6663;
+    background-color: transparent;
+    border-style: hidden;
+    padding: 0;
+    text-decoration: underline;
+}
+.link:hover {
+    font-weight: 600;
+}
+.logo {
+    width: 273px;
+    height: 64px;
+    margin-bottom: 4%;
+}
+dialog {
+    
+    border-style: hidden;
+    width: 740px;
+    height: 540px;
+
+    background: #fafafa;
+    
+    border-radius: 16px;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.modal {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-esc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.but-esc {
+    background-color: transparent;
+    border-style:none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.invisible {
+    width: 40px;
+}
+.but-esc img {
+    width: max-content;
+    height: 40px;
+}
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    justify-content: space-between;
+}
+form {
+    width: 46%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form label {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #2D2D2D;
+}
+form input, select {
+    box-sizing: border-box;
+    height: 35px;
+    border: 2px solid #2D2D2D;
+    border-radius: 8px;
+}
+.text {
+    text-indent: 10px;
+}
+.double {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.combination {
+    max-width: 120px;
+    min-height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.combination input {
+    width: 120px;
+
+}
+select {
+    background-color: white;
+}
+.env {
+    margin-top: 28px;
+    border-style: none;
+    background-color: #D2657F;
+    border-radius: 16px;
+    height: 46px;
+    color: #F4F4F4;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
+
+
+.apresentation {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.apresentation h1, h3 {
+    color: #2D2D2D;
+}
+.apresentation h1 {
+    margin: 0;
+}
+.apresentation h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+}
+.cat {
+    width: 206px;
+    height: 199px;
+    background: url("../img/cat.jpg");
+    border-radius: 140px;
+    background-size: 100%;
+    background-position: center; 
+}
+
