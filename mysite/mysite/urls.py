@@ -19,6 +19,6 @@ from nannypets import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('nannypets/', include ('nannypets.urls')),
+    path('', include ('nannypets.urls'), name = 'nannypets'),
     path('accounts/', include('django.contrib.auth.urls')),
 ]

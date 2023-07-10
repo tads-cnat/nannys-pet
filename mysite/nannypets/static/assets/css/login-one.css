@@ -95,6 +95,7 @@ main {
     line-height: 20px;
     letter-spacing: -0.01em;
     color: #FF6663; 
+    
 }
 
 .link:focus {
@@ -134,6 +135,7 @@ main {
     border-style: hidden;
     padding: 0;
     text-decoration: underline;
+    cursor: pointer;
 }
 .link:hover {
     font-weight: 600;
@@ -143,6 +145,12 @@ main {
     height: 64px;
     margin-bottom: 4%;
 }
+
+dialog [open]{
+    -webkit-animation-delay: show 300ms ease normal;
+    animation-delay: 150ms;
+}
+
 dialog {
     
     border-style: hidden;
@@ -178,6 +186,10 @@ dialog {
     padding: 0;
     outline: 0;
     cursor: pointer;
+}
+.but-esc:hover {
+    transform: scale(1.1,1.1);
+    transition-delay: 150ms;
 }
 .invisible {
     width: 40px;

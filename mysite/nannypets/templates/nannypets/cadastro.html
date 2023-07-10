@@ -5,7 +5,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'assets/css/login-one.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/register.css' %}">
     <script src="{% static 'assets/js/login-one.js' %}" defer></script>
     <link rel="shortcut icon" href="{% static 'assets/img/logotipo.png' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,47 +17,24 @@
 </head>
 <body>
     <main class="page-full">
-            <form method="post" class="card-login">
-                {% csrf_token %}
-                <div class="conteudo">
-                    <img src="{% static 'assets/img/logo-one.png' %}" alt="Logo do Nanny's Pets">
-                    <div class ="title-input">
-                        <h3>Email</h3>
-                        <input class = "caixa-texto" name="username"  type="text" placeholder="Digite seu Email">
-                    </div>
-                    <div class ="title-input">
-                        <h3>Senha</h3>
-                        <input class = "caixa-texto" name="password" type="password" placeholder="Digite sua Senha">
-                    </div>
-                    <div class="links">
-                        <a class="link">Esqueci minha senha</a>
-                        <a class="link" href="/cadastro" id="cadastrar">Quero me cadastrar</a>
-                    </div>
-                    <button type="submit" class="logar">Entrar</button>
-                </div>
-                <input type="hidden" name="next" value="{{ next }}">
-            </form>
-            <!-- <dialog>
+            <div class="register-container">
                 <div class="modal">
                     <div class="title-esc">
-                        <img src="" alt="" class="invisible">
                         <img src="{% static 'assets/img/logo-one.png' %}" class="logo" alt="">
-                        <button class="but-esc">
-                            <img src="{% static 'assets/img/esc.png' %}" alt="">
-                        </button>
                     </div>
                     <div class="info">
-                        <form action="">
-                            <label for="lemail" class="label-email">Email</label>
-                            <input type="text" class="text">
+                        <form method ="POST" action="{% url 'nannypets:cadastro' %}">
+                            {% csrf_token %}
+                            <label for="email" class="label-email">Email</label>
+                            <input type="email" class="text" name="email">
                             <div class="double">
                                 <div class="combination">
-                                    <label for="lnome" class="label-double">Nome</label>
-                                    <input type="text" class="text">
+                                    <label for="username" class="label-double">Nome</label>
+                                    <input type="text" class="text" name="username">
                                 </div>
                                 <div class="combination">
-                                    <label for="lsobrenome" class="label-double">Sobrenome</label>
-                                    <input type="text" class="text">
+                                    <label for="last_name" class="label-double">Sobrenome</label>
+                                    <input type="text" class="text" name="last_name">
                                 </div>
                             </div>
                             <div class="double">
@@ -66,8 +43,8 @@
                                     <input type="number" class="text">
                                 </div>
                                 <div class="combination">
-                                    <label for="lsobrenome" class="label-double">Senha</label>
-                                    <input type="password" class="text">
+                                    <label for="senha" class="label-double">Senha</label>
+                                    <input type="password" class="text" name="senha">
                                 </div>
                             </div>
                             <label for="lsearch">Como você nos conheceu?</label>
@@ -77,7 +54,7 @@
                                 <option value="pet-shop">Por algum Pet-Shop</option>
                                 <option value="other">De outra forma</option>
                             </select>
-                            <input type="submit" class="env" value="CADASTRAR">
+                            <input type="submit" class="env" value ="CADASTRAR">
                         </form>
                         <div class="apresentation">
                             <h1>Olá,</h1>
@@ -86,7 +63,7 @@
                         </div>
                     </div>
                 </div>
-            </dialog> -->
+            </div>
     </main>
     
 </body>
