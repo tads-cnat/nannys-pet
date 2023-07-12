@@ -1,0 +1,208 @@
+
+:root {
+    /*========== Colors ==========*/
+    
+    --white: #f4f4f4;
+    --pink-strong: #D2657F;
+    --text-color-black: #2d2d2d;
+    --text-color-gray: #5f5f5f;
+    --hover-button: #FF6663;
+    --gray: #9AA0A8;
+    --blue-light: #A9D8B8;
+    --container-color: #fff;
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Open Sans', sans-serif;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--white);
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 105px;
+    background: rgba(192, 126, 117, 0.20);
+    background-image: url("/static/assets/img/alvan-nee-T-0EW-SEbsE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: contrast(0.9);
+    flex-shrink: 0;
+    background-position-y: 24%;
+    
+
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2%;
+    align-items: center;
+}
+
+.nav-bar-logo-perfil {
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: auto;
+    height: 40px;
+}
+
+.icon-title-perfil {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+    font-size: var(--h2-font-size);
+    text-decoration: none;  
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.nav-links li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+}
+
+.login-button {
+    display: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    height: 21px;
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.nav-icon {
+    height: 21px;
+    width: 21px;
+    border: none;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .nav-bar {
+        padding: 0 2%;
+    }
+    .nav-bar-logo-perfil {
+        align-items: center;
+        height: 100%;
+    }
+    .icon-title-perfil {
+        display: none;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: var(--pink-strong);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

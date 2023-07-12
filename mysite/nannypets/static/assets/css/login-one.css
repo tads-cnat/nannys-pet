@@ -12,8 +12,9 @@ main {
     background-image: url("/static/assets/img/cat-and-dog.jpg");
     
 
-    background-size: 125%;
+    background-size: cover;
     background-position: right bottom;
+    background-repeat: no-repeat;
     
     filter: contrast(1.1);
 

@@ -1,17 +1,18 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nanny Pets</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/index-one.css' %}">
-</head>
-<body>
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'assets/css/index-o.css' %}"> {% endblock %}
+
+{% block title %}Nanny Pets{% endblock %}
+
+{% block content %}
+
+<div class="container">
     <h1>Bem vindo {{ user.username }}</h1>
     {% if user.is_authenticated %}
     <a href="/accounts/logout">Sair</a>
     {% endif %}
-</body>
-</html>
+</div>
+
+
+{% endblock %}
