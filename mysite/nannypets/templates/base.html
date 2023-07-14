@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/base-one.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/base.css' %}">
     {% block css %}{% endblock %}
     <link rel="shortcut icon" href="{% static 'assets/img/logotipo.png' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,9 +41,31 @@
 
     {% block content %}
     {% endblock %}
-    <footer>
+    <footer class="foot">
+        <div class="foot-form">
+            <div class="box-form">
+                <h2 class="foot-title">Fique por dentro de tudo da Nanny's Pets</h2>
+                <form action="#" class="foot-form-env-email">
+                    <input type="text" placeholder="Digite seu Email" class="foot-form-cx-text">
+                    <button class="foot-btn-env">Enviar</button>
+                </form>
+            </div> 
+        </div>
+        <div class="foot-logo-midia">
+            <div class="box-social">
+                <img src="{% static 'img/logo-black.png' %}" alt="" class="foot-logo">
+                <hr>
+                <div class="foot-social-midia">
+                    <img src="{% static 'img/icon-ig.png' %}" alt="" class="foot-icon-midia">
+                    <img src="{% static 'img/icon-fb.png' %}" alt="" class="foot-icon-midia">
+                    <img src="{% static 'img/icon-wpp.png' %}" alt="" class="foot-icon-midia">
+                    <img src="{% static 'img/icon-tw.png' %}" alt="" class="foot-icon-midia">
+                </div>
+
+            </div>
+        </div>
         
     </footer>
-    <script src="{% static 'assets/js/base-two.js' %}"></script>
+    <script src="{% static 'assets/js/base.js' %}"></script>
 </body>
 </html>

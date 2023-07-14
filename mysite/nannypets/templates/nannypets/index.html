@@ -1,17 +1,212 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'assets/css/index-o.css' %}"> {% endblock %}
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'assets/css/index.css' %}"> {% endblock %}
 
 {% block title %}Nanny Pets{% endblock %}
 
 {% block content %}
 
 <div class="container">
-    <h1>Bem vindo {{ user.username }}</h1>
-    {% if user.is_authenticated %}
-    <a href="/accounts/logout">Sair</a>
-    {% endif %}
+
+    <!-- Header do Dashboard -->
+    <div class="header-img-btn">
+        <div class="header-card">
+            <div class="card-content">
+                <h3>Encontre a pessoa perfeita para hospedar o seu pet</h3>
+                <img src="{% static 'assets/img/dog-home.png' %}" alt="" class="card-icon-home">
+                <div class="card-paw">
+                    <div class="double-paw">
+                        <img src="{% static 'assets/img/patinha.png' %}" alt="" class="icon-paw one">
+                        <img src="{% static 'assets/img/patinha.png' %}" alt="" class="icon-paw two">
+                    </div>
+                    <div class="double-paw">
+                        <img src="{% static 'assets/img/patinha.png' %}" alt="" class="icon-paw three">
+                        <img src="{% static 'assets/img/patinha.png' %}" alt="" class="icon-paw four">
+                    </div>
+                </div>
+                <button class="header-card-btn">HOSPEDAR</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- System Info -->
+    <section class="system-info">
+        <div class="system-info-content">
+            <h2>Conheça nosso Sistema bom pra cachorro (e pra gatos também)</h2>
+            <div class="system-info-icon-title-text">
+                <div class="content-block">
+                    <img src="{% static 'assets/img/love-pet.png' %}" alt="" class="icon-system-content">
+                    <h1 class="title-system-info">Com Muito Amor e Carinho</h1>
+                    <p class="text-system">Nossos Cuidadores cuidam do seu pet com o amor que ele merece, prestando 100% em dedicação para fazer o pet se sentir da melhor forma possível.</p>
+                </div>
+                <div class="content-block">
+                    <img src="{% static 'assets/img/life-pet.png' %}" alt="" class="icon-system-content">
+                    <h1 class="title-system-info">Com Segurança e Conforto</h1>
+                    <p class="text-system">Todos os Cuidadores são avaliados. Tentamos garantir ao máximo de que ele possa oferecer todos os cuidados necessários, com segurança e conforto.</p>
+                </div>
+                <div class="content-block">
+                    <img src="{% static 'assets/img/sitter-pet.png' %}" alt="" class="icon-system-content">
+                    <h1 class="title-system-info">Nada menos que o melhor a oferecer</h1>
+                    <p class="text-system">Fazemos um relatório individual com fotos, descrições detalhadas e tudo aquilo que o dono precisa saber de como foi a hospedagem do seu pet.</p>
+                </div>
+            </div>
+            <button class="system-info-btn">Hospedar meu Pet</button>
+        </div>
+    </section>
+
+    <!-- Section Trust -->
+    <section class="trust-part">
+        <div class="trust-info-dog">
+            <div class="trust-information">
+                <div class="trust-list">
+                    <h2 class="trust-title">Prezamos pela sua Confiança</h2>
+                    <h4>Garantia Veterinária</h4>
+                    <li>Cobrimento de Consultas, Cirurgias, Internações e Medicamentos</li>
+                    <li> É possível acionar a Garantia antes e após o fim da estadia</li>
+                    <h4>Monitoramento do seu Pet</h4>
+                    <li>Será enviado fotos e vídeos do seu animalzinho ao decorrer do dia</li>
+                    <li>É construído um relatório completo e individual da estadia do seu Pet</li>
+                    <li>Fazemos tudo para mostrarmos a seriedade do serviço e a
+                        concepção de que a hospedagem do seu animal de estimação é
+                        um ato de confiança.</li>
+                </div>
+                <div class="trust-dog"></div>
+            </div>
+            <button class="trust-btn">Fazer Hospedagem Segura</button>
+        </div>
+    </section>
+
+    <!-- Section Function -->
+    <section class="function">
+        <div class="function-info-title">
+            <h2 class="function-title">Como Funciona?</h2>
+            <div class="function-card">
+                <div class="function-number-info">
+                    <div class="function-num-bar">
+                        <div class="func-num">1</div>
+                        <div class="func-bar"></div>
+                    </div>
+                    <div class="fun-info">
+                        <h3>Encontre a Cuidador mais perto
+                            de você</h3>
+                        <p>Busque seu endereço no nosso site e
+                            encontre o Cuidador mais perto da sua
+                            região</p>
+                    </div>  
+                </div>
+                <div class="function-ilustrate-one"></div>
+            </div>
+            <div class="function-card">
+                <div class="function-number-info">
+                    <div class="function-num-bar">
+                        <div class="func-num">2</div>
+                        <div class="func-bar"></div>
+                    </div>
+                    <div class="fun-info">
+                        <h3>Agende os Dias em que seu Pet
+                            ficará hospedado</h3>
+                        <p>Selecione o dia e horário inicial, e o dia e
+                            horário final em que seu Pet ficará
+                            com seu cuidador</p>
+                    </div>  
+                </div>
+                <div class="function-ilustrate-two"></div>
+            </div>
+            <div class="function-card">
+                <div class="function-number-info">
+                    <div class="function-num-bar">
+                        <div class="func-num">3</div>
+                        <div class="func-bar"></div>
+                    </div>
+                    <div class="fun-info">
+                        <h3>Preencha o formulário de
+                            hospedagem</h3>
+                        <p>Depois de local e data, preencha um
+                            formulário padrão com suas informações
+                            e adicione quais Pets serão hospedados,
+                            caso não tenha nenhum Pet cadastrado,
+                            cadastre seu animalzinho, quantos forem,
+                            para ficar prático de adicionar em
+                            próximas hospedagens</p>
+                    </div>  
+                </div>
+                <div class="function-ilustrate-three"></div>
+            </div>
+            <div class="function-card">
+                <div class="function-number-info">
+                    <div class="function-num-bar">
+                        <div class="func-num">4</div>
+                        <!-- <div class="func-bar"></div> -->
+                    </div>
+                    <div class="fun-info">
+                        <h3>Finalize a hospedagem do seu
+                            Pet</h3>
+                        <p>Marque a caixinha de concordância com
+                            os termos segurança e ética, solicite a
+                            hospedagem com o cuidador escolhido e
+                            aguarde o feedback</p>
+                    </div>  
+                </div>
+                <div class="function-ilustrate-four"></div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Section Explorer -->
+    <section class="explorer">
+        <div class="explorer-content">
+            <h2 class="explorer-title">Já Estamos em muitos lugares do Brasil</h2>
+            <div class="explorer-box-citys">
+                <div class="explorer-citys">
+                    <h3 class="city">São Paulo (SP)</h3>
+                    <h3 class="city">Rio de Janeiro (RJ)</h3>
+                    <h3 class="city">Porto Alegre (RS)</h3>
+                    <h3 class="city">Belo Horizonte (MG)</h3>
+                    <h3 class="city">Curitiba (PR)</h3>
+                    <h3 class="city">Brasília (DF)</h3>
+                    <h3 class="city">Campinas (SP)</h3>
+                </div>
+                <div class="explorer-citys">
+                    <h3 class="city">São Paulo (SP)</h3>
+                    <h3 class="city">Rio de Janeiro (RJ)</h3>
+                    <h3 class="city">Porto Alegre (RS)</h3>
+                    <h3 class="city">Belo Horizonte (MG)</h3>
+                    <h3 class="city">Curitiba (PR)</h3>
+                    <h3 class="city">Brasília (DF)</h3>
+                    <h3 class="city">Campinas (SP)</h3>
+                </div>
+                <div class="explorer-citys">
+                    <h3 class="city">São Paulo (SP)</h3>
+                    <h3 class="city">Rio de Janeiro (RJ)</h3>
+                    <h3 class="city">Porto Alegre (RS)</h3>
+                    <h3 class="city">Belo Horizonte (MG)</h3>
+                    <h3 class="city">Curitiba (PR)</h3>
+                    <h3 class="city">Brasília (DF)</h3>
+                    <h3 class="city">Campinas (SP)</h3>
+                </div>
+                <div class="explorer-citys">
+                    <h3 class="city">São Paulo (SP)</h3>
+                    <h3 class="city">Rio de Janeiro (RJ)</h3>
+                    <h3 class="city">Porto Alegre (RS)</h3>
+                    <h3 class="city">Belo Horizonte (MG)</h3>
+                    <h3 class="city">Curitiba (PR)</h3>
+                    <h3 class="city">Brasília (DF)</h3>
+                    <h3 class="city">Campinas (SP)</h3>
+                </div>
+                <div class="explorer-citys">
+                    <h3 class="city">São Paulo (SP)</h3>
+                    <h3 class="city">Rio de Janeiro (RJ)</h3>
+                    <h3 class="city">Porto Alegre (RS)</h3>
+                    <h3 class="city">Belo Horizonte (MG)</h3>
+                    <h3 class="city">Curitiba (PR)</h3>
+                    <h3 class="city">Brasília (DF)</h3>
+                    <h3 class="city">Campinas (SP)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 
