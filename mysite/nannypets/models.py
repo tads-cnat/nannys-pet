@@ -104,6 +104,21 @@ class User(AbstractBaseUser, PermissionsMixin):
     def email_user(self, subject, message, from_email=None):
         send_mail(subject, message, from_email, [self.email])
 
+# class Pet(models.Model):
+#    nome = models.CharField(max_length=200)
+#    idade = models.IntegerField(default=0)
+#    porte = models.CharField(max_length=200)
+#    docil = models.BooleanField()
+#    especie = models.CharField(max_length=200)
 
+# class Cuidador(models.Model):
+#    dia_disponivel = models.CharField(max_length=200)
+#    valor_diaria = models.IntegerField(default=1)
+#    preferencia_porte = models.CharField(max_length=200)
+
+# class Hospedagem(models.Model):
+#    status = models.CharField(max_length=200)
+#    data_inicial = models.DateTimeField()
+#    data_final = models.DateTimeField()
 
 # Create your models here.
