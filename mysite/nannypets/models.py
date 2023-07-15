@@ -1,15 +1,27 @@
 import re
 from django.db import models
 from django.core import validators
+from django.conf import settings
 from django.utils import timezone
 from django.core.mail import send_mail
 from django.utils.translation import gettext_lazy as _
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager, User
 
 
 class Pet(models.Model):
     nome = models.CharField(max_length=255)
-    
+    idade = models.IntegerField()
+    ESPECIE = (1, 'Cachorro'), (2,'Gato')
+    TAMANHO = (1, 'Porte pequeno'), (2, 'Porte médio'), (3, 'Porte grande')
+    porte = models.IntegerField(choices=TAMANHO,)
+    especie = models.IntegerField(choices=ESPECIE,)
+    docil = models.BooleanField()
+    User = settings.AUTH_USER_MODEL
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    foto = models.ImageField(upload_to='pet_photos',
+                             blank=True)
+    def __str__(self):
+        return self.nome
 
 
 
@@ -61,6 +73,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
     foto = models.ImageField(_('foto'), upload_to='user_photos', null=True,
                              blank=True)
+    
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email',] 
