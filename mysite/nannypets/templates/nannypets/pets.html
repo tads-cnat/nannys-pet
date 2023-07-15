@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'assets/css/pets.css' %}"> {% endblock %}
+
+{% block title %}Nanny Pets{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="pets-all">
+            <div class="pets-title-button">
+                <h2 class="pets-title">Meus Pets</h2>
+                <button class="pets-add-btn">Cadastrar Novo Pet</button>
+            </div>
+            <hr>
+            <div class="pets-content">
+                <ul class="list-pets">
+                    {% for pet in pets_list %}
+                        <a href="#" class="pet-link">
+                            <div class="pet-pet">
+                                <img src="{{pet.foto.url}}" alt="" class="pet-foto">
+                                <h3 class="pet-nome">{{pet}}</h3>
+                                {% if pet.especie == 1 %}
+                                    <img src="{% static 'assets/img/icon-dog.png' %}" alt="" class="pet-icon">
+                                {% else %}
+                                    <img src="{% static 'assets/img/cat.png' %}" alt="" class="pet-icon">
+                                {% endif %}
+                            </div>
+                        </a>
+                    {% endfor %} 
+                </ul>
+            </div>
+            <!-- <ul>
+                {% for pet in pets_list %}
+                    <li>{{ pet }}</li>
+                {% empty %}
+                    <li>Nenhum pet encontrado</li>
+                {% endfor %}
+            </ul> -->
+        </div>
+        
+    </div>
+{% endblock %}
