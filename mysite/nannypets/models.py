@@ -19,7 +19,7 @@ class Pet(models.Model):
     docil = models.BooleanField()
     User = settings.AUTH_USER_MODEL
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    foto = models.ImageField(upload_to='pet_photos',
+    foto = models.ImageField(upload_to='nannypets/pet_photos',
                              blank=True)
     def __str__(self):
         return self.nome
@@ -110,7 +110,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         help_text=_('Designates whether this user should be treated as active. \
                     Unselect this instead of deleting accounts.'))
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
-    foto = models.ImageField(_('foto'), upload_to='user_photos', null=True,
+    foto = models.ImageField(_('foto'), upload_to='mysite/nannypets/user_photos', null=True,
                              blank=True)
     
 

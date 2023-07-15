@@ -7,13 +7,33 @@
 
 {% block content %}
     <div class="conatiner">
-        <h2>Pets</h2>
-        <ul>
-            {% for pet in pets_list %}
-                <li>{{ pet }}</li>
-            {% empty %}
-                <li>Nenhum pet encontrado</li>
-            {% endfor %}
-        </ul>
+        <div class="pets-all">
+            <div class="pets-title-button">
+                <h2 class="pets-title">Pets</h2>
+                <button class="pets-add-btn">Cadastrar Novo Pet</button>
+            </div>
+            <div class="pets-content">
+                <ul class="list-pets">
+                    {% for pet in pets_list %}
+                        <a href="#" class="pet-link">
+                            <div class="pet-pet">
+                                <img src="../{{pet.foto}}" alt="" class="pet-foto">
+                                <h3 class="pet-nome">{{pet}}</h3>
+                                <h3>IEw</h3>
+                                <img src="" alt="" class="pet-icon">
+                            </div>
+                        </a>
+                    {% endfor %} 
+                </ul>
+            </div>
+            <!-- <ul>
+                {% for pet in pets_list %}
+                    <li>{{ pet }}</li>
+                {% empty %}
+                    <li>Nenhum pet encontrado</li>
+                {% endfor %}
+            </ul> -->
+        </div>
+        
     </div>
 {% endblock %}
