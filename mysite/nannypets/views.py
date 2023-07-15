@@ -15,7 +15,7 @@ class IndexView(View):
     
 class PetsView(View):
     def get(self, request, *args, **kwargs):
-        lista_pets = Pet.objects.order_by('nome')
+        lista_pets = Pet.objects.filter(user=request.user)
         contexto = {'pets_list':lista_pets}
         return render(request, 'nannypets/pets.html', contexto)
     
