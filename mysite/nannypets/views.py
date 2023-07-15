@@ -7,11 +7,17 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 
 
-from .models import User, UserManager, BaseUserManager
+from .models import User, UserManager, BaseUserManager, Pet, Cuidador, SolicitacaoHospedagem, Hospedagem
 
 class IndexView(View):
     def get(self, request, *args, **kwargs):
         return render (request, 'nannypets/index.html')
+    
+class PetsView(View):
+    def get(self, request, *args, **kwargs):
+        lista_pets = Pet.objects.order_by('nome')
+        contexto = {'pets_list':lista_pets}
+        return render(request, 'nannypets/pets.html', contexto)
     
 
 def cadastro(request):

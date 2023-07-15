@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/base-a.css' %}">
     {% block css %}{% endblock %}
     <link rel="shortcut icon" href="{% static 'assets/img/logotipo.png' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,9 +29,9 @@
             </button>
         </div>
         <ul class="nav-links">
-            <li><a href="#"><img src="{% static 'assets/img/icon-home.png' %}" alt="" class="nav-icon">Tela Inicial</a></li>
+            <li><a href="/"><img src="{% static 'assets/img/icon-home.png' %}" alt="" class="nav-icon">Tela Inicial</a></li>
             <li><a href="#"><img src="{% static 'assets/img/icon-hospedar.png' %}" alt="" class="nav-icon">Fazer Hospedagem</a></li>
-            <li><a href="#"><img src="{% static 'assets/img/icon-cat.png' %}" alt="" class="nav-icon">Meus Pets</a></li>
+            <li><a href="/pets"><img src="{% static 'assets/img/icon-cat.png' %}" alt="" class="nav-icon">Meus Pets</a></li>
             <li><a href="#"><img src="{% static 'assets/img/icon-help.png' %}" alt="" class="nav-icon">Ajuda</a></li>
             <li><a href="#"><img src="{% static 'assets/img/icon-cuidador.png' %}" alt="" class="nav-icon">Cuidador</a></li>
             <li><button class="login-button" href="#">Login</button></li>
