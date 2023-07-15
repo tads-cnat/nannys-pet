@@ -11,4 +11,4 @@ urlpatterns = [
     path('pets/',login_required(views.PetsView.as_view()), name = 'pets'),
     path('minhas_solicitacoes/', login_required(views.SolicitacaoHospedagemView.as_view()), name = 'listar_solicitacoes')
 ]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+""" urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) """
