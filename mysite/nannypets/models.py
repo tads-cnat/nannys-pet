@@ -23,6 +23,20 @@ class Pet(models.Model):
     def __str__(self):
         return self.nome
 
+class Cuidador(models.Model):
+    DIAS = (1, 'Domingo'), (2, 'Segunda-feira'), (3, 'Terça-feira'), (4, 'Quarta-feira'), (5, 'Quinta-feira'), (6, 'Sexta-feira'), (7, 'Sábado')
+    PORTES = (1, 'Pequeno porte'), (2, 'Médio porte'), (3, 'Grande porte')
+    dias_disponiveis = models.IntegerField(choices=DIAS)
+    valor_diaria = models.IntegerField(default=1)
+    preferencia_porte = models.IntegerField(choices=PORTES)
+    User = settings.AUTH_USER_MODEL
+    user = models.OneToOneField(
+        User, 
+        on_delete=models.CASCADE,
+        primary_key=True,  
+    )
+    def __str__(self):
+        return self.user.username    
 
 
 class UserManager(BaseUserManager):
@@ -93,22 +107,5 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def email_user(self, subject, message, from_email=None):
         send_mail(subject, message, from_email, [self.email])
-
-# class Pet(models.Model):
-#    nome = models.CharField(max_length=200)
-#    idade = models.IntegerField(default=0)
-#    porte = models.CharField(max_length=200)
-#    docil = models.BooleanField()
-#    especie = models.CharField(max_length=200)
-
-# class Cuidador(models.Model):
-#    dia_disponivel = models.CharField(max_length=200)
-#    valor_diaria = models.IntegerField(default=1)
-#    preferencia_porte = models.CharField(max_length=200)
-
-# class Hospedagem(models.Model):
-#    status = models.CharField(max_length=200)
-#    data_inicial = models.DateTimeField()
-#    data_final = models.DateTimeField()
 
 # Create your models here.
