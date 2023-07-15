@@ -7,4 +7,5 @@ urlpatterns = [
     path('', login_required(views.IndexView.as_view()), name = 'index'),
     path('cadastro/', views.cadastro, name = 'cadastro'),
     path('pets/',login_required(views.PetsView.as_view()), name = 'pets'),
-]
+    path('minhas_solicitacoes/', login_required(views.SolicitacaoHospedagemView.as_view()), name = 'listar_solicitacoes')
+] 

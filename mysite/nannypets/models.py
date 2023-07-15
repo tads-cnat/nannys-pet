@@ -36,7 +36,7 @@ class Cuidador(models.Model):
         on_delete=models.CASCADE,
         primary_key=True,  
     )
-    def __str__(self):
+    def __str__(self): 
         return self.user.username    
 
 class SolicitacaoHospedagem(models.Model):

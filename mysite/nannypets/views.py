@@ -7,7 +7,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 
 
-from .models import User, UserManager, BaseUserManager, Pet, Cuidador, SolicitacaoHospedagem, Hospedagem
+from .models import User, UserManager, BaseUserManager, Pet, Cuidador, SolicitacaoHospedagem, Hospedagem 
 
 class IndexView(View):
     def get(self, request, *args, **kwargs):
@@ -18,7 +18,12 @@ class PetsView(View):
         lista_pets = Pet.objects.filter(user=request.user)
         contexto = {'pets_list':lista_pets}
         return render(request, 'nannypets/pets.html', contexto)
-    
+
+class SolicitacaoHospedagemView(View):
+    def get(self, request, *args, **kwargs):
+        lista_solicitacoes = SolicitacaoHospedagem.objects.filter(cuidador=request.user.cuidador)
+        contexto = {'solicitacao_list':lista_solicitacoes}
+        return render(request, 'nannypets/lista_solicitacoes.html', contexto)
 
 def cadastro(request):
     if request.method == "GET":
