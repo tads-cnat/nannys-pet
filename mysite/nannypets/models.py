@@ -6,6 +6,7 @@ from django.utils import timezone
 from django.core.mail import send_mail
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager, User
+from datetime import datetime, timedelta
 
 
 class Pet(models.Model):
@@ -38,6 +39,30 @@ class Cuidador(models.Model):
     def __str__(self):
         return self.user.username    
 
+class SolicitacaoHospedagem(models.Model):
+    STATUS = (0, 'Aguardando'), (1, 'Rejeitada'), (2, 'Confirmada')
+    status = models.IntegerField(choices=STATUS, default=0)
+    dia_inicial = models.DateField("Data Inicial")
+    dia_final = models.DateField("Data final")
+    User = settings.AUTH_USER_MODEL
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    cuidador = models.ForeignKey(Cuidador, on_delete=models.CASCADE)
+    pet = models.ForeignKey(Pet, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return f'Solicitação {self.id} - Usuário: {self.user.username} & Pet: {self.pet.nome} -> Cuidador: {self.cuidador.user.username}' 
+
+
+class Hospedagem(models.Model):
+    SITUACAO = (0, 'Em andamento'), (1, 'Concluída')
+    situacao = models.IntegerField(choices=SITUACAO, default=0)
+    solicitacao_hospedagem = models.OneToOneField(
+        SolicitacaoHospedagem, 
+        on_delete=models.CASCADE,
+        primary_key=True,  
+    )
+    def __str__(self):
+        return f'Hospedagem {self.solicitacao_hospedagem.id} - Pet: {self.solicitacao_hospedagem.pet.nome} & Dono: {self.solicitacao_hospedagem.user.username} | Cuidador: {self.solicitacao_hospedagem.cuidador.user.username}'
 
 class UserManager(BaseUserManager):
 
