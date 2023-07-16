@@ -10,29 +10,35 @@
     <div class="container">
 
         <div class="form-content">
-            <form action="{%url'nannypets:hospedagem'%}" method="POST" class="hospedagem">
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Enviar</button>
+              </form>
+
+
+
+            <!-- <form action="{% url 'nannypets:hospedagem' %}" method="POST" class="hospedagem">
                 {% csrf_token %}
                 <label for="" class="hosp-diainicial">Dia Inicial</label>
-                <input type="date" class="hosp-box-diainicial">
-                <label for="" class="hosp-diafinal">Dia Finall</label>
+                <input type="date" class="hosp-box-diainicial" name="dia_inicial">
+                <label for="" class="hosp-diafinal" name="dia_final">Dia Finall</label>
                 <input type="date" class="hosp-box-diafinal">
 
                 {% for pet in pets_list %}
-                    <input type="radio" name="" id="" value="{{pet}}"> 
+                    <input type="radio" name="pet" id="" value="{{pet}}"> 
                     <span class="pet-nome">{{pet}}</span>
                 {%endfor%}
             
                 {% for cuidador in cuidador_list %}
-                    <input type="radio" name="" id="" value="{{cuidador}}"> 
+                    <input type="radio" name="cuidador" id="" value="{{cuidador}}"> 
                     <span class="cuidador-nome">{{cuidador}}</span>
                 {%endfor%}
-                
-                {% for usuario in user %}
-                    <input type="hidden" name="user" value="{{user}}">
-                {%endfor%}
+                <input type="hidden" name="user" value="{{user}}">
 
                 <input type="submit" class="hosped-btn" value="HOSPEDAR">
-            </form>            
+            </form> -->            
         </div>
     </div>
 
