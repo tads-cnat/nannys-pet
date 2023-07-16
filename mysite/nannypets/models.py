@@ -23,6 +23,10 @@ class Pet(models.Model):
                              blank=True)
     def __str__(self):
         return self.nome
+    class Meta:
+        ordering = ['nome']
+        verbose_name = 'Pet'
+        verbose_name_plural = 'Pets'
 
 class Cuidador(models.Model):
     DIAS = (1, 'Domingo'), (2, 'Segunda-feira'), (3, 'Terça-feira'), (4, 'Quarta-feira'), (5, 'Quinta-feira'), (6, 'Sexta-feira'), (7, 'Sábado')
@@ -37,7 +41,11 @@ class Cuidador(models.Model):
         primary_key=True,  
     )
     def __str__(self): 
-        return self.user.username    
+        return self.user.username
+    class Meta:
+        ordering = ['user']
+        verbose_name = 'Cuidador'
+        verbose_name_plural = 'Cuidadores' 
 
 class SolicitacaoHospedagem(models.Model):
     STATUS = (0, 'Aguardando'), (1, 'Rejeitada'), (2, 'Confirmada')
@@ -51,6 +59,9 @@ class SolicitacaoHospedagem(models.Model):
     
     def __str__(self):
         return f'Solicitação {self.id} - Usuário: {self.user.username} & Pet: {self.pet.nome} -> Cuidador: {self.cuidador.user.username}' 
+    class Meta:
+        verbose_name = 'Solicitação de Hospedagem'
+        verbose_name_plural = 'Solicitações de Hospedagem'
 
 
 class Hospedagem(models.Model):
@@ -63,6 +74,9 @@ class Hospedagem(models.Model):
     )
     def __str__(self):
         return f'Hospedagem {self.solicitacao_hospedagem.id} - Pet: {self.solicitacao_hospedagem.pet.nome} & Dono: {self.solicitacao_hospedagem.user.username} | Cuidador: {self.solicitacao_hospedagem.cuidador.user.username}'
+    class Meta:
+        verbose_name = 'Hospedagem'
+        verbose_name_plural = 'Hospedagens'
 
 class UserManager(BaseUserManager):
 
@@ -120,6 +134,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     class Meta:
+        ordering = ['username']
         verbose_name = _('user')
         verbose_name_plural = _('users')
 

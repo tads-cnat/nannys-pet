@@ -6,6 +6,7 @@ from django.contrib.auth.forms import ReadOnlyPasswordHashField
 
 from .models import User, Pet, Cuidador, SolicitacaoHospedagem, Hospedagem
 
+admin.site.site_header = "Administração do Projeto NANNYSPETS"
 
 class UserCreationForm(forms.ModelForm):
     """A form for creating new users. Includes all the required
