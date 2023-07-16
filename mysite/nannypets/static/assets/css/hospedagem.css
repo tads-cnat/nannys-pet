@@ -1,0 +1,86 @@
+/*======== Configurações Gerais ========= */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    align-items: center;
+    min-height:auto;
+}
+.form-content h2 {
+    font-size: 1.8rem;
+    margin: 80px;
+}
+.hosped-form {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.hosped-form p {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    color: var(--text-color-black);
+    font-size: var(--h3-font-size);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.hosped-form input, select {
+    height: 34px;
+    width: auto;
+    border: 2px solid #5f5f5f;
+    border-radius: 12px;
+    display: flex;
+    font-size: 15px; 
+    appearance: none;
+    text-indent: 8px;
+}
+.hosped-form input:hover {
+    transition-delay: 200ms;
+    background-color: #FF6663;
+}
+.hosped-form select:focus-within {
+    outline: 0;
+    border: 3px solid #FF6663;
+}
+.hosped-form input:focus-within {
+    outline: 0;
+    border: 3px solid #FF6663;
+}
+.hosped-btn {
+    width: 120px;
+    height: 70px;
+    background: #D2657F;
+    border-radius: 16px;
+    border-color: #F4F4F4;
+    border-style: hidden;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+
+    color: #F4F4F4;
+    margin-left: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}

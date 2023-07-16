@@ -10,14 +10,12 @@
     <div class="container">
 
         <div class="form-content">
-
-            <form method="post">
+            <h2 class="hosped-title">Realizar Solicitação de Hospedagem</h2>
+            <form method="post" class="hosped-form">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button type="submit">Enviar</button>
+                <button type="submit" class="hosped-btn">Enviar</button>
               </form>
-
-
 
             <!-- <form action="{% url 'nannypets:hospedagem' %}" method="POST" class="hospedagem">
                 {% csrf_token %}
