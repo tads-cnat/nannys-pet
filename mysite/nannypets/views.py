@@ -26,7 +26,7 @@ class SolicitacaoHospedagemView(View):
         contexto = {'solicitacao_list':lista_solicitacoes}
         return render(request, 'nannypets/lista_solicitacoes.html', contexto)
 
-class SolicitacaoHospedagemView(View):
+class HospedagemView(View):
     def get(self, request):
         form = SolicitacaoHospedagemForm()
         return render(request, 'nannypets/hospedagem.html', {'form': form})
@@ -37,7 +37,7 @@ class SolicitacaoHospedagemView(View):
             solicitacao = form.save(commit=False)
             solicitacao.user = request.user  
             solicitacao.save()
-            return redirect('/')  # Redirecionar para uma página de sucesso
+            return redirect('/') 
         return render(request, 'nannypets/hospedagem.html', {'form': form})
 
         
