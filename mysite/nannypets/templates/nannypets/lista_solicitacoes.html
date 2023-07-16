@@ -1,32 +1,35 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'assets/css/pets.css' %}"> {% endblock %}
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'assets/css/lista_solicitacoes-1.css' %}"> {% endblock %}
 
 {% block title %}Nanny Pets{% endblock %}
 
 {% block content %}
     <div class="container">
-        <h2>Solicitações de hospedagem</h2>
-        <ul>
-            {% for solicitacaoHospedagem in solicitacao_list %}
-        
-                {% if solicitacaoHospedagem.pet.foto %}
-                    <h3>Foto</h3>
-                    <img src="{{solicitacaoHospedagem.pet.foto.url}}" alt="">
-                {% endif %}
-                
-                
-
-                <h3>Dono</h3>
-                <li>{{ solicitacaoHospedagem.user.username }}</li>
-                
-                <h4>Pet</h3>
-                <li>{{ solicitacaoHospedagem.pet.nome }}</li>
-                <br>
-            {% empty %}
-                <li>Nenhuma solicitação de hospedagem encontrada</li>
-            {% endfor %}
-        </ul>
+        <h2>Solicitações de Hospedagem</h2>
+        <div class="solicita-content">
+            <ul class="list-solicita">
+                {% for solicitacaoHospedagem in solicitacao_list %}
+                <div class="card-solicita">
+                    <div class="titles-pet">
+                        {% if solicitacaoHospedagem.pet.foto %}
+                            <img src="{{solicitacaoHospedagem.pet.foto.url}}" alt="" class="pet-img">
+                        {% endif %}
+                        <div class="titles-all">
+                            <h3>Dono</h3>
+                            <li>{{ solicitacaoHospedagem.user.username }}</li>
+                            <h3>Pet</h3>
+                            <li>{{ solicitacaoHospedagem.pet.nome }}</li>         
+                        </div>
+                    </div>
+                    <div class="buttons-solicita">
+                        <button class="btn-solicita">Confirmar</button>
+                        <button class="btn-solicita">Cancelar</button>
+                    </div>
+                 </div>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 {% endblock %}
