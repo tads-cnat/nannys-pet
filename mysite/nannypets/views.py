@@ -25,6 +25,19 @@ class SolicitacaoHospedagemView(View):
         contexto = {'solicitacao_list':lista_solicitacoes}
         return render(request, 'nannypets/lista_solicitacoes.html', contexto)
 
+class HospedagemView(View):
+    def get(sef, request, *args, **kwargs):
+        lista_pets = Pet.objects.filter(user=request.user)
+        lista_cuidadores = Cuidador.objects.all()
+        usuarios = User.objects.contains(user=request.user)
+        contexto = {'pets_list':lista_pets, 'cuidador_list':lista_cuidadores, 'user':usuarios, }
+        dia_inicial = request.POST.get('dia_inicial')
+        dia_final = request.POST.get('dia_final')
+        cuidador = request.POST.get('cuidador')
+        pet = request.POST.get('pet')
+        user = request.POST.get('user')
+        return render(request, 'nannypets/hospedagem.html', contexto)
+    
 def cadastro(request):
     if request.method == "GET":
         return render(request, 'nannypets/cadastro.html')

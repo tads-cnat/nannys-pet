@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'assets/css/hospedagem.css' %}"> {% endblock %}
+
+{% block title %}Nanny Pets{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="form-content">
+            <form action="{%url'nannypets:hospedagem'%}" method="POST" class="hospedagem">
+                {% csrf_token %}
+                <label for="" class="hosp-diainicial">Dia Inicial</label>
+                <input type="date" class="hosp-box-diainicial">
+                <label for="" class="hosp-diafinal">Dia Finall</label>
+                <input type="date" class="hosp-box-diafinal">
+
+                {% for pet in pets_list %}
+                    <input type="radio" name="" id="" value="{{pet}}"> 
+                    <span class="pet-nome">{{pet}}</span>
+                {%endfor%}
+            
+                {% for cuidador in cuidador_list %}
+                    <input type="radio" name="" id="" value="{{cuidador}}"> 
+                    <span class="cuidador-nome">{{cuidador}}</span>
+                {%endfor%}
+                
+                {% for usuario in user %}
+                    <input type="hidden" name="user" value="{{user}}">
+                {%endfor%}
+
+                <input type="submit" class="hosped-btn" value="HOSPEDAR">
+            </form>            
+        </div>
+    </div>
+
+{% endblock %}
