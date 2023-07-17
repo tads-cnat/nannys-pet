@@ -1,10 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required, permission_required
 from django.utils.decorators import method_decorator
 from django.urls import reverse
 from django.views import View, generic
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+from .forms import SolicitacaoHospedagemForm
 
 
 from .models import User, UserManager, BaseUserManager, Pet, Cuidador, SolicitacaoHospedagem, Hospedagem 
@@ -25,6 +26,22 @@ class SolicitacaoHospedagemView(View):
         contexto = {'solicitacao_list':lista_solicitacoes}
         return render(request, 'nannypets/lista_solicitacoes.html', contexto)
 
+class HospedagemView(View):
+    def get(self, request):
+        form = SolicitacaoHospedagemForm()
+        return render(request, 'nannypets/hospedagem.html', {'form': form})
+
+    def post(self, request):
+        form = SolicitacaoHospedagemForm(request.POST)
+        if form.is_valid():
+            solicitacao = form.save(commit=False)
+            solicitacao.user = request.user  
+            solicitacao.save()
+            return redirect('/') 
+        return render(request, 'nannypets/hospedagem.html', {'form': form})
+
+        
+    
 def cadastro(request):
     if request.method == "GET":
         return render(request, 'nannypets/cadastro.html')

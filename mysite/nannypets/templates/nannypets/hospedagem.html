@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %} <link rel="stylesheet" type="text/css" href="{% static 'assets/css/hospedagem.css' %}"> {% endblock %}
+
+{% block title %}Nanny Pets{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="form-content">
+            <h2 class="hosped-title">Realizar Solicitação de Hospedagem</h2>
+            <form method="post" class="hosped-form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="hosped-btn">Enviar</button>
+              </form>
+
+            <!-- <form action="{% url 'nannypets:hospedagem' %}" method="POST" class="hospedagem">
+                {% csrf_token %}
+                <label for="" class="hosp-diainicial">Dia Inicial</label>
+                <input type="date" class="hosp-box-diainicial" name="dia_inicial">
+                <label for="" class="hosp-diafinal" name="dia_final">Dia Finall</label>
+                <input type="date" class="hosp-box-diafinal">
+
+                {% for pet in pets_list %}
+                    <input type="radio" name="pet" id="" value="{{pet}}"> 
+                    <span class="pet-nome">{{pet}}</span>
+                {%endfor%}
+            
+                {% for cuidador in cuidador_list %}
+                    <input type="radio" name="cuidador" id="" value="{{cuidador}}"> 
+                    <span class="cuidador-nome">{{cuidador}}</span>
+                {%endfor%}
+                <input type="hidden" name="user" value="{{user}}">
+
+                <input type="submit" class="hosped-btn" value="HOSPEDAR">
+            </form> -->            
+        </div>
+    </div>
+
+{% endblock %}
