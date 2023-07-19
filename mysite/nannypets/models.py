@@ -19,8 +19,7 @@ class Pet(models.Model):
     docil = models.BooleanField()
     User = settings.AUTH_USER_MODEL
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    foto = models.ImageField(upload_to='nannypets/pet_photos',
-                             blank=True)
+    foto = models.ImageField(upload_to='nannypets/pet_photos', blank=True)
     def __str__(self):
         return self.nome
     class Meta:

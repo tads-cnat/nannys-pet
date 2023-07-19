@@ -12,6 +12,7 @@ body{
     height: auto;
     width: 100%;
     margin-bottom: 100px;
+    justify-content: center;
 }
 .pets-all {
     display:flex;
@@ -42,6 +43,7 @@ body{
     color: var(--white);
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease
 }
 .pet-foto {
     height: 120px;
@@ -99,3 +101,205 @@ hr {
     height: 30px;
     width: 30px;
 }
+
+/*======== Dialog  ========*/
+
+dialog {
+    
+    border-style: hidden;
+    width: 740px;
+    height: 580px;
+
+    background: #fafafa;
+    margin: auto;
+    
+    border-radius: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 0px 8px 0px rgba(0, 0, 0, 0.25), 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.modal {
+    width: 85%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-esc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.but-esc {
+    background-color: transparent;
+    border-style:none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.invisible {
+    width: 40px;
+}
+.but-esc img {
+    width: max-content;
+    height: 40px;
+    transition: 300ms linear;
+}
+.but-esc img:hover {
+    scale: 1.1;
+}
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    
+}
+form {
+    width: 70%;
+    min-height: auto;
+    gap: 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: center;
+}
+input, select {
+    height: 34px;
+    width: 100%;
+    border: 2px solid #5f5f5f;
+    border-radius: 12px;
+    display: flex;
+    font-size: 14px; 
+    appearance: none;
+    text-indent: 8px;
+    background-color: #F4F4F4;
+    color: var(--text-color-black);
+}
+.pets-add-btn:hover {
+    transition-delay: 200ms;
+    background-color: #FF6663;
+}
+select:focus-within {
+    outline: 0;
+    border: 3px solid #FF6663;
+}
+input:focus-within {
+    outline: 0;
+    border: 3px solid #FF6663;
+}
+.title-pet-add {
+    color: var(--text-color-black);
+}
+.pet-form p {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    color: var(--text-color-black);
+    font-size: var(--h3-font-size);
+    gap: 10px;
+}
+form p:nth-of-type(3), form p:nth-of-type(4), form p:nth-of-type(5), form p:nth-of-type(6), form p:nth-of-type(1), form p:nth-of-type(2) {
+    width: 45%;
+}
+form p:nth-of-type(6) label {
+    display: flex;
+    background-color: var(--text-color-gray);
+    color: var(--blue);
+    text-align: center;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 300ms linear;
+    box-shadow: 4px 0px 8px 0px rgba(0, 0, 0, 0.25), 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+form p:nth-of-type(6) label:hover {
+    color:var(--text-color-gray);
+    background-color: var(--blue);
+}
+.pet-form .env {
+    width: 140px;
+    height: 50px;
+    background: #D2657F;
+    border-radius: 16px;
+    border-color: #F4F4F4;
+    border-style: hidden;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: -0.01em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #F4F4F4;
+    cursor: pointer;
+    text-indent: 0;
+    transition: background-color 0.3s ease
+}
+.pet-form .env:hover {
+    background: #FF6663;
+    transition-delay: 200ms;
+}
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 25%;
+    top: 0;
+    left: 0;
+    background-color:var(--gray);
+}
+input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: 0;
+    background-color:var(--pink-strong);
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height:16px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    left: 11px;
+    top: 4px;
+}
+input[type=file] {
+    display: none;
+}
+
