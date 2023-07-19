@@ -6,7 +6,7 @@
 {% block title %}Nanny Pets{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container page-full">
         <div class="pets-all">
             <div class="pets-title-button">
                 <h2 class="pets-title">Meus Pets</h2>
@@ -30,14 +30,26 @@
                     {% endfor %} 
                 </ul>
             </div>
-            <!-- <ul>
-                {% for pet in pets_list %}
-                    <li>{{ pet }}</li>
-                {% empty %}
-                    <li>Nenhum pet encontrado</li>
-                {% endfor %}
-            </ul> -->
         </div>
-        
+        <dialog>
+            <div class="modal">
+                <div class="title-esc">
+                    <img src="" alt="" class="invisible">
+                    <h2 class="title-pet-add">Cadastrar Novo Pet</h2>
+                    <button class="but-esc">
+                        <img src="{% static 'assets/img/esc.png' %}" alt="">
+                    </button>
+                </div>
+                <div class="info">
+                    <form  method="post" class="pet-form" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type="submit" class="env" value="CADASTRAR">
+                    </form>
+                </div>
+            <img src="{% static 'assets/img/logotipo.png' %}" class="logo" alt="">
+            </div>
+        </dialog>
+        <script src="{% static 'assets/js/pets.js' %}"></script>
     </div>
-{% endblock %}
+    {% endblock %}

@@ -5,34 +5,42 @@ from django.urls import reverse
 from django.views import View, generic
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
-from .forms import SolicitacaoHospedagemForm
+from .forms import SolicitacaoHospedagemForm, PetForm
 
 
 from .models import User, UserManager, BaseUserManager, Pet, Cuidador, SolicitacaoHospedagem, Hospedagem 
 
 class IndexView(View):
     def get(self, request, *args, **kwargs):
-        return render (request, 'nannypets/index.html')
+        if request.user.is_authenticated:
+            user = request.user
+        contexto = {'user':user}
+        return render (request, 'nannypets/index.html', contexto)
     
 class PetsView(View):
     def get(self, request, *args, **kwargs):
         lista_pets = Pet.objects.filter(user=request.user)
-        contexto = {'pets_list':lista_pets}
+        form = PetForm()
+        contexto = {'pets_list':lista_pets, 'form': form}
         return render(request, 'nannypets/pets.html', contexto)
+    
+    def post(self, request):
+        form = PetForm(request.POST, request.FILES)
+        if form.is_valid():
+            newpet = form.save(commit=False)
+            newpet.user = request.user  
+            newpet.save()
+            return redirect('nannypets:pets') 
+        return render(request, 'nannypets/pets.html', {'form': form})
 
-class SolicitacaoHospedagemView(View):
-    def get(self, request, *args, **kwargs):
-        lista_solicitacoes = SolicitacaoHospedagem.objects.filter(cuidador=request.user.cuidador)
-        contexto = {'solicitacao_list':lista_solicitacoes}
-        return render(request, 'nannypets/lista_solicitacoes.html', contexto)
 
 class HospedagemView(View):
     def get(self, request):
-        form = SolicitacaoHospedagemForm()
+        form = SolicitacaoHospedagemForm(user=request.user)
         return render(request, 'nannypets/hospedagem.html', {'form': form})
 
     def post(self, request):
-        form = SolicitacaoHospedagemForm(request.POST)
+        form = SolicitacaoHospedagemForm(request.POST,)
         if form.is_valid():
             solicitacao = form.save(commit=False)
             solicitacao.user = request.user  
@@ -40,6 +48,11 @@ class HospedagemView(View):
             return redirect('/') 
         return render(request, 'nannypets/hospedagem.html', {'form': form})
 
+class SolicitacaoHospedagemView(View):
+    def get(self, request, *args, **kwargs):
+        lista_solicitacoes = SolicitacaoHospedagem.objects.filter(cuidador=request.user.cuidador)
+        contexto = {'solicitacao_list':lista_solicitacoes}
+        return render(request, 'nannypets/lista_solicitacoes.html', contexto)
         
     
 def cadastro(request):

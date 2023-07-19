@@ -109,10 +109,11 @@ body {
     height: 21px;
     display: inline-flex;
     align-items: flex-end;
+    transition: 300ms linear;
 }
 .nav-links a:hover{
-    scale: 1.1;
-    transition: 300ms linear;
+    transform: scale(1.1);
+    
 }
 
 .nav-icon {
