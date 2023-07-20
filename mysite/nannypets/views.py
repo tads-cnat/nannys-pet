@@ -32,6 +32,11 @@ class PetsView(View):
             newpet.save()
             return redirect('nannypets:pets') 
         return render(request, 'nannypets/pets.html', {'form': form})
+    
+class PetView(View):
+    def get(self, request, *args, **kwargs):
+        pet = get_object_or_404(Pet, pk = kwargs['pk'])
+        return render(request, 'nannypets/pet.html', {'pet': pet})
 
 
 class HospedagemView(View):
