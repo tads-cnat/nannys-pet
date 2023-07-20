@@ -16,7 +16,7 @@
             <div class="pets-content">
                 <ul class="list-pets">
                     {% for pet in pets_list %}
-                        <a href="#" class="pet-link">
+                        <a href="{% url 'nannypets:pet' pet.id %}" class="pet-link">
                             <div class="pet-pet">
                                 <img src="{{pet.foto.url}}" alt="" class="pet-foto">
                                 <h3 class="pet-nome">{{pet}}</h3>
