@@ -8,7 +8,7 @@
 </br>
 
 # Projeto Nanny's Pets
-<img src="https://raw.githubusercontent.com/tads-cnat/receber-pets/main/logo.png?token=GHSAT0AAAAAACB2MWJ35SOEZLNYERNTPCWSZDWVSIA" width="600" height="200" /></br></br>
+<img src="logo.png" width="600" height="200" /></br></br>
 
 ## A. Preparativos para se trabalhar com o GitHub
 
