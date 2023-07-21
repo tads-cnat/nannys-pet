@@ -37,8 +37,10 @@ Reuniões duas vezes por semana, às 19h, geralmente às terças e quintas; às 
 
 * [Documento de visão](doc/visao/doc-visao.md)
 * [Mapa do Site](doc/mapa-site/mapa-site.md)
-* [Diagrama Entidade-Relacionamento](doc/bd/diagramaER.md)
+* [Diagrama Entidade-Relacionamento](doc/bd/DiagramaER.md)
 * [Modelo de Domínio](doc/dominio/dominio.md)
 * [Modelo de casos de uso](doc/cdu/cdu.md)
+* [Diagrama de Sequência](doc/sequencia/DiadramaDeSequencia.md)
+* [Dicionário de Dados](doc/bd/DicionarioDeDados.md)
 * [Protótipos de interface com o usuário](doc/prototipos/prototipos.md)
 * [Guia do desenvolvedor](guia-receber-pets.md)
