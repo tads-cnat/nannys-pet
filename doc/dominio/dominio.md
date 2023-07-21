@@ -1,6 +1,6 @@
 # Modelo de Domínio
 
-![Diagrama de Classes de Domínio](https://raw.githubusercontent.com/tads-cnat/receber-pets/main/doc/dominio/diagramaClasses.png?token=GHSAT0AAAAAACB2MWJ2KESHHEVW7KAVEWMEZEI7YNA)
+![Diagrama de Classes de Domínio](https://github.com/tads-cnat/receber-pets/blob/98-revisar-models-do-django/doc/dominio/diagramaClasses.png?raw=true)
 </br></br>
 
 ## Glossário 
