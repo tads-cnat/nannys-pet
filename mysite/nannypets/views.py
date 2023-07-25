@@ -45,7 +45,7 @@ class HospedagemView(View):
         return render(request, 'nannypets/hospedagem.html', {'form': form})
 
     def post(self, request):
-        form = SolicitacaoHospedagemForm(request.POST,)
+        form = SolicitacaoHospedagemForm(request.user, request.POST)
         if form.is_valid():
             solicitacao = form.save(commit=False)
             solicitacao.user = request.user  
