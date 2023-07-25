@@ -41,6 +41,7 @@ Reuniões duas vezes por semana, às 19h, geralmente às terças e quintas; às 
 * [Modelo de Domínio](doc/dominio/dominio.md)
 * [Modelo de casos de uso](doc/cdu/cdu.md)
 * [Diagrama de Sequência](doc/sequencia/DiadramaDeSequencia.md)
+* [Diagrama de Interação](doc/bd/DiagramaDeInteracao.md)
 * [Dicionário de Dados](doc/bd/DicionarioDeDados.md)
 * [Protótipos de interface com o usuário](doc/prototipos/prototipos.md)
 * [Guia do desenvolvedor](guia-receber-pets.md)
