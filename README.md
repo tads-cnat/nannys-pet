@@ -8,6 +8,13 @@ O projeto Nanny's Pets tem como objetivo desenvolver um sistema para o serviço 
 
 # Equipe e Formas de Contato
 
+Versão 2.0 
+1. Anna Carolinne - [GitHub](https://github.com/anna-albuquerque) 
+2. Gabriel Ricardo - [GitHub](https://github.com/gabriellldev) 
+3. Renato Bernardino - [GitHub](https://github.com/renatobernardinodasilva)
+4. Virgínia Cláudia - [GitHub](https://github.com/VCLM)
+
+Versão 1.0
 1. Anna Carolinne - [GitHub](https://github.com/anna-albuquerque) 
 2. Evandro Henrique - [GitHub](https://github.com/evandrohpereira)
 3. Gabriel Ricardo - [GitHub](https://github.com/gabriellldev) 
@@ -15,7 +22,8 @@ O projeto Nanny's Pets tem como objetivo desenvolver um sistema para o serviço 
 5. Sérgio Henrique - [GitHub](https://github.com/sergioh665)
 6. Walber Ranniere - [GitHub](https://github.com/WalberRanniere) 
 
-**Orientador:** Gilbert Azevedo - [GitHub](https://github.com/Gilbert-Silva)   
+**Orientador versão 1.0:** Gilbert Azevedo - [GitHub](https://github.com/Gilbert-Silva)   
+**Orientador versão 2.0:** Alessandro José - [HitHub](https://github.com/alessandrojsouza)
 </br>
 
 # Horário de Reuniões
