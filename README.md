@@ -14,21 +14,23 @@ Versão 2.0
 3. Renato Bernardino - [GitHub](https://github.com/renatobernardinodasilva)
 4. Virgínia Cláudia - [GitHub](https://github.com/VCLM)
 
+**Orientador:** Alessandro José - [GitHub](https://github.com/alessandrojsouza)
+
 Versão 1.0
 1. Anna Carolinne - [GitHub](https://github.com/anna-albuquerque) 
 2. Evandro Henrique - [GitHub](https://github.com/evandrohpereira)
 3. Gabriel Ricardo - [GitHub](https://github.com/gabriellldev) 
 4. Maria Luiza - [GitHub](https://github.com/malucarvalho) 
 5. Sérgio Henrique - [GitHub](https://github.com/sergioh665)
-6. Walber Ranniere - [GitHub](https://github.com/WalberRanniere) 
+6. Walber Ranniere - [GitHub](https://github.com/WalberRanniere)   
 
-**Orientador versão 1.0:** Gilbert Azevedo - [GitHub](https://github.com/Gilbert-Silva)   
-**Orientador versão 2.0:** Alessandro José - [HitHub](https://github.com/alessandrojsouza)
+**Orientador:** Gilbert Azevedo - [GitHub](https://github.com/Gilbert-Silva)   
+
 </br>
 
-# Horário de Reuniões
-
-Reuniões duas vezes por semana, às 19h, geralmente às terças e quintas; às vezes mais, com horários previamente acordados entre os integrantes dependendo das demandas que vão surgindo no decorrer do desenolvimento do projeto.   
+# Horário de Reuniões:
+Presencialmente com o orientador às quartas-feiras no campus IFRN-Central. 
+Reuniões on-line nas segunda-feira às 19h e em outro dia da semana que sempre é escolhido na reunião à depender das demandas.   
 </br>
 
 # Ferramentas e tecnologias utilizadas no desenvolvimento do projeto:
