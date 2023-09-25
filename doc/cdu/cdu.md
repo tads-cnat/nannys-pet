@@ -2,8 +2,7 @@
 
 ## 1. Diagrama de Casos de Uso
 
-![DiagramaDeCdu](https://github.com/tads-cnat/receber-pets/blob/98-revisar-models-do-django/doc/bd/Caso%20de%20uso%20Nannys%20Pet.png?raw=true)
-
+![DiagramaDeCduRevisado](https://raw.githubusercontent.com/tads-cnat/nannys-pet/atualizacoes/doc/cdu/Diagrama%20cdu_revisado.jpg?token=GHSAT0AAAAAACH2ZM4WKARWWFCBUPCR24WWZIK6I3Q)
 
 ## 2. Listagem dos detalhamentos dos casos de uso
 
