@@ -17,7 +17,7 @@ Nosso objetivo principal é aprimorar o sistema de hospedagem para cães e gatos
 
 ## 2. Descrição do problema
 
-| **Problema** | A necessidade de se ausentar e precisar de alguém qualificado que cuide e atenda as necessidades do seu pet. |
+| **Problema** | O *problema* para encontrar pessoas capacitadas e com ambientes adequados para hospedagem de Pets tem *afetado* tutores que por algum motivo precisam ausentar-se de casa por um período mais longo. Isso tem *impactado* na qualidade de vida dos Pets e seus tutores, que, por horas, ficam preocupados com quem e onde podem deixar seus Pets. Uma *solução* seria a construção de uma aplicação que permitisse encontrar tutores, segundo um conjunto de características desejáveis pelos Pets e seus tutores. |
 | :----------: | ------------------------------------------------------------ |
 |  **Afeta**   | Todos aqueles que possuem um animal de estimação e em algum momento necessitam se afastar de sua residência. |
 | **Impacta**  | Em evitar uma busca desorganizada por cuidadores de pets ou cancelamentos de compromissos motivados pela falta de opção de ter onde deixar seu animal de estimação. |
@@ -27,10 +27,10 @@ Nosso objetivo principal é aprimorar o sistema de hospedagem para cães e gatos
 
 |     Nome      |                          Descrição                           |                    Responsabilidade                    |
 | :-----------: | :----------------------------------------------------------: | :----------------------------------------------------: |
-| Administrador | Administrador: Responsável pelo gerenciamento e funcionamento correto da aplicação |                                                        |
-|     Tutor     | Usuário: São as pessoas que se cadastram no site com objetivo de arranjar local para seus pets durante o período desejado. |   Realiza auto-cadastro; - Pesquisa por cuidadores.    |
-|   Cuidador    | São as pessoas que se cadastram no site, para disponibilizar a hospedagem dos pets dos outros | Realiza auto-cadastro; - Atende pedidos de hospedagem. |
-|   Visitante   |                Sem a necessidade de cadastro                 |                  Visualiza cuidadores                  |
+| Administrador | Pessoa que trabalha para a plataforma. |   Responsável pelo gerenciamento e funcionamento correto da aplicação.   |  
+|     Tutor     | Pessoa que deseja encontrar profissionais que possam cuidar do seu Pet por uma tempo. |   Cuida do seu Pet e procura por profissionais que prestam serviço de cuidador de Pet.    |
+|   Cuidador    | Profissional que presta serviço de cuidar de pets. Pode ser pessoa física ou empresa. | Cuidar dos Pets segundo a necessidade dos mesmos. |
+|   Visitante   |                Pessoa que acessa o site.                 |                  Nenhuma.               |
 |     </br>     |                                                              |                                                        |
 
 ## 4. Descrição do ambiente dos usuários
@@ -69,7 +69,6 @@ Uma plataforma que conecta pessoas com tempo, qualificação, um ambiente seguro
 | :----: | :-----------------: | :----------------------------------------------------------: | :--------: |
 |  F01   |   Cadastrar tutor   |        O usuário geral realiza o cadastro no sistema         | Essencial  |
 |  F02   | Cadastrar cuidador  | O usuário ao realizar o cadastro como cuidador informará dados pessoais (nome completo, endereço e contato de WhatsApp), e dados específicos de cuidador: aceita animais que necessitam de cuidados especiais, porte do animal, características gerais do animal (temperamento, sexo, espécie) tipo de instalações, valores do serviço | Essencial  |
-|        |                     |                                                              |            |
 |  F03   |    Login usuário    |   O usuário (cuidador ou tutor), realiza login no sistema    | Essencial  |
 |  F04   |   Buscar cuidador   |   O dono do pet ou visitante busca um cuidador no sistema    | Essencial  |
 |  F05   |  Avaliar cuidador   | O dono do pet avalia o cuidador após o fim da hospedagem, usando um sistema de 1 a 5 estrelas. | Desejável  |
