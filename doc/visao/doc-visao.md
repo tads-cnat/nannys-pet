@@ -67,17 +67,11 @@ Uma plataforma que conecta pessoas com tempo, qualificação, um ambiente seguro
 
 | Código |        Nome         |                          Descrição                           | Prioridade |
 | :----: | :-----------------: | :----------------------------------------------------------: | :--------: |
-RF01 - Gerenciar dados de cuidador
-RF02 - Gerenciar dados de tutor
-RF03 - Encontrar cuidadores
-RF04 - Visualizar cuidadores mais requisitados e/ou melhor avaliados
-RF04 - Avaliar hospedagem de tutor
-
-|  RF01   |   Gerenciar dados de cuidador   |        ...         | Essencial  |
-|  RF02   | Gerenciar dados de tutor  | ... | Essencial  |
-|  RF03   |    Encontrar cuidadores   |   ...    | Essencial  |
-|  RF04   |   Visualizar cuidadores mais requisitados e/ou melhor avaliados   |   ...    | Essencial  |
-|  RF05   |  Avaliar hospedagem de tutor  | ... | Desejável  |
+|  RF01   |   Gerenciar dados de cuidador   |      O sistema permite o registro e gerenciamento de dados de usuários, isso inclui a coleta, armazenamento, atualização e exclusão de informações. No caso do cuidador temos as informações básicas do cadastro de usuário. Adicionada a essas informações, temos ainda o checklist com as características do cuidador, e as fotos do ambiente onde ele vai hospedar os pets.     | Essencial  |
+|  RF02   | Gerenciar dados de tutor  |    O sistema permite o registro e gerenciamento de dados de usuários, isso inclui a coleta, armazenamento, atualização e exclusão de informações como nome, sobrenome, data de nascimento, cpf, e-mail e foto de perfil.  | Essencial  |
+|  RF03   |    Encontrar cuidadores   |   ...atualizar...    | Essencial  |
+|  RF04   |   Visualizar cuidadores mais requisitados e/ou melhor avaliados   |  ...atualizar...    | Essencial  |
+|  RF05   |  Avaliar hospedagem de tutor  | ...atualizar... | Desejável  |
 
 
 ## 9. Requisitos não-funcionais
