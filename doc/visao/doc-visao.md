@@ -8,8 +8,8 @@
 | 09/05/2023 |  1.1   | Versão revisada |                        Anna Carolinne                        |
 | 30/05/2023 |  1.2   | Versão revisada |                        Anna Carolinne                        |
 | 19/09/2023 |  2.0   |  Revisão Geral  |              Anna Carolinne, Renato Bernardino               |
-| 27/09/2023 |  2.1   |  Revisão Geral  | Anna Carolinne, Renato Bernardino, Virginia Claudia, Gabriel Ricardo |
-|   </br>    |        |                 |                                                              |
+| 03/10/2023 |  2.1   |  Revisão Geral  | Anna Carolinne, Renato Bernardino, Virginia Claudia, Gabriel Ricardo |
+
 
 ## 1. Objetivo do projeto
 
@@ -31,7 +31,7 @@ Nosso objetivo principal é aprimorar o sistema de hospedagem para cães e gatos
 |     Tutor     | Pessoa que deseja encontrar profissionais que possam cuidar do seu Pet por uma tempo. |   Cuida do seu Pet e procura por profissionais que prestam serviço de cuidador de Pet.    |
 |   Cuidador    | Profissional que presta serviço de cuidar de pets. Pode ser pessoa física ou empresa. | Cuidar dos Pets segundo a necessidade dos mesmos. |
 |   Visitante   |                Pessoa que acessa o site.                 |                  Nenhuma.               |
-|     </br>     |                                                              |                                                        |
+
 
 ## 4. Descrição do ambiente dos usuários
 
@@ -67,13 +67,12 @@ Uma plataforma que conecta pessoas com tempo, qualificação, um ambiente seguro
 
 | Código |        Nome         |                          Descrição                           | Prioridade |
 | :----: | :-----------------: | :----------------------------------------------------------: | :--------: |
-|  F01   |   Cadastrar tutor   |        O usuário geral realiza o cadastro no sistema         | Essencial  |
-|  F02   | Cadastrar cuidador  | O usuário ao realizar o cadastro como cuidador informará dados pessoais (nome completo, endereço e contato de WhatsApp), e dados específicos de cuidador: aceita animais que necessitam de cuidados especiais, porte do animal, características gerais do animal (temperamento, sexo, espécie) tipo de instalações, valores do serviço | Essencial  |
-|  F03   |    Login usuário    |   O usuário (cuidador ou tutor), realiza login no sistema    | Essencial  |
-|  F04   |   Buscar cuidador   |   O dono do pet ou visitante busca um cuidador no sistema    | Essencial  |
-|  F05   |  Avaliar cuidador   | O dono do pet avalia o cuidador após o fim da hospedagem, usando um sistema de 1 a 5 estrelas. | Desejável  |
-|  F06   | Avaliar dono do pet | O cuidador avalia o dono do pet após o fim da hospedagem, usando um sistema de 1 a 5 estrelas. | Desejável  |
-| </br>  |                     |                                                              |            |
+|  RF01   |   Gerenciar dados de cuidador   |      O sistema permite o registro e gerenciamento de dados de usuários, isso inclui a coleta, armazenamento, atualização e exclusão de informações. No caso do cuidador temos as informações básicas do cadastro de usuário. Adicionada a essas informações, temos ainda o checklist com as características do cuidador, e as fotos do ambiente onde ele vai hospedar os pets.     | Essencial  |
+|  RF02   | Gerenciar dados de tutor  |    O sistema permite o registro e gerenciamento de dados de usuários, isso inclui a coleta, armazenamento, atualização e exclusão de informações como nome, sobrenome, data de nascimento, cpf, e-mail e foto de perfil.  | Essencial  |
+|  RF03   |    Encontrar cuidadores   |   Ao acessar a plataforma e entrar na parte de encontrar cuidador, o usuário vai escolher todas as características que ele procura em um cuidador, digitar seu endereço (para localizar cuidadores próximos) e então clicar em pesquisar para que a busca liste os cuidadores com aquelas caracterísicas.   | Essencial  |
+|  RF04   |   Visualizar cuidadores mais requisitados e/ou melhor avaliados   | Os cuidadores cadastrados na plataforma recebem uma avaliação pelos tutores que já hospedaram com ele e o ranking dessas avaliações aparece na hora de mostrar o resultado das pesquisas dos cuidadores, mostrando primeiro os "melhores" avaliados. Assim como os cuidadores que tem o maior número de hospedagens solicidatas. Tornando esse um diferencial de realizar o processo de hospedagem pela plataforma.   | Essencial  |
+|  RF05   |  Avaliar hospedagem de tutor  | Os cuidadores após hospedar um pet, também avaliam o seu tutor de maneira geral podendo levar em consideração vários aspectos como por exemplo: pontualidade para deixar e retirar o pet, se o pet estava bem cuidado, etc. Essa avaliação também ajuda aos cuidadores a saber se aquele tutor é ou não um bom cliente. | Desejável  |
+
 
 ## 9. Requisitos não-funcionais
 
@@ -81,4 +80,4 @@ Uma plataforma que conecta pessoas com tempo, qualificação, um ambiente seguro
 | :----: | :-----------------: | :----------------------------------------------------------: | :---------: | :-----------: |
 |  NF01  | Segurança dos Dados |        Manter os dados pessoais dos usuários privados        |  Segurança  |   Essencial   |
 |  NF02  |   Responsividade    | O Sistema Web deve ser responsivo para o uso em diversos dispositivos | Usabilidade |   Desejável   |
-|  NF03  |    Funcionamento    | O Sistema deve suportar o uso de vários usuários ao mesmo tempo com qualidade e velocidade | Usabilidade |               |
+|  NF03  |    Funcionamento    | O Sistema deve suportar o uso de vários usuários ao mesmo tempo com qualidade e velocidade | Usabilidade |    Desejável   |
