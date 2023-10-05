@@ -1,15 +1,17 @@
 # Modelo de Domínio
 
-![Diagrama de Classes de Domínio](https://raw.githubusercontent.com/tads-cnat/nannys-pet/main/doc/dominio/diagramaClasses.png?token=GHSAT0AAAAAACH2ZM4XWBLGTHFJQ5VSVZMGZIK6GPQ)
+![Diagrama de Classes de Domínio](https://raw.githubusercontent.com/tads-cnat/nannys-pet/main/doc/dominio/DiagramaDeClasses-NP%20corrigido.png?token=GHSAT0AAAAAACHDLKZ7CS3ES5COMTQTUD4MZI6EISQ)
 </br></br>
 
 ## Glossário 
 
 |  Termo  |  Explicação  |
 | ------- | ------------ |
-| Usuario | Pessoa que já realizou cadastro no site e está logada |
-| Cuidador | Pessoa que já realizou cadastro no site, solicitou para ser cuidador e passou nos processos administrativos estando apta a receber Pets |
-| Administrador | Responsavél pela administração do sistema e por avaliar e aceitar e/ou recusar solicitações para se tornar "Cuidador" na plataforma. |
-| SolicitacaoCuidador | Processo administrativo pelo qual o usuário passa para se tornar ou não um cuidador na plataforma |
-| Hospedagem | A hospedagem do Pet efetivada dentro da plataforma Nanny's Pet. |
-| Pet | O animalzinho de estimação, cadastrado pelo usuário, que será hospedado com todo amor e carinho pelo Cuidador dentro da nossa plataforma |
+| Pessoa | Usuário que está acessando a plataforma e vai realizar o cadastro. |   
+| Tutor | Pessoa que deseja encontrar profissionais que possam cuidar do seu Pet por uma tempo. |   
+| Cuidador | Profissional que presta serviço de cuidar de pets. Pode ser pessoa física ou empresa. |   
+| Características | São todas as informações sobre o cuidador que o tutor vai poder selecionar quando for realizar a pesquisa. |   
+| Imagens | São as imagens do ambiente onde os Pets serão recebidos pelos cuidadores. |   
+| Avaliação Tutor | Avaliação realizada pelo tutor ao cuidador após hospedar seu(s) Pet(s) com um cuidador cadastrado na plataforma. |   
+| Avaliação Cuidador | Avaliação realizada pelo cuidador ao tutor após receber um (ou mais) Pet(s) de um tutor sob seus cuidados. |   
+
