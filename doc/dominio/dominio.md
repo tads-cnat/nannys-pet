@@ -1,6 +1,6 @@
 # Modelo de Domínio
 
-![Diagrama de Classes de Domínio](https://raw.githubusercontent.com/tads-cnat/nannys-pet/main/doc/dominio/DiagramaDeClasses-NP%20corrigido.png?token=GHSAT0AAAAAACHDLKZ7CS3ES5COMTQTUD4MZI6EISQ)
+![Diagrama de Classes de Domínio](DiagramaDeClasses-NPcorrigido.png)
 </br></br>
 
 ## Glossário 
