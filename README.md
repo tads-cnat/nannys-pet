@@ -29,7 +29,8 @@ Versão 1.0
 </br>
 
 # Horário de Reuniões:
-Presencialmente com o orientador às quartas-feiras no campus IFRN-Central. 
+Presencialmente com o orientador às quartas-feiras no campus IFRN-Central.  
+
 Reuniões on-line nas segunda-feira às 19h e em outro dia da semana que sempre é escolhido na reunião à depender das demandas.   
 </br>
 
@@ -45,14 +46,13 @@ Reuniões on-line nas segunda-feira às 19h e em outro dia da semana que sempre 
 
 # Documentação
 
-* [Documento de visão]()
-* [Mapa do Site]()
-* [Diagrama Entidade-Relacionamento]()
-* [Modelo de Domínio]()
-* [Modelo de casos de uso]()
-* [Diagrama de Sequência]()
-* [Diagrama de Interação]()
-* [Diagrama de Classe de Aplicação]()
-* [Dicionário de Dados]()
-* [Protótipos de interface com o usuário]()
+* [Documento de visão](doc/DocumentoDeVisao/doc-visao.md)
+* [Mapa do Site](doc/mapa-site/mapa-site.md)
+* [Diagrama Entidade-Relacionamento](doc/bd/DiagramaER/DiagramaER.md)
+* [Diagrama de Classe de Domínio](doc/DiagramaDeClassesDeDominio/dominio.md)
+* [Modelo de casos de uso](doc/cdu/cdu.md)
+* [Diagrama de Sequência](doc/DiagramaDeSequencia/DiadramaDeSequencia.md)
+* [Diagrama de Interação](doc/bd/DiagramaDeInteracao)
+* [Dicionário de Dados](doc/bd/DicionarioDeDados/DicionarioDeDados.md)
+* [Protótipos de interface com o usuário](doc/prototipos/prototipos.md)
 * [Guia do desenvolvedor](guia-receber-pets.md)
