@@ -1,4 +1,4 @@
-# Modelo de Domínio
+# Diagrama de Classe de Domínio
 
 ![Diagrama de Classes de Domínio](DiagramaDeClasses-NPcorrigido.png)
 </br></br>
