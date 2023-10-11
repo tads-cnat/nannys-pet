@@ -36,3 +36,28 @@ class AvaliacaoTutor(models.Model):
     nota = models.IntegerField()
     comentario = models.TextField()
     data_hora = models.DateTimeField()
+
+class Caracteristicas(models.Model):
+    estudante_de_veterinaria=models.BooleanField(default=False)
+    medico_veterinario=models.BooleanField(default=False)
+    capacidade_adestramento=models.BooleanField(default=False)
+    aceita_multiplos_pets=models.BooleanField(default=False)
+    cuidador_comum=models.BooleanField(default=False)
+    pet_ate_5kg=models.BooleanField(default=False)
+    pet_5kg_a_10kg=models.BooleanField(default=False)
+    pet_10kg_a_20kg=models.BooleanField(default=False)
+    pet_20kg_a_40kg=models.BooleanField(default=False)
+    so_pet_castrado=models.BooleanField(default=False)
+    pet_nao_castrado=models.BooleanField(default=False)
+    pet_femea=models.BooleanField(default=False)
+    pet_macho=models.BooleanField(default=False)
+    medicacao_oral=models.BooleanField(default=False)
+    medicacao_injetavel=models.BooleanField(default=False)
+
+class AvaliacaoCuidador(models.Model):
+    nota=models.IntegerField()
+    comentario=models.TextField()
+    data_hora=models.DateTimeField()
+
+class Imagens(models.Model):
+    fotos_local=models.ImageField()
