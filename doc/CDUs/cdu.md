@@ -2,7 +2,7 @@
 
 ## 1. Diagrama de Casos de Uso
 
-![DiagramaDeCduRevisado](DiagramaDeCasosDeUso.jpeg)
+![Diagrama de CDU](doc\DiagramaDeCDU\DiagramaDeCDU.png)
 
 ## 2. Listagem dos detalhamentos dos casos de uso
 
