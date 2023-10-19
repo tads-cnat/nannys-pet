@@ -46,13 +46,13 @@ Reuniões on-line nas segunda-feira às 19h e em outro dia da semana que sempre 
 
 # Documentação
 
-* [Documento de visão](doc/DocumentoDeVisao/doc-visao.md)
-* [Mapa do Site](doc/mapa-site/mapa-site.md)
-* [Diagrama Entidade-Relacionamento](doc/bd/DiagramaER/DiagramaER.md)
+* [Documento de visão](doc\DocumentoDeVisao\doc-visao.md)
+* [Mapa do Site](doc\Mapa-site\mapa-site.md)
+* [Diagrama Entidade-Relacionamento](doc\DiagramaER\DiagramaER.md)
 * [Diagrama de Classe de Domínio](doc/DiagramaDeClassesDeDominio/dominio.md)
-* [Modelo de casos de uso](doc/cdu/cdu.md)
-* [Diagrama de Sequência](doc/DiagramaDeSequencia/DiadramaDeSequencia.md)
-* [Diagrama de Interação](doc/bd/DiagramaDeInteracao)
-* [Dicionário de Dados](doc/bd/DicionarioDeDados/DicionarioDeDados.md)
-* [Protótipos de interface com o usuário](doc/prototipos/prototipos.md)
+* [Modelo de casos de uso](doc\CDUs\cdu.md)
+* [Diagrama de Sequência](doc\DiagramaDeSequencia\DiadramaDeSequencia.md)
+* [Diagrama de Interação](doc\DiagramaDeInteracao\DiagramaDeInteracao.md)
+* [Dicionário de Dados](doc\DicionarioDeDados\DicionarioDeDados.md)
+* [Protótipos de interface com o usuário](doc\DocumentoDeVisao\doc-visao.md)
 * [Guia do desenvolvedor](guia-receber-pets.md)
