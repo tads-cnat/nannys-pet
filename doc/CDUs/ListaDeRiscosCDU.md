@@ -10,8 +10,5 @@ Inclusão de novas tecnologias que não foram utilizadas no início do projeto.
 ## Dificuldade de alinhar horários para reuniões.
 Os membros da equipe possuem rotinas diferentes, dificultando encontrar um horário comum a todos.
 
-## Saída de membros da equipe.
-Mudança na equipe do projeto devido a alguns membros do semestre anterior terem saído.
-
 ## Conhecimento técnico:
 Os membros da equipe possuem diferentes níveis de grau de conhecimento em determinadas tecnologias.
