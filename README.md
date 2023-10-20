@@ -54,5 +54,5 @@ Reuniões on-line nas segunda-feira às 19h e em outro dia da semana que sempre 
 * [Diagrama de Sequência](doc\DiagramaDeSequencia\DiadramaDeSequencia.md)
 * [Diagrama de Interação](doc\DiagramaDeInteracao\DiagramaDeInteracao.md)
 * [Dicionário de Dados](doc\DicionarioDeDados\DicionarioDeDados.md)
-* [Protótipos de interface com o usuário](doc\DocumentoDeVisao\doc-visao.md)
+* [Protótipos de interface com o usuário](doc\Prototipos\prototipos.md)
 * [Guia do desenvolvedor](guia-receber-pets.md)
