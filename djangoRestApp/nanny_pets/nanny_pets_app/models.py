@@ -2,17 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-# class Snippet(models.Model):
-#     created = models.DateTimeField(auto_now_add=True)
-#     title = models.CharField(max_length=100, blank=True, default='')
-#     code = models.TextField()
-#     linenos = models.BooleanField(default=False)
-#     language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)
-#     style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)
-
-#     class Meta:
-#         ordering = ['created']
-
 class Pessoa(models.Model):
     nome = models.CharField(max_length=100)
     sobrenome = models.CharField(max_length=100)
@@ -29,13 +18,24 @@ class Cuidador(Pessoa):
     endereco = models.CharField(max_length=100)
     instagram = models.CharField(max_length=100)
 
+    class Meta:
+        verbose_name_plural = 'Cuidadores'
+
 class Tutor(Pessoa):
     teste = models.BooleanField(default=False)
+    
+    class Meta:
+        verbose_name_plural = 'Tutores'
 
 class AvaliacaoTutor(models.Model):
     nota = models.IntegerField()
     comentario = models.TextField()
     data_hora = models.DateTimeField()
+
+    tutor = models.ForeignKey(Cuidador, on_delete=models.CASCADE, related_name='tutor')
+    
+    class Meta:
+        verbose_name_plural = 'Avaliações do tutor'
 
 class Caracteristicas(models.Model):
     estudante_de_veterinaria=models.BooleanField(default=False)
@@ -54,10 +54,25 @@ class Caracteristicas(models.Model):
     medicacao_oral=models.BooleanField(default=False)
     medicacao_injetavel=models.BooleanField(default=False)
 
+    cuidador = models.ForeignKey(Cuidador, on_delete=models.CASCADE, related_name='caracteristicas')
+
+    class Meta:
+        verbose_name_plural = 'Características'
+
 class AvaliacaoCuidador(models.Model):
     nota=models.IntegerField()
     comentario=models.TextField()
     data_hora=models.DateTimeField()
 
-class Imagens(models.Model):
+    cuidador = models.ForeignKey(Cuidador, on_delete=models.CASCADE, related_name='avaliacaocuidador')
+
+    class Meta:
+        verbose_name_plural = 'Avaliações do cuidador'
+
+class ImagensAmbiente(models.Model):
     fotos_local=models.ImageField()
+
+    class Meta:
+        verbose_name_plural = 'Imagens do ambiente'
+
+    cuidador = models.ForeignKey(Cuidador, on_delete=models.CASCADE, related_name='imagensambiente')
