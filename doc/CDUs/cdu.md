@@ -2,7 +2,7 @@
 
 ## 1. Diagrama de Casos de Uso
 
-![DiagramaDeCduRevisado](DiagramaDeCasosDeUso.jpeg)
+![doc/DiagramaDeCDU/DiagramaDeCDU.png](https://github.com/tads-cnat/nannys-pet/blob/organizando/doc/DiagramaDeCDU/DiagramaDeCDU.png?raw=true)
 
 ## 2. Listagem dos detalhamentos dos casos de uso
 
