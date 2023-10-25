@@ -1,18 +1,39 @@
 # Protótipos de Interface com o Usuário
 
-As telas estão disponiveis em PDF no GitHub do projeto na pasta receber-pets/doc/prototipos.   
+As telas estão disponiveis em PNG no GitHub do projeto na pasta nannys-pets/doc/prototipos.   
 
-O links para os arquivos no FIGMA das respectivas páginas são os seguintes:
+O link para os arquivos no FIGMA das respectivas páginas são os seguintes:
 
+* Página inicial - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=709-4&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
 
-* Login - [Abrir no FIGMA](https://www.figma.com/file/nsenwfWDldwBCP6ZZUXXKH/Hospedagem-de-Pets---PDS?type=design&node-id=61-6&t=FxjaO56hj8ddWd1G-0) 
+* Login - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=716-126&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
 
-* Cadastro - [Abrir no FIGMA](https://www.figma.com/file/nsenwfWDldwBCP6ZZUXXKH/Hospedagem-de-Pets---PDS?type=design&node-id=63-2426&t=rdmwWpJlcfh1uQFw-0) 
+* Cadastro tutor - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=713-14&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
 
-* Dashboard - [Abrir no FIGMA](https://www.figma.com/file/nsenwfWDldwBCP6ZZUXXKH/Hospedagem-de-Pets---PDS?type=design&node-id=482-11&t=E4cbb2FOOGD2SqMj-0) 
+* Gerenciar perfil - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=908-1024&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
 
-* Agendamento de hospedagem - [Abrir no FIGMA](https://www.figma.com/file/nsenwfWDldwBCP6ZZUXXKH/Hospedagem-de-Pets---PDS?type=design&node-id=49-110&t=NLccCkKAZljj7LKA-0) 
+* Cadastro cuidador pt 1 - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=906-355&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
 
-* Termo de ética -[Abrir no FIGMA](https://www.figma.com/file/nsenwfWDldwBCP6ZZUXXKH/Hospedagem-de-Pets---PDS?type=design&node-id=56-194&t=SyjhH16oIaRF8SCi-0) 
+* Cadastro cuidador pt 2 - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=726-289&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
 
-* Hospedagem Realizada - [Abrir no FIGMA](https://www.figma.com/file/nsenwfWDldwBCP6ZZUXXKH/Hospedagem-de-Pets---PDS?type=design&node-id=58-549&t=M5VWrBhgALBsQyag-0) 
+* Cadastro cuidador pt 3 - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=726-335&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* Cadastro cuidador pt 4 - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=726-261&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* Buscar cuidador - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=726-409&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* Listar cuidador - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=730-6&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* Avaliar cuidador - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=730-165&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* Avaliar tutor - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=730-232&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* Pesquisa visitante 1 - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=713-89&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* Pesquisa visitante 2 - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=907-565&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* Pesquisa logado (PL) 1 - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=907-768&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* PL 2 - Ambiente do cuidador - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=734-18&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
+
+* PL 3 - Avaliações do cuidador - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=907-933&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202)
