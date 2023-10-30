@@ -1,31 +1,54 @@
 .App {
   text-align: center;
-  background-color: 248,249,250;
+  background-color: #E9ECEF;
+  height: 100px;
 }
 
-h1{
-  text-align: left;
-}
 
 .botao{
-    border: solid 1px white;
+    width: 180px;
+    height: 30px;
     border-radius: 20px;
-    color: 210,101,127;
     background-color: 233, 236, 239;
     position: center;
+    color: #6C757D;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 1366px;
+    float: center;
+    background-color: white;
 }
 
 .botao:hover{
-    background-color: #D2657F;
-    color: white;
-    transform: scale(1.2)
+  background-color: #D2657F;
+  color: white;
+  transform: scale(1.0);
 }
+
+.mostrar{
+    background-color: #D2657F;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    border-color: #D2657F;
+
+}
+
+
 #txtBusca{
-    border: solid 1px white;
-    border-radius: 20px;
-    color: 210,101,127;
-    background-color: 233, 236, 239;
-    text-align: center;    
+  width: 400px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #E9ECEF;  
 }
 
 
