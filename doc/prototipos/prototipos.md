@@ -1,8 +1,8 @@
 # Protótipos de Interface com o Usuário
 
-As telas estão disponiveis em PNG no GitHub do projeto na pasta nannys-pets/doc/prototipos.   
+Todas as telas estão disponíveis em PNG no diretório nannys-pets/doc/prototiposno no GitHub do projeto .   
 
-O link para os arquivos no FIGMA das respectivas páginas são os seguintes:
+## O link para os arquivos no FIGMA das respectivas páginas são os seguintes:
 
 * Página inicial - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=709-4&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
 
@@ -37,3 +37,7 @@ O link para os arquivos no FIGMA das respectivas páginas são os seguintes:
 * PL 2 - Ambiente do cuidador - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=734-18&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202) 
 
 * PL 3 - Avaliações do cuidador - [Abrir no FIGMA](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=907-933&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202)
+
+## Apresentação com todas as telas
+[Abrir no Figma](https://www.figma.com/proto/crk2qqfr9qnsR2ORHasiqU/Nanny-Pets?type=design&node-id=709-4&t=KHhsfOcnN90pvbZY-0&scaling=contain&page-id=1669%3A162202)   
+Basta clicar na seta para o lado, para ir vendo a tela seguinte.
