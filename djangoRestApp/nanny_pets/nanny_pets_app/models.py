@@ -13,6 +13,16 @@ class Pessoa(models.Model):
     class Meta:
         abstract = True
 
+class Tutor(Pessoa):
+    plataformaIndicação = models.CharField(max_length=100)
+    
+    class Meta:
+        verbose_name_plural = 'Tutores'
+
+    def __str__(self):
+        return self.nome
+
+
 class Cuidador(Pessoa):
     telefone = models.IntegerField()
     endereco = models.CharField(max_length=100)
@@ -21,18 +31,16 @@ class Cuidador(Pessoa):
     class Meta:
         verbose_name_plural = 'Cuidadores'
 
-class Tutor(Pessoa):
-    teste = models.BooleanField(default=False)
-    
-    class Meta:
-        verbose_name_plural = 'Tutores'
+    def __str__(self):
+        return f'{self.nome} {self.sobrenome}'
+
 
 class AvaliacaoTutor(models.Model):
     nota = models.IntegerField()
     comentario = models.TextField()
     data_hora = models.DateTimeField()
 
-    tutor = models.ForeignKey(Cuidador, on_delete=models.CASCADE, related_name='tutor')
+    tutor = models.ForeignKey(Tutor, on_delete=models.CASCADE, related_name='tutor')
     
     class Meta:
         verbose_name_plural = 'Avaliações do tutor'
@@ -58,6 +66,11 @@ class Caracteristicas(models.Model):
 
     class Meta:
         verbose_name_plural = 'Características'
+
+    def __str__(self):
+        return f'Características do cuidador: {self.cuidador.nome}'
+
+
 
 class AvaliacaoCuidador(models.Model):
     nota=models.IntegerField()
