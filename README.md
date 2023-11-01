@@ -47,10 +47,10 @@ Reuniões on-line nas segunda-feira às 19h e em outro dia da semana que sempre 
 # Documentação
 
 * [Documento de visão](doc/DocumentoDeVisao/doc-visao.md)
-* [Mapa do Site](doc/mapa-site/mapa-site.md)
 * [Diagrama Entidade-Relacionamento](doc/DiagramaER/DiagramaER.md)
 * [Diagrama de Classe de Domínio](doc/DiagramaDeClassesDeDominio/dominio.md)
 * [Modelo de casos de uso](doc/CDUs/cdu.md)
+* [Visão Arquitetural](doc/VisaoArquitetural/VisaoArquitetural.md)
 * [Diagrama de Sequência](doc/DiagramaDeSequencia/DiadramaDeSequencia.md)
 * [Diagrama de Interação](doc/DiagramaDeInteracao/DiagramaDeInteracao.md)
 * [Dicionário de Dados](doc/DicionarioDeDados/DicionarioDeDados.md)
