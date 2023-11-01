@@ -4,12 +4,19 @@ import styles from "./ListaCuidadores.module.css"
 function ListaCuidadores(){
   return(
     <section className={styles.listacuidadores}>
-      <h2>Exibindo Resultados</h2>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h2>Exibindo Resultados</h2><br/>
+      <br />
+      <br/>
       <section className={styles.lista}>
+        <div>
         <Card />
         <Card />
-        <Card />
-        <Card />  
+        <Card /> 
+        </div> 
       </section>
     </section>    
   )

@@ -1,7 +1,7 @@
 function HelloWorld(){
     return(
         <footer>
-            <a href="URL"><button class="mostrar">Mostrar Resultados</button></a>
+            <a href=""><button class="mostrar">Mostrar Resultados</button></a>
         </footer>
     )
 }

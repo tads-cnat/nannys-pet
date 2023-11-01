@@ -4,6 +4,21 @@
   height: 100px;
 }
 
+.app footer {
+  flex-direction: column;
+  align-items: center;
+
+}
+.Menu{
+  position: top;
+  
+}
+
+.PaginaLista{
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .botao{
     width: 180px;

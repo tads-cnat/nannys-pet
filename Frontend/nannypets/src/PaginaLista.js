@@ -5,11 +5,16 @@ import ListaCuidadores from './components/ListaCuidadores';
 function PaginaLista() {
   
     return (
-      <><div className="paginalista">
+      <div className="paginalista">
+          <header>
             <Menu />
-        </div><div className="listacuidador">
-                <ListaCuidadores />
-            </div></>
+          </header>
+          <body>
+            <ListaCuidadores />
+          </body>
+      </div>
+          
+        
     );
   }
   
