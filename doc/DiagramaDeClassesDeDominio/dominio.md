@@ -1,6 +1,6 @@
 # Diagrama de Classe de Domínio
 
-![Diagrama de Classes de Domínio](DiagramaDeClasses-NPcorrigido.png)
+![Diagrama de Classes de Domínio](DiagramaDeClasses-NP.png)
 </br></br>
 
 ## Glossário 
@@ -12,6 +12,5 @@
 | Cuidador | Profissional que presta serviço de cuidar de pets. Pode ser pessoa física ou empresa. |   
 | Características | São todas as informações sobre o cuidador que o tutor vai poder selecionar quando for realizar a pesquisa. |   
 | Imagens | São as imagens do ambiente onde os Pets serão recebidos pelos cuidadores. |   
-| Avaliação Tutor | Avaliação realizada pelo tutor ao cuidador após hospedar seu(s) Pet(s) com um cuidador cadastrado na plataforma. |   
 | Avaliação Cuidador | Avaliação realizada pelo cuidador ao tutor após receber um (ou mais) Pet(s) de um tutor sob seus cuidados. |   
-
+| Espécie | Espécie do pet que o cuidador aceita receber em sua residência sob seus cuidados. |
