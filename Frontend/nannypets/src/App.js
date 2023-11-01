@@ -7,12 +7,14 @@ import Card from './components/Card'
 import ListaCuidadores from './components/ListaCuidadores';
 
 function App() {
+  
   return (
     <div className="App">
       <Menu />
       <Filtro />
       <HelloWorld /> 
-      <ListaCuidadores />  	
+      <Card />
+      <ListaCuidadores />	
     </div>
     
   
