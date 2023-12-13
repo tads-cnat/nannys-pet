@@ -1,0 +1,26 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inter-font {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    left: 40%;
+    top: 390px;
+}
+
+button{
+    position: absolute;
+    top: 510px;
+    right: 14%;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #D2657F;
+    position: center;
+    color: white;
+}
+
+
