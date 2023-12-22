@@ -6,7 +6,7 @@
     
 }
 
-.formulario{
+form{
     flex:2;
     padding: 20px;
     position: absolute;
@@ -14,7 +14,7 @@
     left: 50%;
     right: 80px;
 }
-.form-row {
+.form-group {
     display: flex;
     flex-wrap: wrap; /* Permite que os elementos se movam para a próxima linha se necessário */
     gap: 10px; /* Adiciona espaço entre os grupos de entrada */

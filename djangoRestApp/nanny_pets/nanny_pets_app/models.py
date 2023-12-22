@@ -5,16 +5,16 @@ from django.db import models
 class Pessoa(models.Model):
     nome = models.CharField(max_length=100)
     sobrenome = models.CharField(max_length=100)
-    data_nascimento = models.DateField()
+    data_nascimento = models.DateField(null=True, blank=True)
     cpf = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
-    foto_perfil = models.ImageField()
+    foto_perfil = models.ImageField(blank=True, null=True)
 
     class Meta:
         abstract = True
 
 class Tutor(Pessoa):
-    plataformaIndicação = models.CharField(max_length=100)
+    plataformaIndicação = models.CharField(max_length=100,blank=True, null=True)
     
     class Meta:
         verbose_name_plural = 'Tutores'

@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+DATE_FORMAT = 'd/m/Y'
 
 # Application definition
 
@@ -41,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
+
 ]
 
 MIDDLEWARE = [
@@ -51,7 +54,16 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.locale.LocaleMiddleware'
 ]
+
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:4200",
+    # Adicione outros domínios permitidos conforme necessário
+]
+
 
 ROOT_URLCONF = 'tutorial.urls'
 

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Animal } from '../../Animal';
 import { ListService } from '../../services/list.service';
 
 @Component({
@@ -8,8 +7,8 @@ import { ListService } from '../../services/list.service';
   styleUrl: './list-render.component.css'
 })
 export class ListRenderComponent {
-  animals : Animal[]= [];
-
+  
+/*
   animalDetails = ''
 
   constructor( private listservice: ListService) {
@@ -29,5 +28,5 @@ export class ListRenderComponent {
   getAnimals(): void{
     this.listservice.getAll().subscribe((animals) => (this.animals =animals));
   }
-
+*/
 }

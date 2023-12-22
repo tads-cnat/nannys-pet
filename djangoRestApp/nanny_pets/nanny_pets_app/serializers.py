@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Cuidador, Caracteristicas
+from .models import Cuidador, Caracteristicas, Tutor
 
 class CaracteristicasSerializer(serializers.ModelSerializer):
 
@@ -43,3 +43,14 @@ class CuidadorSerializer(serializers.ModelSerializer):
             'instagram',
             'caracteristicas'
         )
+class TutorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tutor
+        fields = (
+            'nome',
+            'sobrenome',
+            'data_nascimento',
+            'cpf',
+            'email'
+        )
+
