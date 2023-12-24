@@ -19,6 +19,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { HomeComponent } from './components/home/home.component';
 import { CadastroTutor1Component } from './components/cadastro-tutor1/cadastro-tutor1.component';
 import { CadastroFotoComponent } from './components/cadastro-foto/cadastro-foto.component';
+import { ListarcuidadorComponent } from './components/listarcuidador/listarcuidador.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CadastroFotoComponent } from './components/cadastro-foto/cadastro-foto.
     TwoWayBindingComponent,
     HomeComponent,
     CadastroTutor1Component,
-    CadastroFotoComponent
+    CadastroFotoComponent,
+    ListarcuidadorComponent
   ],
   imports: [
     BrowserModule,

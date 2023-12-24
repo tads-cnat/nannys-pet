@@ -1,0 +1,17 @@
+
+<ul *ngFor="let cuidador of cuidadors">
+    <li><section class="card">
+        <img src="assets/img/perfil.png" alt="imagem" style="width: 50px; " />
+        <h3>{{cuidador.nome + cuidador.sobrenome }}</h3>        <h3> {{cuidador.endereco}}</h3>
+        <a href="{{ whatsapp + cuidador.telefone }}"> Enviar mensagem</a>  
+    </section>
+    </li>
+</ul>
+<!--
+<div class="lista">
+    <ul>
+        <li *ngFor="let cuidador of cuidadors">
+            {{cuidador.nome}} - {{cuidador.endereco}}
+        </li>
+    </ul>
+</div> --> 

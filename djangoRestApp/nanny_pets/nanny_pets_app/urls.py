@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import CaracteristicasAPIView, CuidadorAPIView, TutorCreateView, TutorAPIView
+from .views import CaracteristicasAPIView, CuidadorAPIView, TutorAPIView
 
 urlpatterns = [
     path('cuidadores/', CuidadorAPIView.as_view(), name='cuidadores'),
