@@ -16,9 +16,14 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
-import { HomeComponent } from './components/home/home.component';
-import { CadastroTutor1Component } from './components/cadastro-tutor1/cadastro-tutor1.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CadastroTutor1Component } from './pages/cadastro-tutor1/cadastro-tutor1.component';
 import { CadastroFotoComponent } from './components/cadastro-foto/cadastro-foto.component';
+import { ListarCuidadoresComponent } from './pages/listar-cuidadores/listar-cuidadores.component';
+import { ListarcuidadorComponent } from './pages/listarcuidador/listarcuidador.component';
+import { CardCuidadoresComponent } from './components/card-cuidadores/card-cuidadores.component';
+import { BuscarCuidadorComponent } from './pages/buscar-cuidador/buscar-cuidador.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import { CadastroFotoComponent } from './components/cadastro-foto/cadastro-foto.
     TwoWayBindingComponent,
     HomeComponent,
     CadastroTutor1Component,
-    CadastroFotoComponent
+    CadastroFotoComponent,
+    ListarCuidadoresComponent,
+    ListarcuidadorComponent,
+    CardCuidadoresComponent,
+    BuscarCuidadorComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -25,6 +25,7 @@ class CaracteristicasSerializer(serializers.ModelSerializer):
             'medicacao_injetavel'
         )
 
+
 class CuidadorSerializer(serializers.ModelSerializer):
 
     caracteristicas = CaracteristicasSerializer(many=True)
@@ -42,11 +43,13 @@ class CuidadorSerializer(serializers.ModelSerializer):
             'endereco',
             'instagram',
             'caracteristicas'
+            
         )
 class TutorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tutor
         fields = (
+            'id',
             'nome',
             'sobrenome',
             'data_nascimento',
