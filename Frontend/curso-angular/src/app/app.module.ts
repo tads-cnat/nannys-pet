@@ -19,11 +19,15 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { HomeComponent } from './pages/home/home.component';
 import { CadastroTutor1Component } from './pages/cadastro-tutor1/cadastro-tutor1.component';
 import { CadastroFotoComponent } from './components/cadastro-foto/cadastro-foto.component';
+<<<<<<< HEAD
 import { ListarCuidadoresComponent } from './pages/listar-cuidadores/listar-cuidadores.component';
 import { ListarcuidadorComponent } from './pages/listarcuidador/listarcuidador.component';
 import { CardCuidadoresComponent } from './components/card-cuidadores/card-cuidadores.component';
 import { BuscarCuidadorComponent } from './pages/buscar-cuidador/buscar-cuidador.component';
 
+=======
+import { ListarcuidadorComponent } from './components/listarcuidador/listarcuidador.component';
+>>>>>>> 9fc74eeffb0b0f50649d41943c2720a3f24d7d30
 
 @NgModule({
   declarations: [
@@ -41,11 +45,15 @@ import { BuscarCuidadorComponent } from './pages/buscar-cuidador/buscar-cuidador
     HomeComponent,
     CadastroTutor1Component,
     CadastroFotoComponent,
+<<<<<<< HEAD
     ListarCuidadoresComponent,
     ListarcuidadorComponent,
     CardCuidadoresComponent,
     BuscarCuidadorComponent,
     
+=======
+    ListarcuidadorComponent
+>>>>>>> 9fc74eeffb0b0f50649d41943c2720a3f24d7d30
   ],
   imports: [
     BrowserModule,

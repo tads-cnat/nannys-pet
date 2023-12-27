@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Cuidador } from '../Cuidador';
 import { Observable } from 'rxjs';
+<<<<<<< HEAD
 import { HttpClient,HttpParams } from '@angular/common/http';
 import { Caracteristicas } from '../Caracteristicas';
+=======
+import { HttpClient } from '@angular/common/http';
+>>>>>>> 9fc74eeffb0b0f50649d41943c2720a3f24d7d30
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +21,7 @@ export class CuidadorService {
     return this.http.get<Cuidador[]>(this.url + 'cuidadores/');
   }
 
+<<<<<<< HEAD
   getCaracteristicasDoCuidador(cuidadorId: number): Observable<Caracteristicas> {
     const url = `${this.url}${cuidadorId}/caracteristicas`;
     return this.http.get<Caracteristicas>(url);
@@ -39,3 +44,7 @@ export class CuidadorService {
 }
 
 
+=======
+
+}
+>>>>>>> 9fc74eeffb0b0f50649d41943c2720a3f24d7d30
