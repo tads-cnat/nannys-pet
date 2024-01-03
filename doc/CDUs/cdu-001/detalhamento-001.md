@@ -1,16 +1,17 @@
 # **Projeto “Nanny's Pets”**
 ## **Especificação de Caso de Uso**   
-### **Realizar cadastro de usuário no site**   
+### **Realizar cadastro de tutor no site**   
 
 **Histórico da Revisão**
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | --- | --- | --- | --- |
 | 09/05/2023 | 1.0 | Realizar cadastro de usuário no site | Anna Carolinne |
 | 30/05/2023 | 1.1 | Revisão dos detalhamentos para simplificar | Anna Carolinne |
+| 02/01/2024 | 2.0 | Revisão dos detalhamentos para simplificar | Virginia Menezes |
 </br>
 
 ### **1 Resumo**
-O usuário que deseja utilizar o site seja para hospedar seu pet, ou, para se tornar um possível hospedante de pets, precisa realizar o cadastro no sistema do site “Nanny's Pets”. </br></br>
+O usuário que deseja utilizar o site seja para hospedar seu pet, ou, para se tornar um possível hospedante de pets, precisa realizar o cadastro como tutor no sistema do site “Nanny's Pets”. </br></br>
 
 ### **2 Atores**
 2.1 Usuário. </br></br>
@@ -30,7 +31,9 @@ O usuário agora está cadastrado na plataforma.</br></br>
 |   | Carregar página inicial da plataforma Nanny’s Pet | 
 | 2. Clicar em cadastro |  | 
 |   | Carrega página de cadastro | 
-| 3. Preencher e clicar em cadastrar |  | 
+| 3. Clicar em tutor|  | 
+|   | Carrega página de cadastro | 
+| 4. Preencher e clicar em cadastrar |  | 
 |   | Salva o cadastro do usuário | 
 </br>
 
