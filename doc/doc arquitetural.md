@@ -47,7 +47,9 @@ Este documento apresenta uma visão arquitetural abrangente do sistema Nanny’s
 
 #### 1.5.1 Diagrama de Casos de Uso
 
-[Descrição dos casos de uso principais.]
+ - Um usuário realiza seu cadastro na plataforma, como tutor ou como cuidador.
+ - O tutor faz uma busca por um cuidador que preencha os requisitos desejados.
+
 
 #### 1.5.2 Diagrama de Contexto
 
