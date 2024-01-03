@@ -26,7 +26,8 @@
             id="cep" 
             placeholder="Digite o CEP da sua região" 
             name="cep"
-            [(ngModel)]="cuidador.cep" >
+            (blur)="blur($event)"
+            [(ngModel)]="cep" >
         </div>
         <div class="box-half">
             <div class="form-group">
@@ -35,7 +36,7 @@
                 class="form-control" 
                 id="estado" 
                 name="estado" 
-                [(ngModel)]="cuidador.estado"  >
+                [(ngModel)]="uf"  >
             </div>
             <div class="form-group">
                 <label for="cidade">Cidade</label>
@@ -43,7 +44,7 @@
                 class="form-control" 
                 id="cidade" 
                 name="cidade" 
-                [(ngModel)]="cuidador.cidade"  >
+                [(ngModel)]="localidade"  >
             </div>
         </div>
            
@@ -55,7 +56,7 @@
               id="rua" 
               placeholder="Digite o nome da sua rua" 
               name="rua" 
-              [(ngModel)]="cuidador.rua" >
+              [(ngModel)]="logradouro" >
             </div>
             <div class="form-group">
                 <label for="numero">N° Casa</label>

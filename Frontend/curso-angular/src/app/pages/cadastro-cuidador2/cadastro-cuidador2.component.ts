@@ -65,6 +65,23 @@ export class CadastroCuidador2Component {
     this.router.navigate(['/cadastro-cuidador-3']);
   }
   
+  blur(event: any) {
+    this.buscaCEP();
+
+    console.log(this.buscaCEP);
+  }
+  buscaCEP() {
+    this.service.getCEP(this.cep).subscribe((data) => {
+        this.cep = data.cep;
+        this.logradouro = data.logradouro;
+        this.localidade = data.localidade;
+        this.uf = data.uf;
+
+        
+    });
+  }
+  
+
   
   
 }

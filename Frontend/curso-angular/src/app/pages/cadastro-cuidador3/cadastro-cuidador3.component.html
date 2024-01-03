@@ -1,110 +1,36 @@
 <div class="container">
     <div class="box-form">
         <form #f="ngForm">    
-            <div class="form-group">
-                <label for="estudante_de_veterinaria">Estudante de Veterinária:</label>
-                <button type="button" id="estudante_de_veterinaria" (click)="toggleEstudanteVeterinaria()" [ngClass]="{'active': cuidador.caracteristicas.estudante_de_veterinaria}">
-                    {{ cuidador.caracteristicas.estudante_de_veterinaria ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
+            <button type="button" [ngClass]="{'selecionado': capacidadeAdestramento}" (click)="toggleCapacidadeAdestramento()">Capacidade de Adestramento</button>
+            
+                <button type="button" [ngClass]="{'selecionado': estudanteVeterinaria}" (click)="toggleEstudanteVeterinaria()">Estudante de Veterinária</button>
+            
+                <button type="button" [ngClass]="{'selecionado': medicoVeterinaria}" (click)="toggleMedicoVeterinario()">Médico Veterinário</button>
+                        
+                <button type="button" [ngClass]="{'selecionado': aceitaMultiplosPets}" (click)="toggleAceitaMultiplosPets()">Aceita Múltiplos Pets</button>
+            
+                <button type="button" [ngClass]="{'selecionado': cuidadorComum}" (click)="toggleCuidadorComum()">Cuidador Comum</button>
+            
+                <button type="button" [ngClass]="{'selecionado': petAte5kg}" (click)="togglePetAte5kg()">Pet até 5kg</button>
+            
+                <button type="button" [ngClass]="{'selecionado': pet5kgA10kg}" (click)="togglePet5kgA10kg()">Pet de 5kg a 10kg</button>
 
-            <div class="form-group">
-                <label for="medico_veterinario">Médico Veterinário:</label>
-                <button type="button" id="medico_veterinario" (click)="toggleMedicoVeterinario()" [ngClass]="{'active': cuidador.caracteristicas.medico_veterinario}">
-                    {{ cuidador.caracteristicas.medico_veterinario ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="capacidade_adestramento">Capacidade de Adestramento:</label>
-                <button type="button" id="capacidade_adestramento" (click)="toggleCapacidadeAdestramento()" [ngClass]="{'active': cuidador.caracteristicas.capacidade_adestramento}">
-                    {{ cuidador.caracteristicas.capacidade_adestramento ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="aceita_multiplos_pets">Aceita Múltiplos Pets:</label>
-                <button type="button" id="aceita_multiplos_pets" (click)="toggleAceitaMultiplosPets()" [ngClass]="{'active': cuidador.caracteristicas.aceita_multiplos_pets}">
-                    {{ cuidador.caracteristicas.aceita_multiplos_pets ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="cuidador_comum">Cuidador Comum:</label>
-                <button type="button" id="cuidador_comum" (click)="toggleCuidadorComum()" [ngClass]="{'active': cuidador.caracteristicas.cuidador_comum}">
-                    {{ cuidador.caracteristicas.cuidador_comum ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="pet_ate_5kg">Pet até 5kg:</label>
-                <button type="button" id="pet_ate_5kg" (click)="togglePetAte5kg()" [ngClass]="{'active': cuidador.caracteristicas.pet_ate_5kg}">
-                    {{ cuidador.caracteristicas.pet_ate_5kg ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="pet_5kg_a_10kg">Pet de 5kg a 10kg:</label>
-                <button type="button" id="pet_5kg_a_10kg" (click)="togglePet5kgA10kg()" [ngClass]="{'active': cuidador.caracteristicas.pet_5kg_a_10kg}">
-                    {{ cuidador.caracteristicas.pet_5kg_a_10kg ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="pet_10kg_a_20kg">Pet de 10kg a 20kg:</label>
-                <button type="button" id="pet_10kg_a_20kg" (click)="togglePet10kgA20kg()" [ngClass]="{'active': cuidador.caracteristicas.pet_10kg_a_20kg}">
-                    {{ cuidador.caracteristicas.pet_10kg_a_20kg ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="pet_20kg_a_40kg">Pet de 20kg a 40kg:</label>
-                <button type="button" id="pet_20kg_a_40kg" (click)="togglePet20kgA40kg()" [ngClass]="{'active': cuidador.caracteristicas.pet_20kg_a_40kg}">
-                    {{ cuidador.caracteristicas.pet_20kg_a_40kg ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="so_pet_castrado">Só Pet Castrado:</label>
-                <button type="button" id="so_pet_castrado" (click)="toggleSoPetCastrado()" [ngClass]="{'active': cuidador.caracteristicas.so_pet_castrado}">
-                    {{ cuidador.caracteristicas.so_pet_castrado ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="pet_nao_castrado">Pet Não Castrado:</label>
-                <button type="button" id="pet_nao_castrado" (click)="togglePetNaoCastrado()" [ngClass]="{'active': cuidador.caracteristicas.pet_nao_castrado}">
-                    {{ cuidador.caracteristicas.pet_nao_castrado ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="pet_femea">Pet Fêmea:</label>
-                <button type="button" id="pet_femea" (click)="togglePetFemea()" [ngClass]="{'active': cuidador.caracteristicas.pet_femea}">
-                    {{ cuidador.caracteristicas.pet_femea ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="pet_macho">Pet Macho:</label>
-                <button type="button" id="pet_macho" (click)="togglePetMacho()" [ngClass]="{'active': cuidador.caracteristicas.pet_macho}">
-                    {{ cuidador.caracteristicas.pet_macho ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="medicacao_oral">Medicação Oral:</label>
-                <button type="button" id="medicacao_oral" (click)="toggleMedicacaoOral()" [ngClass]="{'active': cuidador.caracteristicas.medicacao_oral}">
-                    {{ cuidador.caracteristicas.medicacao_oral ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
-
-            <div class="form-group">
-                <label for="medicacao_injetavel">Medicação Injetável:</label>
-                <button type="button" id="medicacao_injetavel" (click)="toggleMedicacaoInjetavel()" [ngClass]="{'active': cuidador.caracteristicas.medicacao_injetavel}">
-                    {{ cuidador.caracteristicas.medicacao_injetavel ? 'Ativo' : 'Inativo' }}
-                </button>
-            </div>
+                <button type="button" [ngClass]="{'selecionado': pet10kgA20kg}" (click)="togglePet10kgA20kg()">Pet de 10kg a 20kg</button>
+                        
+                <button type="button" [ngClass]="{'selecionado': pet20kgA40kg}" (click)="togglePet20kgA40kg()">Pet de 20kg a 40kg</button>
+            
+                <button type="button" [ngClass]="{'selecionado': soPetCastrado}" (click)="toggleSoPetCastrado()">Somente Pet Castrado</button>
+            
+                <button type="button" [ngClass]="{'selecionado': petNaoCastrado}" (click)="togglePetNaoCastrado()">Pet Não Castrado</button>
+            
+                <button type="button" [ngClass]="{'selecionado': petFemea}" (click)="togglePetFemea()">Pet Fêmea</button>
+            
+                <button type="button" class="central" [ngClass]="{'selecionado': petMacho}" (click)="togglePetMacho()">Pet Macho</button>
+            
+                <button type="button" class="central" [ngClass]="{'selecionado': medicacaoOral}" (click)="toggleMedicacaoOral()">Medicação Oral</button>
+            
+                <button type="button" class="central" [ngClass]="{'selecionado': medicacaoInjetavel}" (click)="toggleMedicacaoInjetavel()">Medicação Injetável</button>
+            
 
                 
                 <div class="box-btn">

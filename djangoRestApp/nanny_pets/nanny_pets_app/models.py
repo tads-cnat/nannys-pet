@@ -25,7 +25,11 @@ class Tutor(Pessoa):
 
 class Cuidador(Pessoa):
     telefone = models.IntegerField()
-    endereco = models.CharField(max_length=100)
+    cep = models.CharField(max_length = 8,null = True)
+    estado = models.CharField(max_length = 100, null = True)
+    cidade = models.CharField(max_length = 100, null = True)
+    numero = models.IntegerField(default = 0)
+    rua = models.CharField(max_length = 100)
     instagram = models.CharField(max_length=100)
 
     class Meta:

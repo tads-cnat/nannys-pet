@@ -40,7 +40,11 @@ class CuidadorSerializer(serializers.ModelSerializer):
             'cpf',
             'email',
             'telefone',
-            'endereco',
+            'rua',
+            'cep',
+            'estado',
+            'cidade',
+            'numero',
             'instagram',
             'caracteristicas'
             

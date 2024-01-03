@@ -34,6 +34,7 @@ DATE_FORMAT = 'd/m/Y'
 
 INSTALLED_APPS = [
     'rest_framework',
+    
     'nanny_pets_app',
     'django_filters',
     'django.contrib.admin',
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'drf_yasg',
 
 ]
 
