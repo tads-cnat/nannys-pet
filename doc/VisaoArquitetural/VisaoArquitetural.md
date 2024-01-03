@@ -7,11 +7,11 @@ Aqui serão apresentados resumidamente os diagramas de Contexto, Containers, Com
 <br>
 
 ## Diagrama de Container
-![Diagrama de Container](https://github.com/tads-cnat/nannys-pet/blob/main/doc/DiagramaDeContainer.md/Diagrama-container.png?raw=true)   
+![Diagrama de Container](https://github.com/tads-cnat/nannys-pet/blob/main/doc/DiagramaDeContainer.md/DiagramaDeContainer.png?raw=true)   
 <br>
 
 ## Diagrama de Componente
-![Diagrama de Componente](https://github.com/tads-cnat/nannys-pet/blob/main/doc/DiagramaDeComponentes/ComponentDiagram.png?raw=true)   
+![Diagrama de Componente](https://github.com/tads-cnat/nannys-pet/blob/main/doc/DiagramaDeComponentes/DiagramaDeComponente.png?raw=true)   
 <br>
 
 ## Diagrama de Aspectos Dinâmicos   
