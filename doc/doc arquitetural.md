@@ -53,7 +53,11 @@ Este documento apresenta uma visão arquitetural abrangente do sistema Nanny’s
 
 #### 1.5.2 Diagrama de Contexto
 
-[Descrição da interação do sistema com atores e sistemas externos.]
+-	O tutor se cadastra na plataforma e busca por um cuidador que atenda suas necessidades.
+-	O cuidador após se cadastrar na plataforma é quem será procurado pelo tutor, para hospedar pets sob condições pré acordadas.
+-	 A plataforma conecta tutores e cuidadores.
+- A plataforma acessa a api dos correios ViaCep para localizar o endereço cadastrado através do CEP.
+
 
 #### 1.5.3 Diagrama de Containers
 
