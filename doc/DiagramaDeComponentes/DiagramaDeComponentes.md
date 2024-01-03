@@ -1,3 +1,3 @@
 # Diagrama de Componentes
 
-![Diagrama de Componentes](ComponentDiagram.png)
+![Diagrama de Componentes](DiagramaDeComponente.png)
