@@ -14,5 +14,4 @@ export interface Caracteristicas{
     pet_macho: boolean;
     medicacao_oral: boolean;
     medicacao_injetavel: boolean;
-    [key: string]: boolean;
 }

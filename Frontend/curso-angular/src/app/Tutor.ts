@@ -3,4 +3,5 @@ export interface Tutor{
     sobrenome: string;
     cpf: string;
     email: string;
+    data_nascimento: Date;
 }

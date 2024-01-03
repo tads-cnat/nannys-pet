@@ -1,3 +1,4 @@
+
 .card{
     width: 800px;
     height: 100px;
@@ -15,4 +16,20 @@
 .card h3 {
     float: left;
 
+}
+
+.card-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nome{
+    position: fixed;
+    left: 34%;
+}
+
+.cidade{
+    position: fixed;
+    left: 55%;
 }

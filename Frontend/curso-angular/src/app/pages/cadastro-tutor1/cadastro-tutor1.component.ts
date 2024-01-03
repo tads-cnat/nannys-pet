@@ -10,7 +10,7 @@ import { TutorService } from '../../services/tutor.service';
 })
 export class CadastroTutor1Component implements OnInit {
   tutors: Tutor[] = [];
-  tutor: Tutor = {nome:'',sobrenome:'',cpf:'', email:''};
+  tutor: Tutor = {nome:'',sobrenome:'',cpf:'', email:'', data_nascimento: new Date('01/12/1999') };
   
   constructor(private service: TutorService){}
 

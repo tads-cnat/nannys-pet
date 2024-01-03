@@ -51,25 +51,6 @@ export class BuscarCuidadorComponent implements OnInit{
   
   filtrarCuidadores() {
     this.cuidadoresFiltrados = [];
-  
-    for (const cuidador of this.cuidadors) {
-      let atendeTodosOsFiltros = true;
-  
-      for (const caracteristica of this.caracteristicasSelecionadas) {
-        if (!cuidador.caracteristicas[caracteristica]) {
-          atendeTodosOsFiltros = false;
-          break;
-        }
-      }
-  
-      if (atendeTodosOsFiltros) {
-        this.cuidadoresFiltrados.push(cuidador);
-      }
-    }
-  
-   
-  
-  
     console.log('Cuidadores Filtrados:', this.cuidadoresFiltrados);
   }
   

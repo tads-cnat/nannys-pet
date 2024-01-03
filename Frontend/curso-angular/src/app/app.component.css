@@ -1,4 +1,52 @@
+.menu {
+  display: flex;
+  align-items: center;
+}
 
+nav {
+  margin-left: 20px; /* Adiciona um espaçamento entre a logo e o nav */
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 1em;
+    width: 108px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
 
 header{
     background-color: #E9ECEF;
