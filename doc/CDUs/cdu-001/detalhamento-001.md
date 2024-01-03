@@ -1,48 +1,45 @@
 # **Projeto “Nanny's Pets”**
 ## **Especificação de Caso de Uso**   
-### **Realizar cadastro de tutor no site**   
+### **Cadastrar Tutor**   
 
 **Histórico da Revisão**
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | --- | --- | --- | --- |
-| 09/05/2023 | 1.0 | Realizar cadastro de usuário no site | Anna Carolinne |
-| 30/05/2023 | 1.1 | Revisão dos detalhamentos para simplificar | Anna Carolinne |
-| 02/01/2024 | 2.0 | Revisão dos detalhamentos para simplificar | Virginia Menezes |
+| 09/05/2023 | 1.0 | Cadastrar Tutor | Renato Bernardino|
+
 </br>
 
 ### **1 Resumo**
-O usuário que deseja utilizar o site seja para hospedar seu pet, ou, para se tornar um possível hospedante de pets, precisa realizar o cadastro como tutor no sistema do site “Nanny's Pets”. </br></br>
+O usuário que deseja utilizar o site seja para se tornar um possível hospedante de pets, precisa realizar o cadastro no sistema do site “Nanny's Pets”. </br></br>
 
 ### **2 Atores**
-2.1 Usuário. </br></br>
+2.1 Tutor </br></br>
 
 ### **3 Precondições**     
-Usuário deve estar logado.  </br></br>  
+Não há precondições  </br></br>  
 
 ### **4 Pós-condições**    
-O usuário agora está cadastrado na plataforma.</br></br>
+O cuidador está cadastrado na plataforma.</br></br>
 
 ### **5 Fluxos de evento**
 
 #### **5.1 Fluxo básico**
 | **Ações do ator** | **Ações do sistema** | 
 | --- | --- |
-| 1. Acessar a plataforma |  | 
-|   | Carregar página inicial da plataforma Nanny’s Pet | 
-| 2. Clicar em cadastro |  | 
-|   | Carrega página de cadastro | 
-| 3. Clicar em tutor|  | 
-|   | Carrega página de cadastro | 
-| 4. Preencher e clicar em cadastrar |  | 
-|   | Salva o cadastro do usuário | 
+| 1. Usuário acessa a home Nannys-Pets | Sistema exibe a tela home   | 
+| 2. Usuário seleciona o botão cadastrar  | Sistema exibe um modal com duas opções: Cadastrar Tutor e Cadastrar Cuidador | 
+| 3. Usuário seleciona a opção cadastrar Tutor | Sistema exibe a primeira tela de cadasrto   | 
+| 4. Usuário preenche as informações de cadastro e seleciona o botão próxima etapa  | Sistema exibe a tela de seleção de foto de perfil | 
+| 5. Usuário seleciona a foto de perfil e seleciona o botão Finalizar cadastro | Sistema exibe uma lista de cuidadores da plataforma, com a opção de filtrar caracteristicas  | 
+
 </br>
 
 #### **5.2 Fluxo alternativo**
 | **Ações do ator** | **Ações do sistema** | 
 | --- | --- |
-| 1. Clica em cadastro |  | 
-|   | Carrega a página de cadastro | 
-| 2. Visualiza e clica em voltar |  | 
-|   | Carrega a página inicial | 
+| 1. Usuário acessa a home Nannys-Pets | Sistema exibe a tela home   |
+| 2. Usuário passa o cursor na opção cadastrar no menu e seleciona a opção Tutor | Sistema exibe a primeira tela de cadastro |  
+| 3. Usuário preenche as informações de cadastro e seleciona o botão próxima etapa  | Sistema exibe a tela de seleção de foto de perfil | 
+| 4. Usuário seleciona a foto de perfil e seleciona o botão finalizar cadastro | Sistema exibe a lista de cuidadores da plataforma, com a opção de filtrar caracteristicas  | 
 
 ---------------------
