@@ -41,12 +41,12 @@ O cuidador está cadastrado na plataforma.</br></br>
 | --- | --- |
 | 1. Usuário acessa a home Nannys-Pets | Sistema exibe a tela home   |
 | 2. Usuário seleciona o botão login no menu| Sistema exibe a tela de login | 
-| 2. Usuário seleciona a opção: Ainda não sou cadastrado  | Sistema exibe um modal com duas opções: Cadastrar Tutor e Cadastrar Cuidador | 
-| 3. Usuário seleciona a opção cadastrar Cuidador | Sistema exibe a primeira tela de cadasrto   | 
-| 4. Usuário preenche as informações de cadastro e seleciona o botão próxima etapa  | Sistema exibe a tela de seleção de foto de perfil | 
-| 5. Usuário seleciona a foto de perfil e seleciona o botão próxima etapa | Sistema exibe tela de adicionar fotos do ambiente do cuidador  | 
-| 6. Usuário seleciona as fotos do ambiente e seleciona o botão próxima etapa  | Sistema exibe tela de cadastro de informações de contato |
-| 7. Usuário preenche as informações e seleciona o botão próxima etapa| Sistema exibe tela de seleção de características do cuidador|
-| 8. Usuário seleciona suas características e seleciona o botão finalizar cadastro| Sistema envia as informações de cadastro para a API | 
+| 3. Usuário seleciona a opção: Ainda não sou cadastrado  | Sistema exibe um modal com duas opções: Cadastrar Tutor e Cadastrar Cuidador | 
+| 4. Usuário seleciona a opção cadastrar Cuidador | Sistema exibe a primeira tela de cadasrto   | 
+| 5. Usuário preenche as informações de cadastro e seleciona o botão próxima etapa  | Sistema exibe a tela de seleção de foto de perfil | 
+| 6. Usuário seleciona a foto de perfil e seleciona o botão próxima etapa | Sistema exibe tela de adicionar fotos do ambiente do cuidador  | 
+| 7. Usuário seleciona as fotos do ambiente e seleciona o botão próxima etapa  | Sistema exibe tela de cadastro de informações de contato |
+| 8. Usuário preenche as informações e seleciona o botão próxima etapa| Sistema exibe tela de seleção de características do cuidador|
+| 9. Usuário seleciona suas características e seleciona o botão finalizar cadastro| Sistema envia as informações de cadastro para a API | 
 
 ---------------------
