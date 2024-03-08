@@ -20,7 +20,7 @@ Versão 2.0
 </br>
 
 # Horário de Reuniões:
-Presencialmente com o orientador às quartas-feiras no campus IFRN-Central.  
+Presencialmente com o orientador às quinta-feiras no campus IFRN-Central.  
 
 Reuniões on-line nas segunda-feira às 20h e em outro dia da semana que sempre é escolhido na reunião à depender das demandas.   
 </br>
