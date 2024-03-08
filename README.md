@@ -10,28 +10,19 @@ O projeto Nanny's Pets tem como objetivo desenvolver um sistema para o serviço 
 
 Versão 2.0 
 1. Anna Carolinne - [GitHub](https://github.com/anna-albuquerque) 
-2. Gabriel Ricardo - [GitHub](https://github.com/gabriellldev) 
+2. Joana Dark - [Github](https://github.com/JoanaFernandes1998)
 3. Renato Bernardino - [GitHub](https://github.com/renatobernardinodasilva)
 4. Virgínia Cláudia - [GitHub](https://github.com/VCLM)
+5. Weberson Chagas - [Github](https://github.com/wemersonchaga)
 
-**Orientador:** Alessandro José - [GitHub](https://github.com/alessandrojsouza)
-
-Versão 1.0
-1. Anna Carolinne - [GitHub](https://github.com/anna-albuquerque) 
-2. Evandro Henrique - [GitHub](https://github.com/evandrohpereira)
-3. Gabriel Ricardo - [GitHub](https://github.com/gabriellldev) 
-4. Maria Luiza - [GitHub](https://github.com/malucarvalho) 
-5. Sérgio Henrique - [GitHub](https://github.com/sergioh665)
-6. Walber Ranniere - [GitHub](https://github.com/WalberRanniere)   
-
-**Orientador:** Gilbert Azevedo - [GitHub](https://github.com/Gilbert-Silva)   
+**Orientador:** Alexandre Gomes - [GitHub](https://github.com/alexlimatds)
 
 </br>
 
 # Horário de Reuniões:
 Presencialmente com o orientador às quartas-feiras no campus IFRN-Central.  
 
-Reuniões on-line nas segunda-feira às 19h e em outro dia da semana que sempre é escolhido na reunião à depender das demandas.   
+Reuniões on-line nas segunda-feira às 20h e em outro dia da semana que sempre é escolhido na reunião à depender das demandas.   
 </br>
 
 # Ferramentas e tecnologias utilizadas no desenvolvimento do projeto:
