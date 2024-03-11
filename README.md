@@ -10,7 +10,7 @@ O projeto Nanny's Pets tem como objetivo desenvolver um sistema para o serviço 
 
 Versão 2.0 
 1. Anna Carolinne - [GitHub](https://github.com/anna-albuquerque) 
-2. Joana Dark - [Github](https://github.com/JoanaFernandes1998)
+2. Joana Darc - [Github](https://github.com/JoanaFernandes1998)
 3. Renato Bernardino - [GitHub](https://github.com/renatobernardinodasilva)
 4. Virgínia Cláudia - [GitHub](https://github.com/VCLM)
 5. Weberson Chagas - [Github](https://github.com/wemersonchaga)
