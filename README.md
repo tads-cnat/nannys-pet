@@ -15,7 +15,7 @@ Versão 2.0
 4. Virgínia Cláudia - [GitHub](https://github.com/VCLM)
 5. Wemerson Chagas - [Github](https://github.com/wemersonchaga)
 
-**Orientador:** Alexandre Gomes - [GitHub](https://github.com/alexlimatds)
+**Orientador:** Plácido Neto - [GitHub](https://github.com/placidoneto)
 
 </br>
 
