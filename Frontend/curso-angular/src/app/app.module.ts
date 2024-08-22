@@ -21,10 +21,8 @@ import { CadastroTutor1Component } from './pages/cadastro-tutor1/cadastro-tutor1
 import { CadastroFotoComponent } from './components/cadastro-foto/cadastro-foto.component';
 
 import { ListarCuidadoresComponent } from './pages/listar-cuidadores/listar-cuidadores.component';
-import { ListarTutoresComponent } from './pages/listar-tutores/listar-tutores.component';
 
 import { CardCuidadoresComponent } from './components/card-cuidadores/card-cuidadores.component';
-import { CardTutoresComponent } from './components/card-tutores/card-tutores.component';
 import { BuscarCuidadorComponent } from './pages/buscar-cuidador/buscar-cuidador.component';
 import { CadastroCuidador1Component } from './pages/cadastro-cuidador1/cadastro-cuidador1.component';
 import { CadastroCuidador2Component } from './pages/cadastro-cuidador2/cadastro-cuidador2.component';
@@ -56,8 +54,7 @@ import { CadastroCuidador3Component } from './pages/cadastro-cuidador3/cadastro-
     CadastroCuidador1Component,
     CadastroCuidador2Component,
     CadastroCuidador3Component,
-    ListarTutoresComponent,
-    CardTutoresComponent,
+    
 
     
 
@@ -69,9 +66,6 @@ import { CadastroCuidador3Component } from './pages/cadastro-cuidador3/cadastro-
     HttpClientModule,
     ReactiveFormsModule
   ],
-  
-
-  
   providers: [
     provideClientHydration()
   ],

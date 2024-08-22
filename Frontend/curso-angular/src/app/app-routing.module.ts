@@ -10,7 +10,6 @@ import { BuscarCuidadorComponent } from './pages/buscar-cuidador/buscar-cuidador
 import { CadastroCuidador1Component } from './pages/cadastro-cuidador1/cadastro-cuidador1.component';
 import { CadastroCuidador2Component } from './pages/cadastro-cuidador2/cadastro-cuidador2.component';
 import { CadastroCuidador3Component } from './pages/cadastro-cuidador3/cadastro-cuidador3.component';
-import { ListarTutoresComponent } from './pages/listar-tutores/listar-tutores.component';
 
 const routes: Routes = [
     {path: '',component: FirstComponentComponent},
@@ -18,7 +17,6 @@ const routes: Routes = [
     {path: 'cadastrar', component: CadastroTutor1Component},
     {path: 'cadastro-foto', component: CadastroFotoComponent},
     {path: 'cuidadores', component: ListarCuidadoresComponent},
-    {path: 'tutores', component: ListarTutoresComponent},
     {path: 'cadastro-cuidador', component: CadastroCuidador1Component},
     {path: 'cadastro-cuidador-2', component: CadastroCuidador2Component},
     {path: 'cadastro-cuidador-3', component: CadastroCuidador3Component},
