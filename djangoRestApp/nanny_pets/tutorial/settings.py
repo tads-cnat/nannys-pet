@@ -34,7 +34,6 @@ DATE_FORMAT = 'd/m/Y'
 
 INSTALLED_APPS = [
     'rest_framework',
-    
     'nanny_pets_app',
     'django_filters',
     'django.contrib.admin',
@@ -44,8 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'drf_yasg',
-
+    'rest_framework.authtoken',  # Add this line
+    'django.contrib.sites',  # Required for allauth
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',  # Add this line
+    'dj_rest_auth',
 ]
 
 MIDDLEWARE = [
@@ -57,15 +60,19 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.locale.LocaleMiddleware'
+    'django.middleware.locale.LocaleMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:80",
+    #"http://localhost:4200",
+    'http://127.0.0.1:4200',  # Replace with your Angular app's URL
     # Adicione outros domínios permitidos conforme necessário
 ]
-
+CORS_ALLOWED_PATHS = [
+    '/auth/signup/',
+]
 
 ROOT_URLCONF = 'tutorial.urls'
 
@@ -93,12 +100,8 @@ WSGI_APPLICATION = 'tutorial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nanny-pets',
-        'USER': 'root',
-        'PASSWORD': 'Nannys2024@',
-        'HOST': 'localhost',   # ou endereço do seu banco de dados MySQL
-        'PORT': '3306',        # porta padrão do MySQL
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -147,3 +150,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# allauth
+
+SITE_ID = 1
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+# JWT settings
+
+REST_USE_JWT = True
+REST_AUTH_TOKEN_MODEL = None
