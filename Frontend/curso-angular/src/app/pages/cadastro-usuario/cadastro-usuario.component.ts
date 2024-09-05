@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './cadastro-usuario.component.html',
   styleUrls: ['./cadastro-usuario.component.css']
 })
+
 export class CadastroUsuarioComponent {
   username: string = '';
   password: string = '';
@@ -17,7 +18,20 @@ export class CadastroUsuarioComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   checkPasswords() {
-    // A função para verificar se as senhas coincidem é chamada em tempo real
+    // Função para verificar se as senhas coincidem em tempo real
+  }
+
+  registerUser(): void { // Removi os parâmetros da função, pois você já está usando this.username e this.password
+    this.authService.register(this.username, this.password).subscribe(
+      (response: any) => {
+        console.log('Usuário cadastrado com sucesso', response);
+        this.router.navigate(['/login']); // Redireciona para a página de login após o cadastro
+      },
+      (error: any) => {
+        console.error('Erro ao cadastrar usuário', error);
+        this.errorMessage = 'Erro ao cadastrar usuário. Tente novamente.';
+      }
+    );
   }
 
   onSubmit(f: NgForm) {
@@ -25,16 +39,6 @@ export class CadastroUsuarioComponent {
       this.errorMessage = 'As senhas não correspondem.';
       return;
     }
-
-    this.authService.register(this.username, this.password).subscribe(
-      (response) => {
-        console.log('Usuário cadastrado com sucesso', response);
-        this.router.navigate(['/login']); // Redireciona para a página de login após o cadastro
-      },
-      (error) => {
-        console.error('Erro ao cadastrar usuário', error);
-        this.errorMessage = 'Erro ao cadastrar usuário. Tente novamente.';
-      }
-    );
+    this.registerUser(); // Agora, a função é chamada corretamente # o onSUbmit não podia ser chamado dentro do método registerUser
   }
 }

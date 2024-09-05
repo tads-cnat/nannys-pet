@@ -19,9 +19,7 @@ const routes: Routes = [
     {path: 'buscar-cuidador', component: BuscarCuidadorComponent},
     {path: 'login', component: LoginComponent},
     {path: 'cadastro-usuario', component: CadastroUsuarioComponent},
-
-    
-    
+    {path: 'signup', component: CadastroUsuarioComponent},
 ];
 
 @NgModule({

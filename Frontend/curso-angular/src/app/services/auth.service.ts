@@ -49,6 +49,4 @@ export class AuthService {
       localStorage.setItem('token', token);
     }
   }
-  
 }
-
