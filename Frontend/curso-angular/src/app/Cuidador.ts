@@ -3,6 +3,7 @@ import { Caracteristicas } from "./Caracteristicas";
 
 
 export interface Cuidador{
+    id?: number;
     nome: string;
     sobrenome: string;
     cpf: string;
@@ -11,9 +12,10 @@ export interface Cuidador{
     telefone: string;
     instagram: string;
     cep: string;
-    cidade: string;
-    estado: string;
+    localidade: string;
+    uf: string;
     numero: number;
-    rua: string;
-    caracteristicas: Caracteristicas;
+    logradouro: string;
+    caracteristicas: Caracteristicas[]
+    senha?: string;
 }

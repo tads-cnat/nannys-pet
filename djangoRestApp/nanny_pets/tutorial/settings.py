@@ -43,8 +43,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'rest_framework.authtoken'
 
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -63,7 +70,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
     # Adicione outros domínios permitidos conforme necessário
 ]
-
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'tutorial.urls'
 

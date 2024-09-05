@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Tutor } from '../../Tutor';
 import { TutorService } from '../../services/tutor.service';
 
@@ -7,7 +7,7 @@ import { TutorService } from '../../services/tutor.service';
   templateUrl: './listar-tutores.component.html',
   styleUrl: './listar-tutores.component.css'
 })
-export class ListarTutoresComponent {
+export class ListarTutoresComponent implements OnInit {
   tutors: Tutor[] = [];
 
   constructor(private service: TutorService){}
