@@ -9,6 +9,7 @@ import { CadastroCuidador1Component } from './pages/cadastro-cuidador1/cadastro-
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
+// import { HomeLogadoComponent } from './pages/home-logado/home-logado.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,8 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'cadastro-usuario', component: CadastroUsuarioComponent},
     {path: 'signup', component: CadastroUsuarioComponent},
+    // {path: 'home-logado', component: HomeLogadoComponent},
+    
 ];
 
 @NgModule({

@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
-import { provideHttpClient, withFetch } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -17,7 +16,8 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AuthService } from './services/auth.service';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
-
+import { AuthInterceptor } from './services/auth.interceptor';
+// import { HomeLogadoComponent } from './pages/home-logado/home-logado.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usua
     CadastroCuidador1Component,
     LoginComponent,
     CadastroUsuarioComponent,
+    // HomeLogadoComponent,
   ],
 
 
@@ -43,10 +44,13 @@ import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usua
 
 
   providers: [
-    provideClientHydration(),
-    provideHttpClient(withFetch()),
     AuthGuard,
-    AuthService
+    AuthService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
   ],
 
 

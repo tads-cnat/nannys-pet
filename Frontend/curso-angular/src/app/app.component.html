@@ -1,26 +1,30 @@
-
 <header>
-        <div class="menu">
-              <a routerLink="/home"><img src="assets/img/logo.png" alt="imagem" style="float: left; width: 200px; padding: 1em;" /></a>
-              <nav>
-                  <a routerLink="/home">Home</a>
-                  <a routerLink="/cuidadores">Nossos Cuidadores</a>
-                  <div class="dropdown">
-                        <a routerLink="#">Cadastre-se</a>
-                        <div class="dropdown-content">
-                            <a routerLink="/cadastro-cuidador">Cuidador</a>
-                            <a routerLink="/cadastrar">Tutor</a>
-                        </div>
-                    </div>
-              </nav>
-              <a routerLink="/login"><button>Login</button></a>
-              
+    <div class="menu">
+      <a routerLink="/home">
+        <img src="assets/img/logo.png" alt="imagem" style="float: left; width: 200px; padding: 1em;" />
+      </a>
+      <nav>
+        <a routerLink="/home">Home</a>
+        <a routerLink="/cuidadores">Nossos Cuidadores</a>
+        <div class="dropdown" *ngIf="!isLoggedIn">
+          <a routerLink="#">Cadastre-se</a>
+          <div class="dropdown-content">
+            <a routerLink="/cadastro-cuidador">Cuidador</a>
+            <a routerLink="/cadastrar">Tutor</a>
+          </div>
         </div>
-</header>   
-
-
-<router-outlet></router-outlet>
-
-
-
-    
+        <!-- Botão de login aparece somente se não estiver na página de login -->
+        <ng-container *ngIf="!isLoginPage">
+            <button *ngIf="!isLoggedIn" routerLink="/login">
+                Login
+            </button>
+              <button *ngIf="isLoggedIn" (click)="logout()">
+                Logout
+              </button>
+        </ng-container>
+      </nav>
+    </div>
+  </header>
+  
+  <router-outlet></router-outlet>
+  

@@ -1,57 +1,61 @@
+/* login.component.css */
 .login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Altura total da tela */
-    background-color: #f0f0f0; /* Cor de fundo para melhorar o contraste */
-    margin: 0;
-  }
-  
-  /* Estilos para o container de login */
-  .login-container {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%; /* Responsivo para telas menores */
-  }
-  
-  .login-container h2 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .login-container label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .login-container input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .login-container button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .login-container button:hover {
-    background-color: #0056b3;
-  }
-  
-  .error {
-    color: red;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  
+  display: flex;
+  justify-content: center;  /* Alinha horizontalmente */
+  align-items: center;      /* Alinha verticalmente */
+  height: 100vh;            /* Usa a altura total da tela */
+  background-color: #f0f0f0; /* Cor de fundo, opcional */
+}
+
+.login-container {
+  background-color: white;  /* Cor de fundo do formulário, opcional */
+  padding: 2em;             /* Espaçamento interno */
+  border-radius: 8px;       /* Cantos arredondados, opcional */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve, opcional */
+  width: 100%;
+  max-width: 400px;         /* Largura máxima do formulário */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 1em;        /* Espaçamento abaixo do título */
+}
+
+div {
+  margin-bottom: 1em;        /* Espaçamento entre os campos */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;      /* Espaçamento abaixo dos labels */
+}
+
+input {
+  width: 100%;               /* Largura completa dos campos */
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.8em;
+  border: none;
+  border-radius: 4px;
+  background-color: #D2657F;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 1em;
+}
