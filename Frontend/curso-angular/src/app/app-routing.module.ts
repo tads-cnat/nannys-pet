@@ -14,8 +14,8 @@ import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usua
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
-    {path: 'cadastrar', component: CadastroTutor1Component, canActivate: [AuthGuard]},
-    {path: 'cuidadores', component: ListarCuidadoresComponent},
+    {path: 'cadastrar', component: CadastroTutor1Component},
+    {path: 'cuidadores', component: ListarCuidadoresComponent, canActivate: [AuthGuard]},
     {path: 'cadastro-cuidador', component: CadastroCuidador1Component},
     {path: 'buscar-cuidador', component: BuscarCuidadorComponent},
     {path: 'login', component: LoginComponent},

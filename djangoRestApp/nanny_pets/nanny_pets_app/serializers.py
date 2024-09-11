@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 
-from .models import Cuidador, Caracteristicas, Tutor
+from .models import Cuidador, Caracteristicas, Tutor, ImagensAmbiente
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -44,7 +44,8 @@ class CuidadorSerializer(serializers.ModelSerializer):
             'localidade',
             'numero',
             'instagram',
-            'caracteristicas'
+            'caracteristicas',
+            'imagensambiente',
         ]
     def create(self, validated_data):
         caracteristicas_data = validated_data.pop('caracteristicas')
@@ -69,4 +70,11 @@ class TutorSerializer(serializers.ModelSerializer):
             'cpf',
             'email'
         )
+
+class ImagensAmbienteSerializer(serializers.ModelSerializer):
+    fotos_local = serializers.ImageField(use_url=True)  # Para retornar a URL completa da imagem
+
+    class Meta:
+        model = ImagensAmbiente
+        fields = ['fotos_local']
 
