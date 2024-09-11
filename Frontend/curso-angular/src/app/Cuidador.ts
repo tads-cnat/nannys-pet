@@ -18,6 +18,4 @@ export interface Cuidador{
     logradouro: string;
     caracteristicas: Caracteristicas[]
     senha?: string;
-    
-    
 }

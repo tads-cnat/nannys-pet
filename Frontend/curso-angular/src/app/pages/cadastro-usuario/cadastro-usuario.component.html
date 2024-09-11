@@ -23,9 +23,9 @@
           required 
           (ngModelChange)="checkPasswords()"
         />
-        <div *ngIf="errorMessage && confirmPassword !== ''" class="error">
+        <!-- <div *ngIf="errorMessage && confirmPassword !== ''" class="error">
           {{ errorMessage }}
-        </div>
+        </div> -->
       </div>
     
       <button type="submit" [disabled]="password !== confirmPassword">Cadastrar</button>

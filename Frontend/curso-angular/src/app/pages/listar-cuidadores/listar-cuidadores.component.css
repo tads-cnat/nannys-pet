@@ -1,25 +1,39 @@
-.container{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    
+.container {
+    display: flex;
+    flex-direction: column; /* Alinhar elementos verticalmente */
+    align-items: center; /* Centralizar os elementos */
+    width: 100vw;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+.paragrafo {
+    text-align: center; /* Centralizar o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+.search-bar {
+    width: 100%; /* Ocupa toda a largura disponível */
+    display: flex;
+    justify-content: center; /* Centralizar a barra de pesquisa */
+}
+
+.search-bar input {
+    width: 300px; /* Largura da barra de pesquisa */
+    padding: 10px; /* Adicionar preenchimento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    border: 1px solid #ccc; /* Borda da barra de pesquisa */
 }
 
 .lista {
     display: flex;
-    width: 100vw;
+    flex-wrap: wrap; /* Permitir que os cards se reorganizem em várias linhas */
     justify-content: center;
-    
-}
-.paragrafo{
-    border-top: 50px;
+    gap: 15px; /* Espaçamento entre os cards */
+    width: 100%;
 }
 
 ul {
     list-style: none;
-    padding: 0; /* Opcional: remover o preenchimento padrão da lista */
-    margin: 0; /* Opcional: remover a margem padrão da lista */
-  }
-  
+    padding: 0;
+    margin: 0;
+}

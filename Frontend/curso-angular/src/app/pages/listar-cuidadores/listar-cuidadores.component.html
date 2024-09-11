@@ -1,16 +1,26 @@
 <div class="container">
+    <!-- Parágrafo com o título -->
     <div class="paragrafo">
-        <h2>Aqui estão nossos cuidadores</h2>
+      <h2>Aqui estão nossos cuidadores</h2>
     </div>
+  
+    <!-- Barra de pesquisa -->
+    <div class="search-bar">
+      <input 
+        type="text" 
+        placeholder="Pesquisar por cidade" 
+        [(ngModel)]="searchTerm"
+        (input)="filterCuidadores()"
+      />
+    </div>
+  
+    <!-- Lista de cuidadores -->
     <div class="lista">
-        <ul>
-            <li *ngFor="let cuidador of cuidadors" class="teste3">
-                <app-card-cuidadores [cuidador]="cuidador"></app-card-cuidadores>
-            </li>
-        </ul>
+      <ul>
+        <li *ngFor="let cuidador of filteredCuidadores">
+          <app-card-cuidadores [cuidador]="cuidador"></app-card-cuidadores>
+        </li>
+      </ul>
     </div>
-
-</div>
-<!-- [sobrenome]={{cuidador.sobrenome}}
-[telefone]={{cuidador.telefone}}
-[endereco]={{cuidador.endereco}}> -->
+  </div>
+  

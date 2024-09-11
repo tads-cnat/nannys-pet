@@ -11,7 +11,7 @@ import { Input } from '@angular/core';
 export class CardCuidadoresComponent {
   @Input() cuidador!: Cuidador;
 
-  whatsapp: string= 'https://wa.me/';
+  whatsapp: string= 'https://wa.me/55';
   
 
   
