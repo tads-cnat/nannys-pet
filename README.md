@@ -32,7 +32,11 @@ Reuniões on-line nas segunda-feira às 20h e em outro dia da semana que sempre 
 * ERDPlus para elaboração dos diagramas ER;
 * Html 5 como linguagem de marcação;
 * CSS 3 para estilizar as páginas web;
-* Python + Django Framework Web da linguagem de programação Python;   
+* Python + Django Rest Framework;
+* Angular para o frontend;
+* SQLite para o banco de daddos;
+* Docker, Dockerfile, Docker Compose, Docker Hub, utilizados para a criação de imagens com um arquivo de instruções para construção de contêineres, com multiplos contêineres e para a publicação das imagens;
+* Azure para implantar o sistema na nuvem.
 </br>
 
 # Documentação
