@@ -48,4 +48,25 @@ def test_tutor():
     # Testes de atributos
     assert tutor.nome == "João"
     assert tutor.sobrenome == "Silva"
-    assert tutor.data_nascimento == "
+    assert tutor.data_nascimento == "13/05/1991"
+    
+    # Testes de validação
+    assert tutor.validar_cpf() == False  # O CPF não é válido
+    assert tutor.validar_email() == True  # O e-mail é válido
+    
+    tutor_invalido = Tutor(
+        "Maria",
+        "Oliveira",
+        "05/07/1990",
+        "111.111.111-11",  # CPF inválido
+        "maria.silva@@exemplo..com",  # E-mail inválido
+        "SenhaSegura123",
+        "987654321",
+        False
+    )
+
+    assert tutor_invalido.validar_cpf() == False  # CPF inválido
+    assert tutor_invalido.validar_email() == False  # E-mail inválido
+
+if __name__ == "__main__":
+    test_tutor()
