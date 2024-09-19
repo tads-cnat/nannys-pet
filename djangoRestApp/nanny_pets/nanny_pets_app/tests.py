@@ -1,3 +1,4 @@
+import re
 from django.test import TestCase
 
 class Tutor:
@@ -12,31 +13,39 @@ class Tutor:
         self.foto_perfil = foto_perfil
 
     def validar_email(self):
-        return "@" in self.email
+        # Expressão regular para validar e-mail
+        padrao_email = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+        return re.match(padrao_email, self.email) is not None
 
     def validar_cpf(self):
-        return len(self.cpf) == 14  # Formato: 123.000.000-00
+        cpf_numeros = re.sub(r'\D', '', self.cpf)
+
+        if len(cpf_numeros) != 11 or cpf_numeros == cpf_numeros[0] * 11:
+            return False
+
+        soma = sum(int(cpf_numeros[i]) * (10 - i) for i in range(9))
+        digito1 = 11 - (soma % 11)
+        digito1 = 0 if digito1 >= 10 else digito1
+
+        soma = sum(int(cpf_numeros[i]) * (11 - i) for i in range(10))
+        digito2 = 11 - (soma % 11)
+        digito2 = 0 if digito2 >= 10 else digito2
+
+        return cpf_numeros[-2:] == f"{digito1}{digito2}"
 
 def test_tutor():
     tutor = Tutor(
         "João",
         "Silva",
         "13/05/1991",
-        "123.000.000-00",
+        "123.456.789-09",  # Exemplo de CPF no formato correto
         "joao.silva@example.com",
         "SenhaSegura123",
         "123456789",
         True
     )
 
+    # Testes de atributos
     assert tutor.nome == "João"
     assert tutor.sobrenome == "Silva"
-    assert tutor.data_nascimento == "13/05/1991"
-    assert tutor.validar_cpf() == True
-    assert tutor.validar_email() == True
-    assert tutor.senha == "SenhaSegura123"
-    assert tutor.telefone == "123456789"
-    assert tutor.foto_perfil == True
-
-if __name__ == "__main__":
-    test_tutor()
+    assert tutor.data_nascimento == "
