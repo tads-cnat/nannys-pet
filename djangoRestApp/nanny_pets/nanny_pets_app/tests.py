@@ -1,5 +1,4 @@
 import re
-from django.test import TestCase
 
 class Tutor:
     def __init__(self, nome, sobrenome, data_nascimento, cpf, email, senha, telefone, foto_perfil):
@@ -19,7 +18,6 @@ class Tutor:
 
     def validar_cpf(self):
         cpf_numeros = re.sub(r'\D', '', self.cpf)
-
         if len(cpf_numeros) != 11 or cpf_numeros == cpf_numeros[0] * 11:
             return False
 
@@ -38,7 +36,7 @@ def test_tutor():
         "João",
         "Silva",
         "13/05/1991",
-        "123.456.789-09",  # Exemplo de CPF no formato correto
+        "123.456.789-09",  
         "joao.silva@example.com",
         "SenhaSegura123",
         "123456789",
@@ -51,15 +49,15 @@ def test_tutor():
     assert tutor.data_nascimento == "13/05/1991"
     
     # Testes de validação
-    assert tutor.validar_cpf() == False  # O CPF não é válido
+    assert tutor.validar_cpf() == True  # O CPF é válido
     assert tutor.validar_email() == True  # O e-mail é válido
     
     tutor_invalido = Tutor(
         "Maria",
         "Oliveira",
         "05/07/1990",
-        "111.111.111-11",  # CPF inválido
-        "maria.silva@@exemplo..com",  # E-mail inválido
+        "111.111.111-11",  
+        "maria.silva@@exemplo..com",  
         "SenhaSegura123",
         "987654321",
         False
