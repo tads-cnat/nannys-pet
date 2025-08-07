@@ -1,0 +1,20 @@
+
+| Código | Fonte de Elicitação                                |
+|--------|----------------------------------------------------|
+| F1     | Brainstorming com equipe de desenvolvimento        |
+| F2     | Entrevista com usuários (tutores e cuidadores)     |
+| F3     | Análise de sistemas similares (benchmarking)       |
+| F4     | Questionário com potenciais usuários da plataforma |
+
+##  Requisitos x Fontes de Elicitação
+
+| Requisito                                            | ID    | F1 | F2 | F3 | F4 |
+|------------------------------------------------------|-------|----|----|----|----|
+| Gerenciar dados de cuidador                          | RF01  | X  | X  |    |    |
+| Gerenciar dados de tutor                             | RF02  | X  | X  |    |    |
+| Encontrar cuidadores                                 | RF03  |    | X  | X  | X  |
+| Visualizar cuidadores mais requisitados/avaliados    | RF04  |    |    | X  | X  |
+| Avaliar hospedagem de Cuidador                       | RF05  | X  | X  |    |    |
+| Segurança dos Dados                                  | NF01  | X  |    | X  |    |
+| Responsividade                                       | NF02  | X  |    |    | X  |
+| Funcionamento                    
