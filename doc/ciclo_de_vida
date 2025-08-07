@@ -1,0 +1,68 @@
+## 1) Ciclo de Vida dos Requisitos (Diagrama de Estados)
+
+### Estados do Requisito
+
+- **Proposto**
+- **Analisado**
+- **Aprovado**
+- **Implementado**
+- **Validado**
+- **Cancelado**
+- **Rejeitado**
+
+### Transições Possíveis
+
+```
+         [Proposto]
+              |
+              v
+         [Analisado] ---> [Cancelado]
+              |                ^
+              |                |
+              v                |
+         [Aprovado] ----------+
+              |
+              v
+       [Implementado]
+              |
+              v
+          [Validado]
+
+[Analisado] --> [Rejeitado]
+```
+
+---
+
+## 2) Estado Atual dos Requisitos
+
+| Requisito                                       | ID    | Status Atual | Estado no Ciclo de Vida |
+|------------------------------------------------|-------|---------------|---------------------------|
+| Gerenciar dados de cuidador                    | RF01  | Aprovado      | **Aprovado**              |
+| Gerenciar dados de tutor                       | RF02  | Aprovado      | **Aprovado**              |
+| Encontrar cuidadores                           | RF03  | Aprovado      | **Aprovado**              |
+| Visualizar cuidadores mais requisitados        | RF04  | Proposto      | **Proposto**              |
+| Avaliar hospedagem de cuidador                 | RF05  | Cancelado     | **Cancelado**             |
+| Segurança dos Dados                            | NF01  | Aprovado      | **Aprovado**              |
+| Responsividade                                 | NF02  | Aprovado      | **Aprovado**              |
+| Funcionamento                                   | NF03  | Aprovado      | **Aprovado**              |
+
+
+
+
+
+
+# Ciclo de Vida dos Requisitos do Projeto
+
+## Diagrama de Estados do Ciclo de Vida dos Requisitos
+
+### Estados
+
+- **Proposto:** Requisito levantado, ainda em análise para aprovação.
+- **Aprovado:** Requisito revisado e aprovado para desenvolvimento.
+- **Cancelado:** Requisito descartado do projeto.
+
+### Transições principais
+
+- Proposto → Aprovado
+- Proposto → Cancelado
+- Aprovado → Cancelado
