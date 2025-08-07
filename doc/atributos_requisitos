@@ -1,0 +1,12 @@
+# Atributos dos Requisitos – Projeto Nanny’s Pets
+
+| Requisito | Identificação | Dependência | Origem | Prioridade | Status |
+|-----------|----------------|--------------|--------|-------------|--------|
+| Gerenciar dados de cuidador | RF01 | Não há | Equipe | Obrigatório | Aprovado |
+| Gerenciar dados de tutor | RF02 | Não há | Equipe | Obrigatório | Aprovado |
+| Encontrar cuidadores | RF03 | Não há | Equipe | Obrigatório | Aprovado |
+| Visualizar cuidadores mais requisitados e/ou melhor avaliados | RF04 | Gerenciar dados de cuidador | Equipe | Obrigatório | Proposto |
+| Avaliar hospedagem de Cuidador | RF05 | Gerenciar dados de cuidador | Equipe | Desejável | Cancelado |
+| Segurança dos Dados | NF01 | Não há | Equipe | Obrigatório | Aprovado |
+| Responsividade | NF02 | Não há | Equipe | Desejável | Aprovado |
+| Funcionamento | NF03 | Não há | Equipe | Desejável | Aprovado |
